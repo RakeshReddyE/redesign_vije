@@ -1,0 +1,902 @@
+.homeMainContainerStyles {
+  background-color: var(--white);
+}
+.customCursorStyles {
+  color: var(--blue) !important;
+  font-weight: 100 !important;
+  font-size: 56px !important;
+  font-stretch: narrower;
+}
+/*******BANNER SECTION STYLES ******/
+.bannerMainContainerStyles {
+  padding: 144px 48px 0px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  /* max-width: 1440px; */
+  margin: auto;
+}
+.bannerTopContainerStyles {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+.bannerHeadingStyles {
+  color: var(--dark);
+  text-align: center;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 88px;
+  width: 100%;
+  max-width: 784px;
+  padding-inline: 24px;
+  margin: auto;
+}
+.bannerImageStyle {
+  width: 100%;
+  /* max-width: 1344px; */
+  height: 90vh;
+}
+.bannerDescStyles {
+  width: 100%;
+  max-width: 784px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/*******  BANNER INFO SECTION STYLES    *******/
+.bannerInfoMainContainerStyles {
+  padding: 48px 48px 288px 48px;
+}
+.bannerBottomMobileTextStyles {
+  display: none;
+}
+.bannerBottomAnimContainerStyles,
+.bannerBottomAnimTextStyles,
+.customCursorStyles,
+.bannerBottomTextStyles,
+.bannerBottomMobileTextStyles {
+  color: var(--dark);
+  font-size: 48px;
+  font-style: normal;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-weight: 500;
+  line-height: 56px;
+  align-items: center;
+}
+.bannerBottomAnimContainerStyles {
+  display: flex;
+  flex-direction: row;
+}
+.bannerDescTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  max-width: 784px;
+}
+.bannerBottomContainerStyles {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.bannerBottomBtnGroupStyles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/******** FEATURES SECTION STYLES ***********/
+.featuredMainContainerStyles {
+  padding: 96px 0px;
+  position: relative;
+  overflow: scroll;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.featuresMobileViewContainerStyles,
+.featuresButtonGroupStyles {
+  display: none;
+}
+.featuresBottomStyles {
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.featureHeadingTextStyles {
+  position: absolute;
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  left: 48px;
+}
+.emptyDivStyles {
+  width: 576px;
+  height: 100px;
+  display: none;
+}
+.emptyDivStyles:first-child {
+  width: 576px;
+  height: 100px;
+  display: flex;
+}
+.emptyDivStyles::after {
+  content: ' ';
+  width: 576px;
+  height: 100px;
+}
+.featuresContainerStyles {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  /* padding-right: 48px; */
+  /* overflow: scroll; */
+  /* overflow-x: auto; */
+  width: 100%;
+}
+.featureContainerStyle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: fit-content;
+}
+.bigFeatureCardStyles {
+  width: 576px;
+  height: 576px;
+  position: relative;
+}
+.hoverImageStyles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+.featureContainerStyle:hover .hoverImageStyles {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.smallFeatureCardStyles {
+  width: 386px;
+  height: 386px;
+  position: relative;
+}
+.projectNameTextStyles,
+.projectNameTextStyles span {
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.projectNameTextStyles span {
+  color: rgba(5, 5, 5, 0.4);
+}
+.featureRightUpArrowStyles {
+  width: 24px;
+  height: 24px;
+}
+.featureRightArrowPathStyles {
+  stroke: var(--dark);
+}
+.allWorkTextStyles {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  justify-content: flex-start;
+  margin-left: 48px;
+  color: var(--dark);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  transition: all 0.2s ease-in-out;
+}
+.allWorkTextStyles:hover {
+  color: var(--blue);
+  transition: all 0.2s ease-in-out;
+}
+.allWorkTextStyles:hover .featureRightArrowPathStyles {
+  stroke: var(--blue);
+  transition: all 0.2s ease-in-out;
+}
+
+/****** OUR SERVICES SECTION ********/
+.ourServicesMainContainerStyles {
+  padding: 96px 48px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+.ourServicesDescTextStyles {
+  width: 100%;
+  max-width: 784px;
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+.servicesContainerStyles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 784px;
+  margin-left: auto;
+  gap: 16px;
+}
+.allServicesContainerStyles {
+  width: 100%;
+  max-width: 784px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.userServicesBtnStyles {
+  width: 100%;
+  max-width: 784px;
+  margin-left: auto;
+}
+.serviceIdTextStyles {
+  font-size: 16px;
+  line-height: 24px;
+  height: fit-content;
+  font-family: ' NeueHaasDisplay-Medium', sans-serif;
+  transition: 0.4s all ease-in-out;
+}
+.serviceContainerStyles:hover .serviceIdTextStyles {
+  opacity: 0;
+  transition: 0.4s all ease-in-out;
+}
+.rightAngledBlueArrowIconStyles {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0px;
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+}
+.serviceContainerStyles:hover .rightAngledBlueArrowIconStyles {
+  transition: 0.2s all ease-in-out;
+  opacity: 1;
+}
+.serviceHeadingContainerStyles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: #050505;
+  font-family: ' NeueHaasDisplay-Medium', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  gap: 8px;
+  position: relative;
+  transition: 0.2s all ease-in-out;
+}
+.serviceContainerStyles:hover .serviceHeadingContainerStyles {
+  gap: 24px;
+  transition: 0.2s all ease-in-out;
+}
+.serviceContainerStyles {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.serviceContentStyles {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+.serviceNameTextStyles {
+  font-size: 32px;
+  line-height: 40px;
+  height: fit-content;
+  font-family: ' NeueHaasDisplay-Medium', sans-serif;
+  width: 100%;
+}
+.serviceDescTextStyles {
+  color: var(--dark);
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px; /* 150% */
+  width: 100%;
+}
+/************ TESTIMONIAL SECTION STYLES********/
+.testimonialMainContainerStyles {
+  padding: 96px 48px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.testimonialTopContainerStyles,
+.testimonialBottomContainerStyles {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  flex-direction: column;
+}
+.testimonialTopLeftContainerStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+.testimonialTopRightContainerStyles {
+  width: 100%;
+}
+.testimonialLightDescTextStyles,
+.testimonialLightDescTextStyles span {
+  color: rgba(5, 5, 5, 0.5);
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+.testimonialBottomContainerStyles {
+  max-width: 784px;
+  margin-left: auto;
+}
+.testimonialLightDescTextStyles span {
+  color: var(--dark);
+}
+.clientNameTextStyles {
+  cursor: pointer;
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  width: 100%;
+  transition: 0.1s all ease-in-out;
+}
+.clientNamesContainerStyles:hover .clientNameTextStyles {
+  color: #00ff9b;
+  background-color: #050505;
+  transition: 0.5s all ease-in-out;
+}
+.testimonialCardStyles {
+  border-radius: 12px;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.testimonialContentTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.testimonialClientNameTextStyles,
+.featureCountTextStyles {
+  color: rgba(5, 5, 5, 0.5);
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.testimonialBottomStyles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonialsButtonGroupStyles,
+.featuresButtonGroupStyles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  gap: 4px;
+}
+.disabledButtonStyles {
+  border-radius: 16px;
+  border: 1px solid rgba(5, 5, 5, 0.5);
+}
+.clientNamesListContainerStyles {
+  width: 100%;
+}
+.clientNamesContainerStyles {
+  position: relative;
+  width: 100%;
+}
+.clientNamesContainerStyles:hover .hoveredProjectImageStyles {
+  opacity: 1;
+  position: absolute;
+  width: 200px;
+  /* transform: translate(-50%, -50%); */
+  /* top: 0; */
+  top: 0;
+  transform-origin: top right;
+  transform: rotate(-4deg) scale(1) translate(0%, 0%);
+  transition: all 0.5s ease-in-out left 0.1s;
+  z-index: 0;
+  /* transform: scale(1); */
+}
+.hoveredProjectImageStyles {
+  width: 200px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  /* transform: translate(-0%, -50%); */
+  /* top: 0; */
+  transition: all 0.5s ease-in-out;
+  transform-origin: top right;
+  transform: rotate(0deg) scale(0.2) translate(0%, 0%);
+  top: 0;
+  /* left: 50%; */
+}
+/************** RECENT POSTS SECTION  STYLES*****/
+.recentPostsMainContainerStyles {
+  display: flex;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  margin: auto;
+}
+.recentPostHeadingBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.recentPostHeadingTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+.recentPostsCardsContainerStyles {
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+}
+.recentPostStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  /* max-width: 432px; */
+}
+.imageWidthStyles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recentPostImgContainerStyles {
+  position: relative;
+  width: 100%;
+  /* height: 432px; */
+  /* max-width: 432px; */
+}
+.recentPostStyles:hover .hoverImageStyles {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+.recentPostDescTextStyles {
+  overflow: hidden;
+  color: #050505;
+  text-overflow: ellipsis;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.recentPostsCardsMobileViewContainerStyles,
+.allPostsMobileViewButtonStyles {
+  display: none;
+}
+.recentPostsCardsMobileViewMiddleContainerStyles {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow: scroll;
+  width: 100%;
+}
+/**********MEDIA QUERIES **********/
+/* @media screen and (min-height: 650px) {
+  .bannerBottomContainerStyles {
+    height: 100vh;
+  }
+} */
+
+@media screen and (max-width: 1365px) {
+  .bannerHeadingStyles {
+    font-size: 64px;
+    line-height: 72px;
+    padding-inline: 96px;
+  }
+  .bannerImageStyle {
+    height: 714px;
+  }
+  .bannerDescTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .emptyDivStyles {
+    width: 376px;
+  }
+  .bannerBottomAnimContainerStyles,
+  .bannerBottomAnimTextStyles,
+  .customCursorStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .customCursorStyles {
+    font-size: 40px !important;
+  }
+  .featureHeadingTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  /* .featuredMainContainerStyles {
+    height: 718px;
+  } */
+  .bigFeatureCardStyles {
+    height: 486px;
+  }
+  .smallFeatureCardStyles {
+    width: 360px;
+    height: 360px;
+  }
+  .ourServicesDescTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .serviceNameTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .clientNameTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .testimonialContentTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .recentPostHeadingTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .recentPostDescTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .recentPostImgContainerStyles {
+    width: 100%;
+    /* height: 360px; */
+    /* max-width: 378px; */
+  }
+}
+@media screen and (max-width: 1079px) {
+  .bannerMainContainerStyles {
+    padding: 96px 32px 0px 32px;
+    gap: 32px;
+  }
+  .bannerTopContainerStyles {
+    gap: 48px;
+  }
+  .bannerHeadingStyles {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .bannerImageStyle,
+  .bannerBottomContainerStyles {
+    height: 568px;
+  }
+
+  .bannerBottomBtnGroupStyles {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .emptyDivStyles {
+    display: none;
+  }
+  .featuredMainContainerStyles {
+    padding: 96px 32px;
+    height: 814px;
+  }
+  .featuresContainerStyles {
+    top: 192px;
+  }
+  .bigFeatureCardStyles {
+    width: 668px;
+    height: 486px;
+  }
+  .ourServicesMainContainerStyles {
+    padding: 96px 32px;
+    gap: 64px;
+  }
+  .allServicesContainerStyles {
+    gap: 40px;
+  }
+  .testimonialMainContainerStyles,
+  .recentPostsMainContainerStyles {
+    padding: 96px 32px;
+  }
+  .recentPostDescTextStyles {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 895px) {
+  .bannerMainContainerStyles {
+    padding: 96px 24px 0px 24px;
+    gap: 24px;
+  }
+  .bannerHeadingStyles {
+    width: 100%;
+    padding-inline: 0px;
+    text-align: start;
+  }
+  .bannerTopContainerStyles {
+    gap: 32px;
+  }
+  .bannerImageStyle {
+    height: 486px;
+  }
+  .bannerBottomContainerStyles {
+    height: 496px;
+  }
+  .featuredMainContainerStyles {
+    padding: 80px 24px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .featuresContainerStyles {
+    display: none;
+  }
+  .featuresMobileViewContainerStyles {
+    display: block;
+  }
+  .featuresBottomStyles {
+    display: flex;
+  }
+  .bigFeatureCardStyles {
+    width: 100%;
+    height: 468px;
+  }
+  .ourServicesMainContainerStyles {
+    padding: 80px 24px;
+    gap: 48px;
+  }
+  .ourServicesDescTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .serviceContainerStyles {
+    gap: 16px;
+  }
+  .rightAngledBlueArrowIconStyles {
+    width: 32px;
+    height: 32px;
+  }
+  .testimonialMainContainerStyles,
+  .recentPostsMainContainerStyles {
+    padding: 80px 24px;
+    gap: 48px;
+  }
+  .testimonialTopLeftContainerStyles,
+  .testimonialBottomContainerStyles {
+    gap: 16px;
+  }
+  .recentPostsCardsContainerStyles {
+    flex-wrap: wrap;
+  }
+  .recentPostStyles {
+    width: calc(50% - 12px);
+    /* height: 224px; */
+  }
+  /* .recentPostStyles .recentPostImgContainerStyles {
+    height: 224px;
+  } */
+  .recentPostStyles:first-child {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+  /* .recentPostStyles:first-child .recentPostImgContainerStyles {
+    height: 468px;
+  } */
+}
+@media screen and (max-width: 567px) {
+  .featuredMainContainerStyles,
+  .ourServicesMainContainerStyles,
+  .testimonialMainContainerStyles,
+  .recentPostsMainContainerStyles {
+    padding: 64px 20px;
+  }
+  .bannerHeadingStyles {
+    font-size: 40px;
+    line-height: 48px;
+    padding-inline: 0px;
+    text-align: start;
+    max-width: 340px;
+    margin-left: 0;
+  }
+  .bannerMainContainerStyles {
+    padding: 96px 20px 64px 20px;
+    gap: 20px;
+  }
+  .bannerTopContainerStyles,
+  .bannerBottomContainerStyles {
+    gap: 32px;
+  }
+  .bannerBottomContainerStyles {
+    height: fit-content;
+    /* padding-bottom: 64px; */
+  }
+  .bannerImageStyle {
+    height: 374px;
+  }
+  .bannerDescTextStyles {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .bannerBottomBtnGroupStyles {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .bannerBottomTextStyles {
+    display: none;
+  }
+  .bannerBottomMobileTextStyles {
+    display: block;
+  }
+  .bannerBottomMobileTextStyles,
+  .bannerBottomAnimTextStyles,
+  .featureHeadingTextStyles,
+  .ourServicesDescTextStyles,
+  .clientNameTextStyles,
+  .recentPostHeadingTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .customCursorStyles {
+    font-size: 36px !important;
+  }
+  .bigFeatureCardStyles,
+  .smallFeatureCardStyles {
+    height: 448px;
+    width: 100%;
+  }
+  .emptyDivStyles {
+    display: none;
+  }
+  .featureContainerStyle {
+    width: calc(100vw - 40px);
+  }
+  .featuresContainerStyles {
+    top: 132px;
+  }
+  .featuredMainContainerStyles {
+    gap: 24px;
+  }
+  .serviceContentStyles {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .ourServicesMainContainerStyles {
+    gap: 48px;
+  }
+  .testimonialMainContainerStyles,
+  .recentPostsMainContainerStyles {
+    gap: 32px;
+  }
+  .serviceContainerStyles,
+  .testimonialTopLeftContainerStyles {
+    gap: 16px;
+  }
+  .allServicesContainerStyles {
+    gap: 40px;
+  }
+  .serviceNameTextStyles,
+  .recentPostDescTextStyles {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .testimonialCardStyles {
+    padding: 16px;
+    gap: 16px;
+  }
+  .testimonialContentTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .recentPostsCardsContainerStyles {
+    flex-direction: column;
+  }
+  .recentPostStyles {
+    width: 100%;
+    padding-bottom: 0px !important;
+  }
+  .allPostsButtonStyles,
+  .recentPostsCardsContainerStyles {
+    display: none;
+  }
+  .recentPostsCardsMobileViewContainerStyles,
+  .allPostsMobileViewButtonStyles {
+    display: block;
+  }
+  .recentPostsCardsMobileViewContainerStyles {
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .customPostImageStyles {
+    width: 224px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .bannerBottomMobileTextStyles,
+  .bannerBottomAnimTextStyles,
+  .featureHeadingTextStyles,
+  .ourServicesDescTextStyles,
+  .clientNameTextStyles,
+  .recentPostHeadingTextStyles {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .bannerHeadingStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .bannerImageStyle {
+    height: 280px;
+  }
+  .bannerDescTextStyles {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .customCursorStyles {
+    font-size: 32px !important;
+  }
+  .bigFeatureCardStyles {
+    height: 320px;
+  }
+}

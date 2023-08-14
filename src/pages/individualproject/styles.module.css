@@ -1,0 +1,425 @@
+.projectMainContainerStyles {
+  background: #fff;
+}
+.imageWidthStyles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*******PROJECT BANNER SECTION STYLES*******/
+.navigationTextStyles {
+  display: none;
+  color: #050505;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+.presentPageLinkTextStyles {
+  color: rgba(5, 5, 5, 0.5);
+}
+.projectBannerContainerStyles {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 144px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+.projectTitleTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 88px;
+}
+.projectBannerImageStyles {
+  width: 100%;
+  height: 800px;
+}
+.projectBannerBottomContainerStyles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projectBannerBottomLeftStyles {
+  color: #050505;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* width: 100%; */
+}
+.rightAngledArrowIconStyles {
+  width: 24px;
+  height: 24px;
+}
+.websiteTextStyles {
+  display: flex;
+  flex-direction: row;
+}
+.projectBannerBottomDescContainerStyles {
+  width: 100%;
+  max-width: 784px;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  color: #050505;
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+.projectBannerBottomDescTextStyles {
+  width: 100%;
+}
+.projectBannerBottomDescTextStyles span {
+  color: rgba(5, 5, 5, 0.5);
+}
+/*********  INFORMATION ARCHITECTURE SECTION STYLES***************/
+.architectureMainContainerStyles {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+.architectureHeadingStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  width: 100%;
+  max-width: 784px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px; /* 116.667% */
+}
+.architectureImageStyles {
+  width: 100%;
+  height: 800px;
+}
+.architectureDescContainerStyles {
+  display: flex;
+  width: 784px;
+  align-items: flex-start;
+  gap: 48px;
+  width: 100%;
+  max-width: 784px;
+  margin-left: auto;
+}
+.architectureDescTextStyles {
+  color: #050505;
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+  width: 100%;
+}
+.architectureDescTextStyles span {
+  color: rgba(5, 5, 5, 0.5);
+}
+/********* TYPOGRAPHY AND WIREFRAMES SECTION STYLES***********/
+.typographyMainContainerStyles {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 48px;
+}
+.typographyThickDescTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+.typographyDescTextStyles {
+  color: #050505;
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+.typographyDescTextStyles span {
+  color: rgba(5, 5, 5, 0.5);
+}
+/********* HIGH Fidelity SECTION STYLES *******/
+.highFidelityMainContainerStyles {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+.highFidelityHeadingStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  width: 100%;
+  max-width: 784px;
+}
+.highFidelityDescContainerStyles,
+.typographyDescContainerStyles {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+  max-width: 784px;
+  margin-left: auto;
+  color: #050505;
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+.highFidelityImageStyles,
+.typographyImageStyles {
+  width: 100%;
+  height: 800px;
+}
+.highFidelityDescTextStyles span {
+  color: rgba(5, 5, 5, 0.5);
+}
+.highFidelityThickDescTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+/**********RESULT AND REVIEW SECTION STYLES******/
+.resultReviewMainContainerStyles {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+.resultDescTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  width: 100%;
+  max-width: 784px;
+}
+.reviewContainerStyles {
+  display: flex;
+  max-width: 784px;
+  width: 100%;
+  margin-left: auto;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+  background: #fff;
+}
+.reviewDescTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.clientNameTextStyles {
+  color: rgba(5, 5, 5, 0.5);
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/**********MEDIA QUERIES **********/
+
+@media screen and (max-width: 1311px) {
+  .projectTitleTextStyles {
+    font-size: 64px;
+    line-height: 72px;
+  }
+  .projectBannerImageStyles,
+  .architectureImageStyles,
+  .highFidelityImageStyles,
+  .typographyImageStyles {
+    height: 714px;
+  }
+  .architectureHeadingStyles,
+  .typographyThickDescTextStyles,
+  .highFidelityHeadingStyles,
+  .resultDescTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .highFidelityThickDescTextStyles,
+  .reviewDescTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .projectTitleTextStyles {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .projectBannerContainerStyles {
+    gap: 32px;
+  }
+  .projectBannerContainerStyles,
+  .architectureMainContainerStyles,
+  .typographyMainContainerStyles,
+  .highFidelityMainContainerStyles,
+  .resultReviewMainContainerStyles {
+    padding: 96px 32px;
+  }
+  .projectBannerImageStyles,
+  .architectureImageStyles,
+  .highFidelityImageStyles,
+  .typographyImageStyles {
+    height: 568px;
+  }
+  .projectBannerBottomContainerStyles {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .projectBannerBottomDescContainerStyles {
+    margin-left: auto;
+  }
+  .projectBannerBottomLeftStyles {
+    order: 1;
+  }
+  .architectureMainContainerStyles,
+  .typographyMainContainerStyles,
+  .typographyDescContainerStyles,
+  .highFidelityMainContainerStyles,
+  .highFidelityDescContainerStyles {
+    gap: 32px;
+  }
+  .architectureHeadingStyles,
+  .typographyThickDescTextStyles,
+  .highFidelityHeadingStyles,
+  .resultDescTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .highFidelityThickDescTextStyles,
+  .reviewDescTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 895px) {
+  .projectBannerContainerStyles {
+    padding: 96px 24px 80px 24px;
+    gap: 32px;
+  }
+  .projectBannerImageStyles,
+  .architectureImageStyles,
+  .typographyImageStyles,
+  .highFidelityImageStyles {
+    height: 486px;
+  }
+  .projectBannerBottomDescContainerStyles {
+    max-width: 100%;
+    gap: 32px;
+  }
+  .architectureMainContainerStyles,
+  .typographyMainContainerStyles,
+  .highFidelityMainContainerStyles,
+  .resultReviewMainContainerStyles {
+    padding: 80px 24px;
+    gap: 32px;
+  }
+  .architectureDescContainerStyles {
+    gap: 32px;
+  }
+  .reviewDescTextStyles {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .navigationTextStyles {
+    display: block;
+  }
+  .projectBannerContainerStyles {
+    padding: 96px 20px 64px 20px;
+    gap: 32px;
+  }
+  .projectTitleTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .projectBannerImageStyles,
+  .architectureImageStyles,
+  .highFidelityImageStyles,
+  .architectureImageStyles,
+  .typographyImageStyles {
+    height: 374px;
+  }
+  .projectBannerBottomLeftStyles {
+    order: 0;
+  }
+  .projectBannerBottomDescContainerStyles,
+  .architectureDescContainerStyles {
+    flex-direction: column;
+  }
+  .architectureMainContainerStyles,
+  .typographyMainContainerStyles,
+  .highFidelityMainContainerStyles,
+  .resultReviewMainContainerStyles {
+    padding: 64px 20px;
+  }
+  .architectureHeadingStyles,
+  .typographyThickDescTextStyles,
+  .highFidelityHeadingStyles,
+  .resultDescTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .highFidelityThickDescTextStyles {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .reviewContainerStyles {
+    padding: 16px;
+    gap: 16px;
+  }
+  .reviewDescTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 359px) {
+}

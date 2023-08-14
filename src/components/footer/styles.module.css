@@ -1,0 +1,344 @@
+.footerMainContainerStyles {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 144px;
+  align-items: center;
+  padding: 96px 48px 48px 48px;
+}
+.imageWidthStyles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/**********FOOTER TOP STYLES****/
+.footerTopContainerStyles {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-self: stretch;
+}
+.footerHeadingContainerStyles {
+  text-align: left;
+  width: 100%;
+}
+.footerHeadingTextStyles {
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 88px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.2s ease-in-out;
+}
+.footerHeadingTextStyles:hover {
+  color: var(--blue);
+  transition: all 0.2s ease-in-out;
+}
+.footerHeadingTextStyles:hover .rightUpArrowPathStyles {
+  stroke: var(--blue);
+  transition: all 0.2s ease-in-out;
+}
+.rightUpArrowStyles {
+  width: 88px;
+  height: 88px;
+}
+.rightUpArrowPathStyles {
+  stroke: var(--dark);
+  transition: all 0.2s ease-in-out;
+}
+.footerTopRightContainerStyles {
+  width: 100%;
+  max-width: 384px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.footerTopDescTextStyles {
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+.subscribeTextStyles {
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  border-bottom: 1px solid var(--dark);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.subscribeTextStyles:hover {
+  color: var(--blue);
+  border-bottom: 1px solid var(--blue);
+  transition: all 0.2s ease-in-out;
+}
+.emailInputStyles {
+  width: 100%;
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px solid var(--lightgray2);
+  outline: none;
+  color: var(--lightgray2);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+/*********FOOTER BOTTOM STYLES************/
+.footerBottomContainerStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+  padding-top: 24px;
+  border-top: 1px solid var(--dark);
+}
+.footerLinksContainerStyles {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.footerBottomBottomStyles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+}
+.footerLinkTextStyles,
+.addressLinkTextStyles {
+  color: var(--dark);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: fit-content;
+}
+.footerLinkTextStyles:hover {
+  color: var(--lightgray2);
+  transition: all 0.2s ease-in-out;
+}
+.addressLinkContainerStyles:hover .addressLinkTextStyles {
+  color: var(--lightgray2);
+  transition: all 0.2s ease-in-out;
+}
+.allRightsTextStyles {
+  cursor: default;
+  color: var(--lightgray2);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.flagImageContainerStyles {
+  width: 26.667px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/**********MEDIA QUERIES **********/
+@media screen and (min-height: 760px) {
+  .footerMainContainerStyles {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 1729px) {
+  .footerMainContainerStyles {
+    padding: 96px 64px 48px 64px;
+    gap: 240px;
+    max-width: 1728px;
+    margin: auto;
+  }
+  .footerHeadingTextStyles {
+    font-size: 96px;
+    line-height: 104px;
+  }
+  .rightUpArrowStyles {
+    height: 104px;
+    width: 104px;
+  }
+  .footerTopDescTextStyles {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .emailInputStyles,
+  .addressLinkTextStyles,
+  .footerLinkTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .subscribeTextStyles {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .allRightsTextStyles {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footerTopRightContainerStyles {
+    max-width: 448px;
+  }
+  .flagImageContainerStyles {
+    width: 32px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 1513px) and (max-width: 1728px) {
+  .footerMainContainerStyles {
+    padding: 96px 64px 48px 64px;
+    gap: 192px;
+  }
+  .footerTopDescTextStyles {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .emailInputStyles,
+  .addressLinkTextStyles,
+  .footerLinkTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .subscribeTextStyles {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .allRightsTextStyles {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footerTopRightContainerStyles {
+    max-width: 448px;
+  }
+  .flagImageContainerStyles {
+    width: 32px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 1312px) {
+  .footerHeadingTextStyles {
+    font-size: 64px;
+    line-height: 72px;
+  }
+  .rightUpArrowStyles {
+    width: 72px;
+    height: 72px;
+  }
+}
+@media screen and (max-width: 1148px) {
+}
+@media screen and (max-width: 1080px) {
+  .footerMainContainerStyles {
+    padding: 96px 32px 32px 32px;
+    justify-content: start;
+    height: 100%;
+    gap: 96px;
+  }
+  .footerHeadingTextStyles {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .rightUpArrowStyles {
+    width: 56px;
+    height: 56px;
+  }
+  .footerLinksContainerStyles {
+    grid-template-columns: auto auto auto;
+    row-gap: 24px;
+  }
+  .footerBottomContainerStyle {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .footerMainContainerStyles {
+    padding: 80px 24px 24px 24px;
+    gap: 80px;
+  }
+  .footerLinksContainerStyles {
+    grid-template-columns: auto auto;
+  }
+  .footerLinksSubContainerStyles {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .allRightsTextStyles {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .footerMainContainerStyles {
+    padding: 72px 20px 20px 20px;
+    gap: 72px;
+  }
+  .footerHeadingTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .rightUpArrowStyles {
+    width: 48px;
+    height: 48px;
+  }
+  .footerTopDescTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .footerTopContainerStyles {
+    gap: 20px;
+  }
+  .footerTopRightContainerStyles {
+    max-width: 100%;
+  }
+  .footerBottomContainerStyle {
+    padding-top: 20px;
+  }
+  .footerLinksContainerStyles {
+    grid-template-columns: auto;
+    gap: 20px;
+  }
+  .footerBottomBottomStyles {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .flagImageContainerStyles {
+    order: -1;
+  }
+}
+@media screen and (max-width: 360px) {
+  .footerMainContainerStyles {
+    padding: 64px 20px 20px 20px;
+    gap: 64px;
+  }
+  .footerHeadingTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .rightUpArrowStyles {
+    width: 44px;
+    height: 44px;
+  }
+}

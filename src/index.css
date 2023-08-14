@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* --primary: #192a8c; */
+  --dark: #050505;
+  --white: #ffffff;
+  --blue: #000aff;
+  --springgreen: #00ff9b;
+  --lightgray: #ffffff80;
+  --lightgray2: #05050580;
+}
+body {
+  background-color: var(--white);
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('../src/assets/fonts/Manrope-VariableFont_wght.ttf');
+}
+/* @font-face {
+  font-family: "Manrope-SemiBold";
+  src: url("../src/assets/fonts/Manrope-VariableFont_wght.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("../src/assets/fonts/Manrope-VariableFont_wght.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("../src/assets/fonts/Manrope-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Manrope-Light";
+  src: url("../src/assets/fonts/Manrope-VariableFont_wght.ttf");
+  font-weight: 300;
+} */
+@font-face {
+  font-family: 'NeueHaasDisplay-Bold';
+  src: url('../src/assets/fonts/NeueHaasDisplayBold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'NeueHaasDisplay-SemiBold';
+  src: url('../src/assets/fonts/NeueHaasDisplayMediu.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'NeueHaasDisplay-Medium';
+  src: url('../src/assets/fonts/NeueHaasDisplayRoman.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'NeueHaasDisplay-Regular';
+  src: url('../src/assets/fonts/NeueHaasDisplayThin.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'NeueHaasDisplay-Light';
+  src: url('../src/assets/fonts/NeueHaasDisplayXThin.ttf');
+  font-weight: 300;
+}

@@ -1,0 +1,29 @@
+.buttonStyles {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  width: fit-content;
+  display: flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1px solid #050505;
+  color: #050505;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  height: fit-content;
+  white-space: nowrap;
+}
+.buttonImageStyles {
+  width: 24px;
+  height: 24px;
+}
+.buttonStyles:hover {
+  background-color: #050505;
+  color: #ffff;
+  transition: all 0.2s ease-in-out;
+}

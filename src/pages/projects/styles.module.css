@@ -1,0 +1,166 @@
+.projectsContainerStyles {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  padding: 144px 48px 96px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 96px;
+  background: #fff;
+}
+.projectPageHeadingTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+  width: 100%;
+  max-width: 784px;
+}
+.tabNamesContainerStyles {
+  border-top: 1px solid;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 24px;
+  overflow: scroll;
+}
+.activeTabNameTextStyles,
+.tabNameTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #050505;
+  cursor: pointer;
+}
+.tabNameTextStyles {
+  color: rgba(5, 5, 5, 0.5);
+  border-bottom: none;
+}
+.individualProjectsContainerStyles,
+.individualProjectsContainerStyles2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.individualProjectsContainerStyles2 {
+  justify-content: end;
+  gap: 24px;
+}
+.projectSmallCardStyles,
+.projectSmallCardStyles1 {
+  width: 386px;
+  height: fit-content;
+}
+
+/********MEDIA QUERIES ********/
+@media screen and (max-width: 1311px) {
+  .projectPageHeadingTextStyles {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .projectBigCardImageStyles {
+    height: 486px;
+  }
+  .projectSmallCardImageStyles {
+    height: 360px;
+  }
+  .projectSmallCardStyles,
+  .projectSmallCardStyles1 {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .projectPageHeadingTextStyles {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .projectsContainerStyles {
+    padding: 112px 32px 96px 32px;
+    gap: 64px;
+  }
+  .individualProjectsContainerStyles,
+  .individualProjectsContainerStyles2 {
+    flex-direction: column;
+    gap: 64px;
+  }
+  .projectSmallCardStyles1,
+  .projectBigCardStyles {
+    width: 720px;
+  }
+  .projectSmallCardImageStyles1 {
+    height: 486px;
+  }
+  .projectSmallCardStyles,
+  .projectBigCardStyles1 {
+    align-self: flex-end;
+  }
+  .projectBigCardStyles1 {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 895px) {
+  .projectPageHeadingTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .projectsContainerStyles {
+    padding: 96px 24px 80px 24px;
+    gap: 48px;
+  }
+  .individualProjectsContainerStyles,
+  .individualProjectsContainerStyles2 {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .projectBigCardStyles,
+  .projectSmallCardStyles1 {
+    width: 468px;
+  }
+  .projectBigCardImageStyles,
+  .projectSmallCardImageStyles1 {
+    height: 468px;
+  }
+  .projectSmallCardImageStyles,
+  .projectBigCardImageStyles1 {
+    height: 320px;
+  }
+  .projectSmallCardStyles,
+  .projectBigCardStyles1 {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .projectPageHeadingTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .projectsContainerStyles {
+    padding: 96px 20px 64px 20px;
+    gap: 32px;
+  }
+  .projectSmallCardStyles,
+  .projectBigCardStyles,
+  .projectBigCardStyles1,
+  .projectSmallCardStyles1 {
+    width: 100%;
+  }
+  .projectBigCardImageStyles,
+  .projectSmallCardImageStyles {
+    height: 374px;
+  }
+  .individualProjectsContainerStyles,
+  .individualProjectsContainerStyles2 {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 359px) {
+}

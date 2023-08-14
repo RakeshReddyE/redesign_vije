@@ -1,0 +1,8 @@
+.inputTextViewStyle {
+  border-radius: 6px;
+  border: 1px solid var(--lightgray);
+  padding: 16px 24px;
+  width: 100%;
+  outline: none;
+  color: var(--dark);
+}

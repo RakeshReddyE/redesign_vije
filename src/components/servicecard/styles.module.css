@@ -1,0 +1,50 @@
+.serviceCardContainerStyles {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 384px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+  background: #fff;
+}
+.serviceContentContainerStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+}
+.serviceNameTextStyles {
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.imageWidthStylesP {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.serviceIonStyles {
+  width: 48px;
+  height: 48px;
+}
+.serviceDescTextStyles {
+  color: var(--dark);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px; /* 150% */
+}
+.rightUpArrowStyles {
+  width: 48px;
+  height: 48px;
+}
+.rightUpArrowPathStyles {
+  stroke: var(--dark);
+}

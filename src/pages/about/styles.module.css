@@ -1,0 +1,448 @@
+.aboutBannerOuterContainerStyles {
+  background: #eff1f4;
+}
+.aboutBannerInnerContainerStyles {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  height: 900px;
+  padding: 144px 48px 48px 48px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.aboutBannerHeadingStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72px;
+}
+.imageWidthStyles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.rightDownArrowImageStyles {
+  cursor: pointer;
+  width: 96px;
+  height: 96px;
+}
+.whatWeDoMainContainerStyles {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+.whatWeDoHeadingTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+.whatWeDoRightContainerStyles {
+  width: 100%;
+  max-width: 784px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.customDividerStyles {
+  background-color: #050505;
+}
+.whatWeDoContainerStyles {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.whatWeDoNameTextStyles {
+  font-size: 32px;
+  line-height: 40px;
+  height: fit-content;
+  font-family: ' NeueHaasDisplay-Medium', sans-serif;
+  width: 100%;
+}
+.whatWeDoDescTextStyles {
+  color: #050505;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+  width: 100%;
+}
+.whatWeDoContentStyles {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+}
+/***** approachSteps section styles*************/
+.approachMainContainerStyles {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+.approachHeadingTextStyles {
+  color: #050505;
+  text-align: center;
+  font-family: ' NeueHaasDisplay-Medium', sans-serif;
+  width: 100%;
+  max-width: 784px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  padding-inline: 146px;
+}
+.approachStepsContainerStyles {
+  display: flex;
+  /* width: 509px;
+  height: 476px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.approachStepsBottomContainerStyles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  align-self: stretch;
+}
+.approachStepsButtonGroupStyles {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+.stepCounterTextStyles,
+.stepNameTextStyles,
+.stepNumberTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.stepCounterTextStyles {
+  color: rgba(5, 5, 5, 0.4);
+}
+.approachStepCardStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: -16px; */
+  position: relative;
+}
+.stepNumberTextStyles {
+  display: flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #fff;
+  left: 132px;
+  top: -16px;
+  position: absolute;
+}
+.stepNameTextStyles {
+  display: flex;
+  width: 320px;
+  height: 320px;
+  padding: 0px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 90px;
+  border: 1px solid #050505;
+  background: #fff;
+}
+.approachStepsCardsContainerStyles {
+  position: relative;
+  width: 508px;
+  height: 395px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.approachCardOneStyles,
+.approachCardTwoStyles,
+.approachCardThreeStyles,
+.approachCardFourStyles {
+  position: absolute;
+  left: 0;
+}
+.approachCardOneStyles {
+  z-index: 5;
+  /* transform-origin: 0% 108%; */
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+}
+.approachCardTwoStyles {
+  z-index: 4;
+  transform-origin: 0% 108%;
+  transform: rotate(10deg);
+  transition: all 0.5s ease-in-out;
+}
+.approachCardThreeStyles {
+  z-index: 3;
+  transform-origin: 26% 180%;
+  transform: rotate(13deg);
+  transition: all 0.5s ease-in-out;
+}
+.approachCardFourStyles {
+  z-index: 2;
+  transform-origin: 30% 260%;
+  transform: rotate(12deg);
+  transition: all 0.5s ease-in-out;
+}
+.approachCardHideStyles {
+  /* display: none; */
+  opacity: 0.5;
+  position: absolute;
+  left: 0;
+  z-index: -10;
+  transform-origin: 0% 108%;
+  transform: rotate(10deg);
+  transition: all 0.5s ease-in-out;
+}
+
+/***** values section styles *********/
+.valuesMainContainerStyles {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+.valuesHeadingTextStyles {
+  width: 100%;
+  max-width: 784px;
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+.valuesContentContainer {
+  display: flex;
+  width: 100%;
+  max-width: 784px;
+  margin-left: auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+.valuesBlockStyles {
+  width: calc(50% - 24px);
+  display: flex;
+  padding: 48px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-top: 1px solid #050505;
+}
+.valuesBlockHeadingTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.valuesBlockDescTextStyles {
+  color: #050505;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+
+/***********  MEDIA QUERIES **************/
+@media screen and (max-width: 1311px) {
+  .aboutBannerInnerContainerStyles {
+    height: 810px;
+  }
+  .whatWeDoHeadingTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .approachHeadingTextStyles {
+    padding-inline: 0px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .valuesHeadingTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .valuesBlockStyles {
+    padding: 48px 0px 24px 0px;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .aboutBannerInnerContainerStyles {
+    height: 568px;
+    padding: 96px 32px 48px 32px;
+  }
+  .aboutBannerHeadingStyles {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .rightDownArrowImageStyles {
+    height: 56px;
+    width: 56px;
+  }
+  .whatWeDoMainContainerStyles {
+    padding: 96px 32px;
+    gap: 48px;
+  }
+  .whatWeDoNameTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .approachMainContainerStyles,
+  .valuesMainContainerStyles {
+    padding: 96px 32px;
+    gap: 48px;
+  }
+}
+@media screen and (max-width: 895px) {
+  .aboutBannerInnerContainerStyles {
+    padding: 96px 24px 48px 24px;
+    gap: 48px;
+    height: fit-content;
+  }
+  .whatWeDoMainContainerStyles {
+    padding: 80px 24px;
+    gap: 40px;
+  }
+  .whatWeDoRightContainerStyles {
+    max-width: 100%;
+    gap: 40px;
+  }
+  .approachMainContainerStyles,
+  .valuesMainContainerStyles {
+    padding: 80px 24px;
+    gap: 40px;
+  }
+  .approachMainContainerStyles {
+    gap: 48px;
+  }
+  .valuesContentContainer {
+    row-gap: 40px;
+    column-gap: 32px;
+  }
+  .valuesBlockStyles {
+    width: calc(50% - 16px);
+    padding: 40px 0px 24px 0px;
+  }
+}
+@media screen and (max-width: 667px) {
+  .aboutBannerInnerContainerStyles {
+    padding: 80px 20px 32px 20px;
+    gap: 48px;
+  }
+  .aboutBannerHeadingStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .rightDownArrowImageStyles {
+    width: 48px;
+    height: 48px;
+  }
+  .whatWeDoMainContainerStyles,
+  .valuesMainContainerStyles {
+    padding: 64px 20px;
+    gap: 40px;
+  }
+  .whatWeDoHeadingTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .whatWeDoContainerStyles {
+    gap: 16px;
+  }
+  .whatWeDoContentStyles {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .approachMainContainerStyles {
+    padding: 64px 20px;
+    gap: 32px;
+  }
+  .approachStepsContainerStyles {
+    overflow: hidden;
+    width: 100%;
+  }
+  .approachStepsCardsContainerStyles {
+    width: 100%;
+    max-width: 374px;
+  }
+  .approachCardTwoStyles {
+    transform-origin: 20% 108%;
+    transform: rotate(8deg);
+  }
+  .approachCardThreeStyles {
+    transform-origin: 16% 170%;
+    transform: rotate(8deg);
+  }
+  .approachCardFourStyles {
+    transform-origin: 40% 210%;
+    transform: rotate(10deg);
+  }
+  .approachCardHideStyles {
+    transform-origin: 20% 108%;
+    transform: rotate(8deg);
+  }
+  .stepNameTextStyles {
+    display: flex;
+    width: 256px;
+    height: 256px;
+    padding: 0px 56px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .stepNumberTextStyles {
+    left: 104px;
+  }
+  .valuesHeadingTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .valuesBlockStyles {
+    width: 100%;
+    padding: 16px 0px 0px;
+    gap: 8px;
+  }
+  .valuesContentContainer {
+    gap: 40px;
+  }
+  .valuesBlockHeadingTextStyles {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

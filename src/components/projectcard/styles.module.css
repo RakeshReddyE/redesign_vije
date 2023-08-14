@@ -1,0 +1,51 @@
+.projectCardContainerStyle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 576px;
+  /* height: 576px; */
+}
+.projectImageContainerStyles {
+  width: 100%;
+  height: auto;
+}
+.imageWidthStyles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projectNameTextStyles,
+.projectNameTextStyles span {
+  color: #050505;
+  font-family: "NeueHaasDisplay-Medium", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+.projectNameTextStyles span {
+  color: rgba(5, 5, 5, 0.4);
+}
+
+/********MEDIA QUERIES ********/
+@media screen and (max-width: 1311px) {
+  .projectNameTextStyles,
+  .projectNameTextStyles span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 1079px) {
+}
+@media screen and (max-width: 895px) {
+}
+@media screen and (max-width: 567px) {
+}
+@media screen and (max-width: 359px) {
+  .projectNameTextStyles,
+  .projectNameTextStyles span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

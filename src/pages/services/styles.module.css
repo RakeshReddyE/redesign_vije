@@ -1,0 +1,304 @@
+.imageWidthStyles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/**   banner styles ***/
+.bannerMainContainerStyles {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  height: 900px;
+  padding: 144px 48px 48px 48px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+/*******  our services section styles   ****/
+.ourServicesMainContainerStyes {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+.ourServicesHeadingTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+.servicesContentContainerStyles {
+  display: flex;
+  width: 100%;
+  max-width: 784px;
+  margin-left: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+.serviceContainerStyles {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 48px;
+  align-self: stretch;
+  padding-top: 24px;
+  border-top: 1px solid #050505;
+}
+.rightUpArrowImageStyles {
+  height: 24px;
+  width: 24px;
+}
+.serviceTypeTextStyles {
+  width: calc(100% - 24px);
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.serviceRightContainerStyles {
+  width: calc(100% - 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.serviceDescTextStyles,
+.stepsInvolvedTextStyles {
+  color: #050505;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+.stepsInvolvedTextStyles {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/****** vision section styles *****/
+.visionOuterContainStyles {
+  width: 100%;
+
+  background: #eff1f4;
+}
+.visionMainContainStyles {
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
+  height: 900px;
+  padding: 96px 48px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.visionHeadingTextStyles,
+.bannerHeadingTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72px;
+}
+.rightDownArrowImageStyles {
+  cursor: pointer;
+  width: 96px;
+  height: 96px;
+}
+
+/***** choose us section styles *********/
+.chooseUsMainContainerStyles {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+.chooseUsHeadingTextStyles {
+  width: 100%;
+  max-width: 784px;
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+.chooseUsContentContainer {
+  display: flex;
+  width: 100%;
+  max-width: 784px;
+  margin-left: auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+.chooseUsBlockStyles {
+  width: calc(50% - 24px);
+  display: flex;
+  padding: 48px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-top: 1px solid #050505;
+}
+.chooseUsBlockHeadingTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.chooseUsBlockDescTextStyles {
+  color: #050505;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+
+/********  testimonial section styles  *****/
+.testimonialContainerStyles {
+  width: 100%;
+  background-color: #eff1f4;
+}
+
+/******* MEDIA QUERIES *****/
+@media screen and (max-width: 1311px) {
+  .bannerMainContainerStyles {
+    height: auto;
+    gap: 96px;
+  }
+  .visionMainContainStyles {
+    height: 810px;
+  }
+}
+@media screen and (max-width: 1079px) {
+  .bannerMainContainerStyles {
+    padding: 96px 32px 48px 32px;
+    gap: 56px;
+  }
+  .bannerHeadingTextStyles,
+  .visionHeadingTextStyles {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .rightDownArrowImageStyles {
+    width: 56px;
+    height: 56px;
+  }
+  .ourServicesMainContainerStyes,
+  .chooseUsMainContainerStyles {
+    padding: 96px 32px;
+    gap: 48px;
+  }
+  .ourServicesHeadingTextStyles,
+  .chooseUsHeadingTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .visionMainContainStyles {
+    height: auto;
+    gap: 56px;
+    padding: 96px 32px;
+  }
+}
+@media screen and (max-width: 895px) {
+  .bannerMainContainerStyles {
+    padding: 96px 24px 48px 24px;
+    gap: 48px;
+  }
+  .ourServicesMainContainerStyes,
+  .chooseUsMainContainerStyles {
+    padding: 80px 24px;
+    gap: 40px;
+  }
+  .servicesContentContainerStyles {
+    max-width: 100%;
+    gap: 40px;
+  }
+  .serviceContainerStyles {
+    gap: 0;
+  }
+  .serviceTypeTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .visionMainContainStyles {
+    padding: 80px 24px;
+    gap: 48px;
+  }
+  .chooseUsContentContainer {
+    row-gap: 40px;
+    column-gap: 32px;
+  }
+  .chooseUsBlockStyles {
+    width: calc(50% - 16px);
+    padding: 40px 0px 24px;
+  }
+  .chooseUsBlockHeadingTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 667px) {
+  .bannerMainContainerStyles {
+    padding: 80px 20px 32px 20px;
+  }
+  .bannerHeadingTextStyles,
+  .visionHeadingTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .ourServicesMainContainerStyes,
+  .visionMainContainStyles,
+  .chooseUsMainContainerStyles {
+    padding: 64px 20px;
+  }
+  .ourServicesHeadingTextStyles,
+  .chooseUsHeadingTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .serviceContainerStyles {
+    padding-top: 16px;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .serviceTypeTextStyles,
+  .chooseUsBlockHeadingTextStyles {
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+  }
+  .serviceRightContainerStyles {
+    gap: 24px;
+    width: 100%;
+  }
+  .chooseUsContentContainer {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .chooseUsBlockStyles {
+    width: 100%;
+    padding: 16px 0px 0px;
+    gap: 8px;
+  }
+}
