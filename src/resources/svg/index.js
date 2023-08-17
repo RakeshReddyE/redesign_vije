@@ -188,3 +188,61 @@ export const RightUpArrow = (props) => (
     />
   </svg>
 );
+
+export const RightMarkIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    // width="16"
+    // height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    className={props.customStyles}
+  >
+    <g clipPath="url(#clip0_1586_7658)">
+      <path
+        d="M13.5 4.5L6.5 11.5L3 8"
+        // stroke="#050505"
+        className={props.pathStyles}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_1586_7658">
+        <rect width="16" height="16" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const CrossMarkIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    // width="16"
+    // height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    className={props.customStyles}
+  >
+    <g clipPath="url(#clip0_1586_7663)">
+      <path
+        d="M12.5 3.5L3.5 12.5"
+        // stroke="#050505"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className={props.pathStyles}
+      />
+      <path
+        d="M12.5 12.5L3.5 3.5"
+        // stroke="#050505"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className={props.pathStyles}
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_1586_7663">
+        <rect width="16" height="16" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);

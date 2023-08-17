@@ -37,6 +37,7 @@
 .navbarLeftStyles {
   cursor: pointer;
   z-index: 10;
+  height: 24px;
 }
 .navbarRightStyles {
   cursor: pointer;
@@ -306,7 +307,7 @@
     padding-bottom: 0px;
   }
 }
-@media screen and (min-width: 1728px) {
+@media screen and (min-width: 1729px) {
   .navLinkDarkTextStyles,
   .navLinkActiveDarkTextStyles,
   .navLinkActiveTextStyles,
@@ -320,13 +321,13 @@
   }
   .navbarInnerContainerStyles {
     max-width: 1728px;
-    padding-inline: 0px;
+    padding-inline: 64px;
   }
   .navBarDarkContainerStyles,
   .navbarLightStyles,
   .navBarContainerStyles,
   .navbarDarkStyles {
-    padding-inline: 0px;
+    padding-inline: 64px;
     max-width: 1728px;
   }
   .languageTypeTextStyles,
@@ -344,12 +345,12 @@
     line-height: 28px;
   }
 }
-@media screen and (min-width: 1728px) {
-  .navbarLightStyles {
+
+@media screen and (min-width: 1513px) and (max-width: 1729px) {
+  .navbarLightStyles,
+  .navbarDarkStyles {
     padding-inline: 64px;
   }
-}
-@media screen and (min-width: 1513px) and (max-width: 1729px) {
   .logoStyles {
     width: 46px;
     height: 26px;
@@ -461,7 +462,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 568px) {
   .mobileLogoStyles {
     display: block;
   }

@@ -118,7 +118,7 @@ const NavBar = (props) => {
         ) : (
           <>
             <p className={styles.languageTypeTextStyles}>
-              {currentLanguage === 'ENGLISH' ? 'ENGLISH' : 'SWEDISH'}
+              {currentLanguage === 'English' ? 'ENGLISH' : 'SWEDISH'}
               {/* {currentLanguage} */}
             </p>
             <RightDownArrow

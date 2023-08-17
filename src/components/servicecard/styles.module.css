@@ -5,10 +5,20 @@
   align-items: flex-start;
   gap: 24px;
   width: 384px;
+  height: fit-content;
   flex: 1 0 0;
   border-radius: 12px;
   border: 1px solid rgba(5, 5, 5, 0.2);
   background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.serviceCardContainerStyles:hover {
+  background-color: #dadee3;
+  transition: all 0.2s ease-in-out;
+}
+.serviceCardContainerStyles:hover .rightUpArrowPathStyles {
+  stroke: var(--blue);
+  transition: all 0.2s ease-in-out;
 }
 .serviceContentContainerStyles {
   display: flex;
@@ -25,7 +35,7 @@
   font-weight: 500;
   line-height: 40px;
 }
-.imageWidthStylesP {
+.imageWidthStyles {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -47,4 +57,78 @@
 }
 .rightUpArrowPathStyles {
   stroke: var(--dark);
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (min-width: 1729px) {
+  .serviceCardContainerStyles {
+    width: 432px;
+  }
+  .serviceNameTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .serviceIonStyles,
+  .rightUpArrowStyles {
+    width: 64px;
+    height: 64px;
+  }
+  .serviceDescTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (min-width: 1513px) and (max-width: 1729px) {
+  .serviceCardContainerStyles {
+    width: 432px;
+  }
+  .serviceNameTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .serviceIonStyles,
+  .rightUpArrowStyles {
+    width: 64px;
+    height: 64px;
+  }
+  .serviceDescTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .serviceNameTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .serviceCardContainerStyles {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .serviceCardContainerStyles {
+    width: 320px;
+    padding: 16px;
+  }
+  .serviceContentContainerStyles {
+    gap: 24px;
+  }
+  .serviceIonStyles,
+  .rightUpArrowStyles {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .serviceCardContainerStyles {
+    width: 256px;
+    gap: 20px;
+  }
+  .serviceNameTextStyles {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }

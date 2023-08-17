@@ -3,39 +3,123 @@ import styles from './styles.module.css';
 import { RightUpArrow } from '../../resources/svg';
 import { swedenFlag } from '../../resources/images';
 
-const Footer = () => {
+const Footer = (props) => {
+  const {
+    theme,
+    footerBottom,
+    customFooterBottomStyles,
+    customFooterMainContainerStyles,
+  } = props;
   const [email, setEmail] = useState({ email: '' });
   const renderFooterBottomSection = () => {
     return (
-      <div className={styles.footerBottomContainerStyle}>
+      <div
+        className={[
+          styles.footerBottomContainerStyle,
+          customFooterBottomStyles,
+        ].join(' ')}
+      >
         <div className={styles.footerLinksContainerStyles}>
           <div className={styles.addressLinkContainerStyles}>
-            <p className={styles.addressLinkTextStyles}>
+            <p
+              className={
+                theme === 'dark'
+                  ? styles.addressLinkDarkTextStyles
+                  : styles.addressLinkTextStyles
+              }
+            >
               HETCH AB, HENCKELS TORG 3,
             </p>
-            <p className={styles.addressLinkTextStyles}>
+            <p
+              className={
+                theme === 'dark'
+                  ? styles.addressLinkDarkTextStyles
+                  : styles.addressLinkTextStyles
+              }
+            >
               252 25 HELSINGBORG, SWEDEN
             </p>
           </div>
           <div className={styles.footerLinksSubContainerStyles}>
-            <p className={styles.footerLinkTextStyles}>HEJ@VILJETECH.COM</p>
-            <p className={styles.footerLinkTextStyles}>+46(0)724430170</p>
+            <p
+              className={
+                theme === 'dark'
+                  ? styles.footerLinkDarkTextStyles
+                  : styles.footerLinkTextStyles
+              }
+            >
+              HEJ@VILJETECH.COM
+            </p>
+            <p
+              className={
+                theme === 'dark'
+                  ? styles.footerLinkDarkTextStyles
+                  : styles.footerLinkTextStyles
+              }
+            >
+              +46(0)724430170
+            </p>
           </div>
           <div className={styles.footerLinksSubContainerStyles}>
-            <p className={styles.footerLinkTextStyles}>INSTAGRAM</p>
-            <p className={styles.footerLinkTextStyles}>LINKEDIN</p>
+            <p
+              className={
+                theme === 'dark'
+                  ? styles.footerLinkDarkTextStyles
+                  : styles.footerLinkTextStyles
+              }
+            >
+              INSTAGRAM
+            </p>
+            <p
+              className={
+                theme === 'dark'
+                  ? styles.footerLinkDarkTextStyles
+                  : styles.footerLinkTextStyles
+              }
+            >
+              LINKEDIN
+            </p>
           </div>
           <div className={styles.footerLinksSubContainerStyles}>
-            <p className={styles.footerLinkTextStyles}>TERMS & SERVICES</p>
-            <p className={styles.footerLinkTextStyles}>COOKIE POLICY</p>
+            <p
+              className={
+                theme === 'dark'
+                  ? styles.footerLinkDarkTextStyles
+                  : styles.footerLinkTextStyles
+              }
+            >
+              TERMS & SERVICES
+            </p>
+            <p
+              className={
+                theme === 'dark'
+                  ? styles.footerLinkDarkTextStyles
+                  : styles.footerLinkTextStyles
+              }
+              onClick={() => window.open('/privacypolicy', '_blank')}
+            >
+              COOKIE POLICY
+            </p>
           </div>
         </div>
         <div className={styles.footerBottomBottomStyles}>
           <div>
-            <p className={styles.allRightsTextStyles}>
+            <p
+              className={
+                theme === 'dark'
+                  ? styles.allRightsDarkTextStyles
+                  : styles.allRightsTextStyles
+              }
+            >
               © 2023 - ALL RIGHTS RESERVED
             </p>
-            <p className={styles.allRightsTextStyles}>
+            <p
+              className={
+                theme === 'dark'
+                  ? styles.allRightsDarkTextStyles
+                  : styles.allRightsTextStyles
+              }
+            >
               REGISTRATION NO - 123xXX
             </p>
           </div>
@@ -89,8 +173,13 @@ const Footer = () => {
     );
   };
   return (
-    <div className={styles.footerMainContainerStyles}>
-      {renderFooterTopSection()}
+    <div
+      className={[
+        styles.footerMainContainerStyles,
+        customFooterMainContainerStyles,
+      ].join(' ')}
+    >
+      {!footerBottom && renderFooterTopSection()}
       {renderFooterBottomSection()}
     </div>
   );

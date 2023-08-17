@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./styles.module.css";
-const Button = props => {
+import styles from './styles.module.css';
+import React from 'react';
+const Button = (props) => {
   const {
     btnName,
     customBtnStyles,
@@ -11,7 +11,7 @@ const Button = props => {
   return (
     <div
       onClick={onClick}
-      className={[styles.buttonStyles, customBtnStyles].join(" ")}
+      className={[styles.buttonStyles, customBtnStyles].join(' ')}
     >
       {btnName && btnName}
       {btnImage && (
@@ -19,7 +19,7 @@ const Button = props => {
           src={btnImage}
           alt="button icon"
           className={[styles.buttonImageStyles, customButtonImageStyles].join(
-            " "
+            ' '
           )}
         />
       )}

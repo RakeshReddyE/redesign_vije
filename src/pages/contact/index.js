@@ -1,11 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import NavBar from '../../components/navbar';
 import {
   bharathProfilePic,
   idaAlfonsiProfilePic,
 } from '../../resources/images';
+import Footer from '../../components/footer';
+import Divider from '../../components/divider';
+import { CrossMarkIcon } from '../../resources/svg';
+
 const Contact = () => {
+  const [showPopUp, setShowPopUp] = useState(false);
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
   }, []);
@@ -25,7 +30,41 @@ const Contact = () => {
       phoneNumber: '072 44 30 170',
     },
   ];
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // alert('Thank you for contacting us');
+    setShowPopUp(true);
+  };
+  const renderPopUp = () => {
+    return (
+      <div className={styles.popUpContainerStyles}>
+        <div
+          className={
+            // showPopUp ?
+            styles.popUpContentStyles
+            // : styles.popUpContentHideStyles
+          }
+        >
+          <div className={styles.popUpContentInnerStyles}>
+            <p className={styles.popUpContentTextStyles}>
+              Thank you for writing to us, our team will respond back as soon as
+              possible. Cheers!
+            </p>
+            <p
+              className={styles.closeTextStyles}
+              onClick={() => setShowPopUp(false)}
+            >
+              <CrossMarkIcon
+                customStyles={styles.crossMarkIconStyles}
+                pathStyles={styles.crossMarkIconPathStyles}
+              />
+              Close
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  };
   const renderProfilesRightSection = () => {
     return (
       <div className={styles.profilesRightContainerStyles}>
@@ -53,7 +92,10 @@ const Contact = () => {
   };
   const renderContactFormRightSection = () => {
     return (
-      <form className={styles.contactFormStyles}>
+      <form
+        className={styles.contactFormStyles}
+        onSubmit={(e) => handleSubmit(e)}
+      >
         <div className={styles.contactFormInputsContainerStyles}>
           <input
             type={'text'}
@@ -83,7 +125,9 @@ const Contact = () => {
           <p className={styles.privacyPolicyTextStyles}>
             <input type="checkbox" className={styles.inputCheckboxViewStyle} />I
             read and agree with Vilje Tech’s
-            <span> privacy policy</span>
+            <span onClick={() => window.open('/privacypolicy', '_blank')}>
+              privacy policy
+            </span>
           </p>
           <button className={styles.sendMessageTextStyles}>Send message</button>
         </div>
@@ -95,17 +139,25 @@ const Contact = () => {
       <NavBar />
       <div className={styles.contactContainerStyles}>
         <h2 className={styles.contactHeadingTextStyles}>
-          Have a project or query, we would love to hear from you.
+          Wanna say hi or have a project, we’d love to hear from you.
         </h2>
         <div className={styles.profilesContainerStyles}>
-          <p className={styles.idNumberTextStyles}>01</p>
+          <p className={styles.idNumberTextStyles}>{`{01}`}</p>
           {renderProfilesRightSection()}
         </div>
         <div className={styles.contactFormContainerStyles}>
-          <p className={styles.idNumberTextStyles}>02</p>
+          <p className={styles.idNumberTextStyles}>{`{02}`}</p>
           {renderContactFormRightSection()}
         </div>
       </div>
+      <Divider customDividerStyles={styles.customDividerStyles} />
+      <Footer
+        theme="dark"
+        footerBottom={true}
+        customFooterBottomStyles={styles.footerStyles}
+        customFooterMainContainerStyles={styles.footerMainContainerStyles}
+      />
+      {showPopUp && renderPopUp()}
     </div>
   );
 };

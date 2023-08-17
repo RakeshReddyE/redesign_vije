@@ -1,0 +1,105 @@
+.cookiePolicyMainContainerStyles {
+  background: #dadee3;
+  position: fixed;
+  top: 0px;
+  z-index: 6;
+  width: 100%;
+}
+.cookiePolicyInnerContainerStyles {
+  display: flex;
+  padding: 8px 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  max-width: 1728px;
+  margin: auto;
+}
+.cookiePolicyTextStyles,
+.cookiePolicyTextStyles span {
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.cookiePolicyTextStyles span {
+  cursor: pointer;
+  color: var(--blue);
+}
+.cookiePolicyRightContainerStyles {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+.rightMarkIconStyles,
+.crossMarkIconStyles {
+  width: 16px;
+  height: 16px;
+}
+.rightMarkIconPathStyles,
+.crossMarkIconPathStyles {
+  stroke: var(--dark);
+}
+.agreeTextStyles,
+.declineTextStyles {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+/************ MEDIA QUERIES **********/
+@media screen and (min-width: 1728px) {
+  .cookiePolicyInnerContainerStyles {
+    padding: 8px 64px;
+  }
+  .cookiePolicyTextStyles,
+  .agreeTextStyles,
+  .declineTextStyles,
+  .cookiePolicyTextStyles span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (min-width: 1311px) and (max-width: 1728px) {
+  .cookiePolicyInnerContainerStyles {
+    padding: 8px 64px;
+  }
+  .cookiePolicyTextStyles,
+  .agreeTextStyles,
+  .declineTextStyles,
+  .cookiePolicyTextStyles span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width: 1311px) {
+}
+@media screen and (max-width: 1148px) {
+}
+@media screen and (max-width: 1080px) {
+  .cookiePolicyInnerContainerStyles {
+    padding: 8px 32px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .cookiePolicyInnerContainerStyles {
+    padding: 8px 24px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .cookiePolicyMainContainerStyles {
+    top: unset;
+    bottom: 0px;
+  }
+  .cookiePolicyInnerContainerStyles {
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+@media screen and (max-width: 360px) {
+}

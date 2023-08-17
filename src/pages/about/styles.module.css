@@ -1,5 +1,7 @@
-.aboutBannerOuterContainerStyles {
-  background: #eff1f4;
+.aboutBannerOuterContainerStyles,
+.aboutMainContainerStyles {
+  background: #191a19;
+  color: #fff !important;
 }
 .aboutBannerInnerContainerStyles {
   display: flex;

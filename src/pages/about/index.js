@@ -228,7 +228,7 @@ const About = () => {
   };
   return (
     <div className={styles.aboutMainContainerStyles}>
-      <NavBar theme={'dark'} />
+      <NavBar />
       {renderAboutBannerSection()}
       {renderWhatWeDoSection()}
       <Divider />
@@ -236,7 +236,11 @@ const About = () => {
       <Divider />
       {renderTeamValuesSection()}
       <Divider />
-      <Footer />
+      <Footer
+        theme="dark"
+        customFooterBottomStyles={styles.footerStyles}
+        customFooterMainContainerStyles={styles.footerMainContainerStyles}
+      />
     </div>
   );
 };

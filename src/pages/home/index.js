@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Footer from '../../components/footer';
 import Divider from '../../components/divider';
-import styles from './styles.module.css';
 import Button from '../../components/button';
+import styles from './styles.module.css';
 import Typewriter from 'typewriter-effect';
 import {
   appDevelopmentIcon,
@@ -391,8 +391,21 @@ const Home = () => {
   const renderFeaturedSection = () => {
     return (
       <div className={styles.featuredMainContainerStyles}>
-        <h5 className={styles.featureHeadingTextStyles}>Featured</h5>
-        <div id="viewport" style={{ overflow: 'scroll' }}>
+        <div className={styles.featureHeadBlockStyles}>
+          <h5 className={styles.featureHeadingTextStyles}>Featured</h5>
+          <p className={styles.allWorkMobileTextStyles}>
+            ALL <span>WORK</span>
+            <RightUpArrow
+              customStyles={styles.featureRightUpArrowStyles}
+              pathStyles={styles.featureRightArrowPathStyles}
+            />
+          </p>
+        </div>
+        <div
+          id="viewport"
+          style={{ overflow: 'scroll' }}
+          className={styles.featuresWrapperStyles}
+        >
           <div
             className={styles.featuresContainerStyles}
             ref={journalRef}
@@ -538,18 +551,32 @@ const Home = () => {
             </div>
           ))}
         </div> */}
-        <div className={styles.servicesContainerStyles}>
-          {servicesData.map(
-            (item, index) =>
-              index < 2 && <ServiceCard service={item} key={index} />
-          )}
-        </div>
-        <div className={styles.servicesContainerStyles2}>
-          {servicesData.map(
-            (item, index) =>
-              index > 1 &&
-              index < 4 && <ServiceCard service={item} key={index} />
-          )}
+        <div className={styles.allServicesBlockStyles}>
+          <div className={styles.servicesContainerStyles}>
+            {servicesData.map(
+              (item, index) =>
+                index < 2 && (
+                  <ServiceCard
+                    service={item}
+                    key={index}
+                    customStyles={styles.serviceCardStyles}
+                  />
+                )
+            )}
+          </div>
+          <div className={styles.servicesContainerStyles2}>
+            {servicesData.map(
+              (item, index) =>
+                index > 1 &&
+                index < 4 && (
+                  <ServiceCard
+                    service={item}
+                    key={index}
+                    customStyles={styles.serviceCardStyles}
+                  />
+                )
+            )}
+          </div>
         </div>
       </div>
     );

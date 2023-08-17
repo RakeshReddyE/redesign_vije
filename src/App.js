@@ -3,6 +3,7 @@ import './App.css';
 import Loading from './pages/loading';
 import AppRoutes from './routes';
 import { AppDataProvider } from './providers/appDataProvider';
+// import CookiePolicyPopUp from './components/cookiepolicypopup';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -20,6 +21,7 @@ function App() {
     // ) : (
     <AppDataProvider>
       {loading && <Loading />}
+      {/* <CookiePolicyPopUp /> */}
       <AppRoutes />
     </AppDataProvider>
     // );

@@ -27,3 +27,15 @@
   color: #ffff;
   transition: all 0.2s ease-in-out;
 }
+@media screen and (min-width: 1728px) {
+  .buttonStyles {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+@media screen and (min-width: 1513px) and (max-width: 1728px) {
+  .buttonStyles {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}

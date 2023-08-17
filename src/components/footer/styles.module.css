@@ -124,7 +124,9 @@
   align-self: stretch;
 }
 .footerLinkTextStyles,
-.addressLinkTextStyles {
+.addressLinkTextStyles,
+.addressLinkDarkTextStyles,
+.footerLinkDarkTextStyles {
   color: var(--dark);
   font-size: 16px;
   font-style: normal;
@@ -135,15 +137,29 @@
   transition: all 0.2s ease-in-out;
   width: fit-content;
 }
+.footerLinkDarkTextStyles,
+.addressLinkDarkTextStyles {
+  color: var(--white);
+}
+
 .footerLinkTextStyles:hover {
   color: var(--lightgray2);
+  transition: all 0.2s ease-in-out;
+}
+.footerLinkDarkTextStyles:hover {
+  color: rgba(255, 255, 255, 0.5);
   transition: all 0.2s ease-in-out;
 }
 .addressLinkContainerStyles:hover .addressLinkTextStyles {
   color: var(--lightgray2);
   transition: all 0.2s ease-in-out;
 }
-.allRightsTextStyles {
+.addressLinkContainerStyles:hover .addressLinkDarkTextStyles {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+.allRightsTextStyles,
+.allRightsDarkTextStyles {
   cursor: default;
   color: var(--lightgray2);
   font-size: 14px;
@@ -151,6 +167,9 @@
   font-weight: 450;
   line-height: 20px;
   text-transform: uppercase;
+}
+.allRightsDarkTextStyles {
+  color: rgba(255, 255, 255, 0.5);
 }
 .flagImageContainerStyles {
   width: 26.667px;
@@ -185,7 +204,9 @@
   }
   .emailInputStyles,
   .addressLinkTextStyles,
-  .footerLinkTextStyles {
+  .footerLinkTextStyles,
+  .footerLinkDarkTextStyles,
+  .addressLinkDarkTextStyles {
     font-size: 18px;
     line-height: 26px;
   }
@@ -193,7 +214,8 @@
     font-size: 20px;
     line-height: 28px;
   }
-  .allRightsTextStyles {
+  .allRightsTextStyles,
+  .allRightsDarkTextStyles {
     font-size: 16px;
     line-height: 24px;
   }
@@ -216,7 +238,9 @@
   }
   .emailInputStyles,
   .addressLinkTextStyles,
-  .footerLinkTextStyles {
+  .footerLinkTextStyles,
+  .footerLinkDarkTextStyles,
+  .addressLinkDarkTextStyles {
     font-size: 18px;
     line-height: 26px;
   }
@@ -224,7 +248,8 @@
     font-size: 20px;
     line-height: 28px;
   }
-  .allRightsTextStyles {
+  .allRightsTextStyles,
+  .allRightsDarkTextStyles {
     font-size: 16px;
     line-height: 24px;
   }
@@ -236,7 +261,7 @@
     height: 24px;
   }
 }
-@media screen and (max-width: 1312px) {
+@media screen and (max-width: 1366px) {
   .footerHeadingTextStyles {
     font-size: 64px;
     line-height: 72px;
