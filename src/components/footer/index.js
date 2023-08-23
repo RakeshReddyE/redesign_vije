@@ -11,6 +11,66 @@ const Footer = (props) => {
     customFooterMainContainerStyles,
   } = props;
   const [email, setEmail] = useState({ email: '' });
+  const renderFooterTopSection = () => {
+    return (
+      <div className={styles.footerTopContainerStyles}>
+        <div className={styles.footerHeadingContainerStyles}>
+          <h2
+            className={
+              theme === 'dark'
+                ? styles.footerHeadingDarkTextStyles
+                : styles.footerHeadingTextStyles
+            }
+          >
+            Get in touch
+            <RightUpArrow
+              customStyles={styles.rightUpArrowStyles}
+              pathStyles={
+                theme
+                  ? styles.rightUpArrowDarkPathStyles
+                  : styles.rightUpArrowPathStyles
+              }
+            />
+          </h2>
+        </div>
+        <div className={styles.footerTopRightContainerStyles}>
+          <p
+            className={
+              theme
+                ? styles.footerTopDescDarkTextStyles
+                : styles.footerTopDescTextStyles
+            }
+          >
+            Stay up to date on projects we’ve recently launched, what we’re
+            working on, and other news.
+          </p>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            className={
+              theme ? styles.emailInputDarkStyles : styles.emailInputStyles
+            }
+            value={email.email}
+            onChange={(e) => setEmail({ email: e.target.value })}
+          />
+          <p
+            className={
+              theme
+                ? styles.subscribeDarkTextStyles
+                : styles.subscribeTextStyles
+            }
+            onClick={() => {
+              console.log(email);
+              setEmail({ email: '' });
+            }}
+          >
+            Subscribe
+          </p>
+        </div>
+      </div>
+    );
+  };
   const renderFooterBottomSection = () => {
     return (
       <div
@@ -134,44 +194,7 @@ const Footer = (props) => {
       </div>
     );
   };
-  const renderFooterTopSection = () => {
-    return (
-      <div className={styles.footerTopContainerStyles}>
-        <div className={styles.footerHeadingContainerStyles}>
-          <h2 className={styles.footerHeadingTextStyles}>
-            Get in touch
-            <RightUpArrow
-              customStyles={styles.rightUpArrowStyles}
-              pathStyles={styles.rightUpArrowPathStyles}
-            />
-          </h2>
-        </div>
-        <div className={styles.footerTopRightContainerStyles}>
-          <p className={styles.footerTopDescTextStyles}>
-            Stay up to date on projects we’ve recently launched, what we’re
-            working on, and other news.
-          </p>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email address"
-            className={styles.emailInputStyles}
-            value={email.email}
-            onChange={(e) => setEmail({ email: e.target.value })}
-          />
-          <p
-            className={styles.subscribeTextStyles}
-            onClick={() => {
-              console.log(email);
-              setEmail({ email: '' });
-            }}
-          >
-            Subscribe
-          </p>
-        </div>
-      </div>
-    );
-  };
+
   return (
     <div
       className={[

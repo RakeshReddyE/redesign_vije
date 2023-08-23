@@ -10,6 +10,7 @@ import {
 } from '../../resources/svg';
 import { useLocation, useNavigate } from 'react-router';
 import { AppDataContext } from '../../providers/appDataProvider';
+import CookiePolicyPopUp from '../cookiepolicypopup';
 
 const NavBar = (props) => {
   const { theme } = props;
@@ -22,6 +23,7 @@ const NavBar = (props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [showLanguagePopup, setShowLanguagePopup] = useState(false);
   const [activeLink, setActiveLink] = useState('/');
+  // const [showCookiePopUp, setShowCookiePopUp] = useState(true);
 
   useEffect(() => {
     !showMenu && setShowLanguagePopup(false);
@@ -63,7 +65,7 @@ const NavBar = (props) => {
     { title: strings.navbarStrings.projects, route: '/projects' },
     { title: strings.navbarStrings.services, route: '/services' },
     { title: strings.navbarStrings.contact, route: '/contact' },
-    { title: strings.navbarStrings.insights, route: '/blogs' },
+    { title: strings.navbarStrings.insights, route: '/insights' },
   ];
 
   const handleLinkClick = (path) => {
@@ -142,6 +144,7 @@ const NavBar = (props) => {
             ? styles.navBarContainerStyles
             : styles.navbarDarkStyles
         }
+        // style={{ top: showCookiePopUp && '64px' }}
       >
         <div
           className={styles.navbarLeftStyles}
@@ -278,6 +281,9 @@ const NavBar = (props) => {
   };
   return (
     <div className={[styles.navbarMainContainerStyles].join(' ')}>
+      {/* {showCookiePopUp && (
+        <CookiePolicyPopUp setShowCookiePopUp={setShowCookiePopUp} />
+      )} */}
       {renderNavbar()}
       {renderNavbarMenuSection()}
     </div>

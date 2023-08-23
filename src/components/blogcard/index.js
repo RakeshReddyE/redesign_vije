@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './styles.module.css';
+import { useNavigate } from 'react-router';
 
 const BlogCard = (props) => {
-  const { blog, size, onClick = () => {} } = props;
+  const { blog, size } = props;
+  const navigate = useNavigate();
   return (
     <div
-      onClick={onClick}
+      onClick={() => navigate(`/insights/${blog.title}`)}
       className={
         size === 'large' ? styles.largeBlogCardStyles : styles.blogCardStyles
       }
@@ -20,7 +22,7 @@ const BlogCard = (props) => {
         <img src={blog?.image} alt="blog" className={styles.imageWidthStyles} />
         <img
           src={blog?.hoverImage}
-          alt="hover blog post photograph"
+          alt={blog.alt}
           className={styles.hoveredImageStyles}
         />
       </div>
@@ -33,7 +35,7 @@ const BlogCard = (props) => {
                 : styles.blogTitleTextStyles
             }
           >
-            {blog?.title}
+            {blog?.headerText}
           </p>
           <p className={styles.blogDescTextStyles}>{blog?.desc}</p>
         </div>

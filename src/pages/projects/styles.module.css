@@ -60,7 +60,12 @@
   width: 386px;
   height: fit-content;
 }
-
+.projectBigCardStyles {
+  width: 784px;
+}
+.projectBigCardImageStyles {
+  height: 486px;
+}
 /********MEDIA QUERIES ********/
 @media screen and (max-width: 1311px) {
   .projectPageHeadingTextStyles {
@@ -96,6 +101,7 @@
   .projectBigCardStyles {
     width: 720px;
   }
+
   .projectSmallCardImageStyles1 {
     height: 486px;
   }

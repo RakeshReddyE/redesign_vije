@@ -95,7 +95,7 @@
 }
 /******** FEATURES SECTION STYLES ***********/
 .featuredMainContainerStyles {
-  max-width: 1728px;
+  /* max-width: 1728px; */
   padding: 96px 0px;
   position: relative;
   overflow: scroll;
@@ -117,13 +117,14 @@
   align-items: center;
 }
 .featureHeadingTextStyles {
-  position: absolute;
+  /* position: absolute; */
   color: var(--dark);
   font-family: 'NeueHaasDisplay-Medium';
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: 56px;
+  margin: 0px;
   left: 48px;
 }
 .emptyDivStyles {
@@ -234,6 +235,8 @@
   display: block;
 }
 .featureHeadBlockStyles {
+  position: absolute;
+  left: 48px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -357,7 +360,7 @@
   flex-direction: column;
   gap: 16px;
 }
-/************ TESTIMONIAL SECTION STYLES********/
+/* *********** TESTIMONIAL SECTION STYLES*******
 .testimonialMainContainerStyles {
   padding: 96px 48px;
   margin: auto;
@@ -460,6 +463,7 @@
   gap: 4px;
 }
 .disabledButtonStyles {
+  pointer-events: none;
   border-radius: 16px;
   border: 1px solid rgba(5, 5, 5, 0.5);
 }
@@ -490,6 +494,33 @@
   transform: rotate(0deg) scale(0.2) translate(0%, 0%);
   top: 0;
 }
+.rightArrowDisablePathStyles,
+.leftArrowDisablePathStyles {
+  fill: rgba(5, 5, 5, 0.5);
+}
+.leftArrowBtnStyles:hover {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  transition: 0.2s all ease-in-out;
+}
+.rightArrowBtnStyles:hover {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  transition: 0.2s all ease-in-out;
+}
+.leftArrowBtnStyles:hover .leftArrowPathStyles {
+  fill: var(--white);
+  transition: 0.2s all ease-in-out;
+}
+.rightArrowBtnStyles:hover .rightArrowPathStyles {
+  fill: var(--white);
+  transition: 0.2s all ease-in-out;
+}
+.leftArrowPathStyles,
+.rightArrowPathStyles {
+  fill: var(--dark);
+  transition: 0.2s all ease-in-out;
+} */
 /************** RECENT POSTS SECTION  STYLES*****/
 .recentPostsMainContainerStyles {
   display: flex;
@@ -564,7 +595,7 @@
   overflow: scroll;
   width: 100%;
 }
-/**********MEDIA QUERIES **********/
+/************************       MEDIA QUERIES     ***********************/
 /* @media screen and (min-height: 650px) {
   .bannerBottomContainerStyles {
     height: 100vh;
@@ -585,9 +616,9 @@
   .featureHeadingTextStyles {
     left: 64px;
   }
-  .allWorkTextStyles {
+  /* .allWorkTextStyles {
     margin-left: 64px;
-  }
+  } */
   .ourServicesMainContainerStyles,
   .testimonialMainContainerStyles,
   .recentPostsMainContainerStyles {
@@ -617,10 +648,21 @@
   .allWorkTextStyles {
     font-size: 18px;
     line-height: 26px;
+    margin-left: calc((100vw - 1728px) / 2 + 64px);
+  }
+  .featuresContainerStyles {
+    margin-left: calc((100vw - 1728px) / 2 + 64px);
   }
   .featureRightUpArrowStyles {
     width: 26px;
     height: 26px;
+  }
+  .featureHeadBlockStyles {
+    /* width: 100%; */
+    left: 64px;
+  }
+  .featureHeadingTextStyles {
+    margin-left: calc((100vw - 1728px) / 2);
   }
   .projectNameTextStyles,
   .projectNameTextStyles span {
@@ -662,7 +704,7 @@
   .bannerInfoMainContainerStyles {
     padding: 48px 64px 288px 64px;
   }
-  .featureHeadingTextStyles {
+  .featureHeadBlockStyles {
     left: 64px;
   }
   .allWorkTextStyles {
@@ -778,6 +820,7 @@
   }
   .bigFeatureCardStyles {
     height: 486px;
+    width: 486px;
   }
   .smallFeatureCardStyles {
     width: 360px;
@@ -806,6 +849,12 @@
   .recentPostImgContainerStyles {
     width: 100%;
     height: 378px;
+  }
+}
+@media screen and (max-width: 1278px) {
+  .emptyDivStyles:after {
+    width: 468px;
+    height: 100px;
   }
 }
 @media screen and (max-width: 1147px) {
@@ -837,9 +886,8 @@
   }
   .featureHeadBlockStyles {
     padding-inline: 48px;
-  }
-  .bigFeatureCardStyles {
-    width: 668px;
+    position: relative;
+    left: 0px;
   }
   .ourServicesDescTextStyles {
     font-size: 40px;
@@ -1067,8 +1115,7 @@
   }
   .featuredMainContainerStyles,
   .ourServicesMainContainerStyles,
-  .testimonialMainContainerStyles,
-  .recentPostsMainContainerStyles {
+  .testimonialMainContainerStyles {
     padding: 72px 20px;
   }
   .ourServicesMainContainerStyles {
@@ -1240,7 +1287,6 @@
   .testimonialMainContainerStyles {
     padding: 64px 20px;
   }
-
   .recentPostsMainContainerStyles,
   .ourServicesMainContainerStyles {
     padding: 64px 0px;

@@ -25,7 +25,8 @@
   text-align: left;
   width: 100%;
 }
-.footerHeadingTextStyles {
+.footerHeadingTextStyles,
+.footerHeadingDarkTextStyles {
   color: var(--dark);
   font-family: 'NeueHaasDisplay-Medium';
   font-size: 80px;
@@ -39,12 +40,26 @@
   width: fit-content;
   transition: all 0.2s ease-in-out;
 }
+.footerHeadingDarkTextStyles {
+  color: var(--white);
+}
 .footerHeadingTextStyles:hover {
   color: var(--blue);
   transition: all 0.2s ease-in-out;
 }
+.footerHeadingDarkTextStyles:hover {
+  color: var(--springgreen);
+  transition: all 0.2s ease-in-out;
+}
 .footerHeadingTextStyles:hover .rightUpArrowPathStyles {
   stroke: var(--blue);
+  transition: all 0.2s ease-in-out;
+}
+.rightUpArrowDarkPathStyles {
+  stroke: var(--white);
+}
+.footerHeadingDarkTextStyles:hover .rightUpArrowDarkPathStyles {
+  stroke: var(--springgreen);
   transition: all 0.2s ease-in-out;
 }
 .rightUpArrowStyles {
@@ -64,7 +79,8 @@
   align-items: flex-start;
   gap: 16px;
 }
-.footerTopDescTextStyles {
+.footerTopDescTextStyles,
+.footerTopDescDarkTextStyles {
   color: var(--dark);
   font-family: 'NeueHaasDisplay-Medium';
   font-size: 20px;
@@ -72,7 +88,11 @@
   font-weight: 500;
   line-height: 28px;
 }
-.subscribeTextStyles {
+.footerTopDescDarkTextStyles {
+  color: var(--white);
+}
+.subscribeTextStyles,
+.subscribeDarkTextStyles {
   color: var(--dark);
   font-family: 'NeueHaasDisplay-Medium';
   font-size: 18px;
@@ -83,22 +103,41 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
+.subscribeDarkTextStyles {
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+}
 .subscribeTextStyles:hover {
   color: var(--blue);
   border-bottom: 1px solid var(--blue);
   transition: all 0.2s ease-in-out;
 }
-.emailInputStyles {
+.subscribeDarkTextStyles:hover {
+  color: var(--springgreen);
+  border-bottom: 1px solid var(--springgreen);
+  transition: all 0.2s ease-in-out;
+}
+.emailInputStyles,
+.emailInputDarkStyles {
   width: 100%;
   padding: 16px;
   border-radius: 6px;
   border: 1px solid var(--lightgray2);
-  outline: none;
   color: var(--lightgray2);
   font-size: 16px;
   font-style: normal;
   font-weight: 450;
   line-height: 24px;
+}
+.emailInputDarkStyles {
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #1a1a1a;
+  caret-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+.emailInputDarkStyles:active {
+  border: 1px solid var(--white);
 }
 /*********FOOTER BOTTOM STYLES************/
 .footerBottomContainerStyle {
@@ -190,7 +229,8 @@
     max-width: 1728px;
     margin: auto;
   }
-  .footerHeadingTextStyles {
+  .footerHeadingTextStyles,
+  .footerHeadingDarkTextStyles {
     font-size: 96px;
     line-height: 104px;
   }
@@ -198,7 +238,8 @@
     height: 104px;
     width: 104px;
   }
-  .footerTopDescTextStyles {
+  .footerTopDescTextStyles,
+  .footerTopDescDarkTextStyles {
     font-size: 24px;
     line-height: 32px;
   }
@@ -232,7 +273,8 @@
     padding: 96px 64px 48px 64px;
     gap: 192px;
   }
-  .footerTopDescTextStyles {
+  .footerTopDescTextStyles,
+  .footerTopDescDarkTextStyles {
     font-size: 24px;
     line-height: 32px;
   }
@@ -262,7 +304,8 @@
   }
 }
 @media screen and (max-width: 1366px) {
-  .footerHeadingTextStyles {
+  .footerHeadingTextStyles,
+  .footerHeadingDarkTextStyles {
     font-size: 64px;
     line-height: 72px;
   }
@@ -280,7 +323,8 @@
     height: 100%;
     gap: 96px;
   }
-  .footerHeadingTextStyles {
+  .footerHeadingTextStyles,
+  .footerHeadingDarkTextStyles {
     font-size: 48px;
     line-height: 56px;
   }
@@ -319,7 +363,8 @@
     padding: 72px 20px 20px 20px;
     gap: 72px;
   }
-  .footerHeadingTextStyles {
+  .footerHeadingTextStyles,
+  .footerHeadingDarkTextStyles {
     font-size: 40px;
     line-height: 48px;
   }
@@ -327,7 +372,8 @@
     width: 48px;
     height: 48px;
   }
-  .footerTopDescTextStyles {
+  .footerTopDescTextStyles,
+  .footerTopDescDarkTextStyles {
     font-size: 18px;
     line-height: 26px;
   }
@@ -358,7 +404,8 @@
     padding: 64px 20px 20px 20px;
     gap: 64px;
   }
-  .footerHeadingTextStyles {
+  .footerHeadingTextStyles,
+  .footerHeadingDarkTextStyles {
     font-size: 36px;
     line-height: 44px;
   }

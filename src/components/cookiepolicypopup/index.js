@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './styles.module.css';
 import { CrossMarkIcon, RightMarkIcon } from '../../resources/svg';
 
-const CookiePolicyPopUp = () => {
+const CookiePolicyPopUp = (props) => {
+  const { setShowCookiePopUp } = props;
   return (
     <div className={styles.cookiePolicyMainContainerStyles}>
       <div className={styles.cookiePolicyInnerContainerStyles}>
@@ -11,14 +12,20 @@ const CookiePolicyPopUp = () => {
           end-user experience.<span>Cookie policy</span>
         </p>
         <div className={styles.cookiePolicyRightContainerStyles}>
-          <p className={styles.agreeTextStyles}>
+          <p
+            className={styles.agreeTextStyles}
+            onClick={() => setShowCookiePopUp(false)}
+          >
             <RightMarkIcon
               customStyles={styles.rightMarkIconStyles}
               pathStyles={styles.rightMarkIconPathStyles}
             />
             Agree
           </p>
-          <p className={styles.declineTextStyles}>
+          <p
+            className={styles.declineTextStyles}
+            onClick={() => setShowCookiePopUp(false)}
+          >
             <CrossMarkIcon
               customStyles={styles.crossMarkIconStyles}
               pathStyles={styles.crossMarkIconPathStyles}

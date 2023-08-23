@@ -131,7 +131,6 @@
 }
 .inputCheckboxViewStyle {
   margin-right: 12px;
-  accent-color: var(--dark);
 }
 .privacyPolicyTextStyles {
   display: flex;
@@ -227,6 +226,7 @@
 }
 .closeTextStyles {
   cursor: pointer;
+  gap: 4px;
 }
 .crossMarkIconStyles {
   height: 16px;
@@ -268,6 +268,11 @@
     height: 428px;
     /* border-radius: 6px;
     overflow: hidden; */
+  }
+  .popUpContentTextStyles,
+  .closeTextStyles {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 @media screen and (min-width: 1513px) and (max-width: 1728px) {
@@ -344,6 +349,14 @@
   .footerMainContainerStyles {
     padding: 32px;
   }
+  .popUpContentInnerStyles {
+    padding: 8px 32px;
+  }
+  .popUpContentTextStyles,
+  .closeTextStyles {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 @media screen and (max-width: 895px) {
   .contactContainerStyles {
@@ -376,6 +389,9 @@
   }
   .contactFormStyles {
     gap: 40px;
+  }
+  .popUpContentInnerStyles {
+    padding: 8px 24px;
   }
 }
 @media screen and (max-width: 567px) {
@@ -413,6 +429,16 @@
   }
   .footerMainContainerStyles {
     padding: 20px;
+  }
+  .popUpContentInnerStyles {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+  .closeTextStyles {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 360px) {

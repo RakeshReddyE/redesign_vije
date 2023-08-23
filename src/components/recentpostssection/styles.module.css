@@ -1,0 +1,267 @@
+/************** RECENT POSTS SECTION  STYLES*****/
+.recentPostsMainContainerStyles {
+  display: flex;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  margin: auto;
+  width: 100%;
+  max-width: 1728px;
+}
+.recentPostHeadingBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.recentPostHeadingTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+}
+.recentPostsCardsContainerStyles {
+  display: flex;
+  gap: 24px;
+  flex-direction: row;
+}
+.recentPostStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  /* max-width: 432px; */
+}
+.imageWidthStyles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.recentPostImgContainerStyles {
+  position: relative;
+  width: 100%;
+  height: 432px;
+  /* max-width: 432px; */
+}
+.recentPostStyles:hover .hoverImageStyles {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+.hoverImageStyles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+.recentPostDescTextStyles {
+  overflow: hidden;
+  color: #050505;
+  text-overflow: ellipsis;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.recentPostsCardsMobileViewContainerStyles,
+.allPostsMobileViewButtonStyles {
+  display: none;
+}
+.recentPostsCardsMobileViewMiddleContainerStyles {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow: scroll;
+  width: 100%;
+}
+
+@media screen and (min-width: 1728px) {
+  .recentPostsMainContainerStyles {
+    padding: 96px 64px;
+  }
+  .recentPostHeadingTextStyles {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .recentPostImgContainerStyles {
+    height: 528px;
+  }
+  .recentPostDescTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (min-width: 1513px) and (max-width: 1728px) {
+  .recentPostsMainContainerStyles {
+    padding: 96px 64px;
+  }
+  .recentPostHeadingTextStyles {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .recentPostImgContainerStyles {
+    height: 528px;
+  }
+  .recentPostDescTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .recentPostHeadingTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .recentPostDescTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .recentPostImgContainerStyles {
+    width: 100%;
+    height: 378px;
+  }
+}
+@media screen and (max-width: 1148px) {
+  .recentPostImgContainerStyles {
+    height: 312px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .recentPostsMainContainerStyles {
+    padding: 96px 32px;
+  }
+  .recentPostImgContainerStyles {
+    height: 261px;
+  }
+  .recentPostDescTextStyles {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 895px) {
+  .recentPostsMainContainerStyles {
+    padding: 80px 24px;
+    gap: 40px;
+  }
+  .recentPostsCardsContainerStyles {
+    flex-wrap: wrap;
+  }
+  .recentPostStyles {
+    width: calc((100% - 24px) / 2);
+  }
+  .recentPostStyles:first-child {
+    width: 100%;
+    padding-bottom: 16px;
+  }
+  .recentPostStyles:first-child .recentPostImgContainerStyles {
+    height: 448px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .recentPostHeadingTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .recentPostsMainContainerStyles {
+    padding: 72px 0px;
+  }
+
+  .recentPostHeadingBlock,
+  .recentPostStyles {
+    padding-inline: 20px;
+  }
+  .recentPostsMainContainerStyles {
+    gap: 32px;
+  }
+  .recentPostDescTextStyles {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .recentPostsCardsContainerStyles {
+    flex-direction: column;
+  }
+  .recentPostStyles {
+    width: 100%;
+    padding-bottom: 0px !important;
+  }
+  .recentPostsCardsMobileViewMiddleContainerStyles .recentPostStyles {
+    padding-inline: 0px;
+  }
+  .recentPostsCardsMobileViewMiddleContainerStyles {
+    padding-inline: 20px;
+  }
+  /* .recentPostsCardsMobileViewMiddleContainerStyles
+    .recentPostStyles:last-child {
+    margin-right: 20px;
+  } */
+  .allPostsMobileViewButtonStyles {
+    margin-inline: 20px;
+  }
+  .recentPostsCardsContainerStyles {
+    display: none;
+  }
+  .allPostsButtonStyles {
+    display: none;
+    opacity: 0;
+  }
+  .recentPostsCardsMobileViewContainerStyles,
+  .allPostsMobileViewButtonStyles {
+    display: block;
+  }
+  .recentPostsCardsMobileViewContainerStyles {
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .customPostImageStyles {
+    width: 224px;
+  }
+  .recentPostStyles:first-child .recentPostImgContainerStyles {
+    height: 374px;
+  }
+  .recentPostsCardsMobileViewMiddleContainerStyles
+    .recentPostStyles
+    .recentPostImgContainerStyles {
+    height: 286px;
+    width: 286px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .recentPostHeadingTextStyles {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .ourServicesMainContainerStyles {
+    padding: 64px 0px;
+  }
+  .recentPostHeadingTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .recentPostStyles:first-child .recentPostImgContainerStyles {
+    height: 286px;
+  }
+  .recentPostsCardsMobileViewMiddleContainerStyles
+    .recentPostStyles
+    .recentPostImgContainerStyles {
+    height: 256px;
+    width: 256px;
+  }
+}

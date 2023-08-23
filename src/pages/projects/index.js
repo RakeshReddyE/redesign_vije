@@ -49,10 +49,8 @@ const Projects = () => {
     <div className={styles.projectsMainContainerStyles}>
       <NavBar theme={'dark'} />
       <div className={styles.projectsContainerStyles}>
-        <h2 className={styles.projectPageHeadingTextStyles}>
-          Here is a glance of some of our previous work
-        </h2>
-        <div className={styles.tabNamesContainerStyles}>
+        <h2 className={styles.projectPageHeadingTextStyles}>Previous work</h2>
+        {/* <div className={styles.tabNamesContainerStyles}>
           {tabsData.map((item, index) => (
             <p
               className={
@@ -66,7 +64,7 @@ const Projects = () => {
               {item}
             </p>
           ))}
-        </div>
+        </div> */}
         <div className={styles.individualProjectsContainerStyles}>
           <ProjectCard
             customCardStyles={styles.projectBigCardStyles}
@@ -77,7 +75,7 @@ const Projects = () => {
             projectType={'UI/UX design, Development'}
             projectId={'01'}
           />
-          <ProjectCard
+          {/* <ProjectCard
             customCardStyles={styles.projectSmallCardStyles}
             customImageStyles={styles.projectSmallCardImageStyles}
             onClick={() => navigate('/projects/name')}
@@ -85,7 +83,7 @@ const Projects = () => {
             projectName={'RosholmDell'}
             projectType={'Development'}
             projectId={'02'}
-          />
+          /> */}
         </div>
         <div className={styles.individualProjectsContainerStyles2}>
           <ProjectCard
@@ -97,7 +95,7 @@ const Projects = () => {
             projectType={'UI/UX design, Development'}
             projectId={'03'}
           />
-          <ProjectCard
+          {/* <ProjectCard
             customCardStyles={styles.projectBigCardStyles1}
             customImageStyles={styles.projectBigCardImageStyles1}
             onClick={() => navigate('/projects/name')}
@@ -105,12 +103,12 @@ const Projects = () => {
             projectName={'Trakr'}
             projectType={'UI/UX design, Development'}
             projectId={'04'}
-          />
+          /> */}
         </div>
         <div className={styles.individualProjectsContainerStyles}>
           <ProjectCard
-            customCardStyles={styles.projectBigCardStyles}
-            customImageStyles={styles.projectBigCardImageStyles}
+            customCardStyles={styles.projectSmallCardStyles}
+            customImageStyles={styles.projectSmallCardImageStyles}
             onClick={() => navigate('/projects/name')}
             projectImage={featuresSampleImg}
             projectName={'Project title'}
@@ -125,6 +123,17 @@ const Projects = () => {
             projectName={'Trakr'}
             projectType={'UI/UX design, Development'}
             projectId={'06'}
+          />
+        </div>
+        <div className={styles.individualProjectsContainerStyles}>
+          <ProjectCard
+            customCardStyles={styles.projectBigCardStyles}
+            customImageStyles={styles.projectBigCardImageStyles}
+            onClick={() => navigate('/projects/name')}
+            projectImage={featuresSampleImg}
+            projectName={'RosholmDell'}
+            projectType={'Development'}
+            projectId={'02'}
           />
         </div>
       </div>

@@ -1,0 +1,361 @@
+/* .serviceSectionMainContainerStyles:hover {
+  background-color: #1a1a1a;
+  transition: all 0.5s ease-in-out;
+} */
+.serviceSectionInnerContainerStyles,
+.serviceSectionInnerContainerStylesTwo {
+  display: flex;
+  width: 100%;
+  max-width: 1728px;
+  margin: auto;
+  padding: 96px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+.sectionBgStyles {
+  background-color: var(--dark);
+  transition: all 0.8s ease-in-out;
+  color: var(--white);
+}
+.serviceSectionInnerContainerStylesTwo {
+  align-items: flex-start;
+}
+.serviceSectionTopStyles {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: space-between;
+}
+.serviceHeadTextStyles {
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  width: 100%;
+  max-width: 384px;
+}
+.serviceDecTextStyles {
+  width: 100%;
+  max-width: 384px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px; /* 150% */
+}
+
+.approachStepsContainerStyles {
+  display: flex;
+  /* width: 509px;
+    height: 476px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.approachStepsBottomContainerStyles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+.approachStepsButtonGroupStyles {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+.stepCounterTextStyles,
+.stepNameTextStyles,
+.stepNumberTextStyles {
+  /* color: var(--dark); */
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.stepNameTextStyles {
+  background-color: aquamarine;
+}
+/* .stepCounterTextStyles {
+  color: rgba(255, 255, 255, 0.5);
+} */
+.disabledButtonStyles {
+  pointer-events: none;
+  background-color: #191a19;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.leftArrowDisablePathStyles,
+.rightArrowDisablePathStyles {
+  stroke: rgba(255, 255, 255, 0.5);
+}
+.leftArrowBtnStyles,
+.rightArrowBtnStyles {
+  border: 1px solid var(--white);
+  background-color: #191a19;
+}
+.leftArrowPathStyles,
+.rightArrowPathStyles {
+  stroke: var(--white);
+}
+.leftArrowBtnStyles:hover {
+  background-color: var(--springgreen);
+  border: 1px solid #191a19;
+}
+.rightArrowBtnStyles:hover {
+  background-color: var(--springgreen);
+  border: 1px solid #191a19;
+}
+.leftArrowBtnStyles:hover .leftArrowPathStyles {
+  stroke: var(--dark);
+}
+.rightArrowBtnStyles:hover .rightArrowPathStyles {
+  stroke: var(--dark);
+}
+.approachStepCardStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: -16px; */
+  position: relative;
+}
+.stepNumberTextStyles {
+  display: flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: var(--dark);
+  left: 132px;
+  top: -16px;
+  position: absolute;
+}
+.stepNameTextStyles {
+  display: flex;
+  width: 320px;
+  height: 320px;
+  padding: 0px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 90px;
+  border: 1px solid var(--white);
+  /* background: #fff; */
+}
+.approachStepsCardsContainerStyles {
+  position: relative;
+  width: 358px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.approachCardOneStyles,
+.approachCardTwoStyles,
+.approachCardThreeStyles,
+.approachCardFourStyles,
+.emptyApproachCardStyles {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.emptyApproachCardStyles {
+  width: 320px;
+  height: 320px;
+  border: 1px solid var(--white);
+  border-radius: 48px;
+  background-color: var(--dark);
+}
+.approachCardOneStyles {
+  z-index: 5;
+  /* transform-origin: 0% 108%; */
+  transform: rotate(0deg);
+  /* transform: translateX(0%); */
+  transition: all 0.3s ease-in-out;
+}
+.approachCardTwoStyles {
+  z-index: 4;
+  transform-origin: 0% 108%;
+  transform: rotate(6deg);
+  /* transform: translateX(10%); */
+  transition: all 0.3s ease-in-out;
+}
+.approachCardThreeStyles {
+  z-index: 3;
+  transform-origin: 26% 180%;
+  transform: rotate(13deg);
+  transition: all 0.5s ease-in-out;
+}
+.approachCardFourStyles {
+  z-index: 2;
+  transform-origin: 30% 260%;
+  transform: rotate(12deg);
+  transition: all 0.5s ease-in-out;
+}
+.approachCardHideStyles {
+  /* display: none; */
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* z-index: -10; */
+  transform-origin: 0% 108%;
+  /* transform: rotate(10deg); */
+  transform: translateX(150%);
+  transition: all 0.3s ease-in-out;
+}
+.approachCardLeftHideStyles {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 15;
+  /* transform-origin: 0% 108%; */
+  /* transform: rotate(10deg); */
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.approachCardStyles {
+  display: flex;
+  width: 320px;
+  height: 320px;
+  padding: 24px 24px 16px 24px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 48px;
+}
+.stepNameStyles {
+  width: 100%;
+  padding-top: 8px;
+  text-align: center;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+/***************   Media Queries *******************/
+
+@media screen and (min-width: 1728px) {
+  .serviceSectionInnerContainerStyles,
+  .serviceSectionInnerContainerStylesTwo {
+    padding: 96px 64px;
+  }
+  .serviceDecTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .serviceHeadTextStyles {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+@media screen and (min-width: 1513px) and (max-width: 1728px) {
+  .serviceSectionInnerContainerStyles,
+  .serviceSectionInnerContainerStylesTwo {
+    padding: 96px 64px;
+  }
+  .serviceDecTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .serviceHeadTextStyles {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .serviceHeadTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 1148px) {
+}
+@media screen and (max-width: 1080px) {
+  .serviceSectionInnerContainerStyles,
+  .serviceSectionInnerContainerStylesTwo {
+    padding: 96px 32px;
+  }
+}
+@media screen and (max-width: 895px) {
+  .serviceSectionInnerContainerStyles,
+  .serviceSectionInnerContainerStylesTwo {
+    padding: 80px 24px;
+  }
+  .serviceSectionTopStyles {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .serviceHeadTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 100%;
+  }
+  .serviceDecTextStyles {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .serviceSectionInnerContainerStyles,
+  .serviceSectionInnerContainerStylesTwo {
+    padding: 72px 20px;
+    gap: 40px;
+  }
+  .serviceSectionInnerContainerStylesTwo {
+    align-items: center;
+  }
+  .approachStepsContainerStyles {
+    gap: 32px;
+  }
+  .serviceSectionTopStyles {
+    gap: 8px;
+  }
+  .serviceHeadTextStyles {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .stepNameStyles {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .approachCardStyles {
+    height: 256px;
+    width: 256px;
+  }
+  .stepImageStyles {
+    width: 80px;
+    height: 80px;
+  }
+  .imageWidthStyles {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .approachStepsCardsContainerStyles {
+    width: 277px;
+    height: 269px;
+  }
+  .approachCardTwoStyles {
+    transform-origin: 20% 108%;
+    transform: rotate(5deg);
+  }
+}
+@media screen and (max-width: 360px) {
+  .serviceSectionInnerContainerStyles,
+  .serviceSectionInnerContainerStylesTwo {
+    padding: 64px 20px;
+  }
+  .serviceHeadTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}

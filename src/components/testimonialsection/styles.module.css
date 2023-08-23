@@ -1,0 +1,272 @@
+/************ TESTIMONIAL SECTION STYLES********/
+.testimonialMainContainerStyles {
+  padding: 96px 48px;
+  margin: auto;
+  width: 100%;
+  max-width: 1728px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.testimonialTopContainerStyles,
+.testimonialBottomContainerStyles {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+  flex-direction: column;
+}
+.testimonialTopLeftContainerStyles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+.testimonialTopRightContainerStyles {
+  width: 100%;
+}
+.testimonialLightDescTextStyles,
+.testimonialLightDescTextStyles span {
+  color: rgba(5, 5, 5, 0.5);
+  font-family: 'Manrope';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 24px;
+}
+.testimonialBottomContainerStyles {
+  max-width: 784px;
+  margin-left: auto;
+}
+.testimonialLightDescTextStyles span {
+  color: var(--dark);
+}
+.clientNameTextStyles {
+  cursor: pointer;
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 56px;
+  width: fit-content;
+  transition: 0.2s all ease-in-out;
+}
+.clientNameTextStyles:hover {
+  color: rgba(5, 5, 5, 0.5);
+  transition: 0.2s all ease-in-out;
+}
+/* .clientNamesContainerStyles:hover .clientNameTextStyles {
+    color: #00ff9b;
+    background-color: #050505;
+    transition: 0.5s all ease-in-out;
+  } */
+.testimonialCardStyles {
+  border-radius: 12px;
+  border: 1px solid rgba(5, 5, 5, 0.2);
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.testimonialContentTextStyles {
+  color: #050505;
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+}
+.testimonialClientNameTextStyles,
+.featureCountTextStyles {
+  color: rgba(5, 5, 5, 0.5);
+  font-family: 'NeueHaasDisplay-Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.testimonialBottomStyles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonialsButtonGroupStyles,
+.featuresButtonGroupStyles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  gap: 4px;
+}
+.disabledButtonStyles {
+pointer-events: none;
+  border-radius: 16px;
+  border: 1px solid rgba(5, 5, 5, 0.5);
+}
+.rightArrowDisablePathStyles,.leftArrowDisablePathStyles{
+    fill: rgba(5, 5, 5, 0.5);
+}
+.leftArrowBtnStyles:hover {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  transition: 0.2s all ease-in-out;
+}
+.rightArrowBtnStyles:hover{
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    transition: 0.2s all ease-in-out;
+}
+.leftArrowBtnStyles:hover .leftArrowPathStyles {
+  fill: var(--white);
+  transition: 0.2s all ease-in-out;
+}
+.rightArrowBtnStyles:hover .rightArrowPathStyles{
+    fill: var(--white);
+    transition: 0.2s all ease-in-out;
+}
+.leftArrowPathStyles,.rightArrowPathStyles {
+  fill: var(--dark);
+  transition: 0.2s all ease-in-out;
+}
+.clientNamesListContainerStyles {
+  width: 100%;
+}
+.clientNamesContainerStyles {
+  position: relative;
+  /* width: 100%; */
+  width: fit-content;
+}
+/* .clientNamesContainerStyles:hover .hoveredProjectImageStyles {
+    opacity: 1;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    transform-origin: top right;
+    transform: rotate(-4deg) scale(1) translate(0%, 0%);
+    transition: all 0.5s ease-in-out left 0.1s;
+    z-index: 0;
+  }
+  .hoveredProjectImageStyles {
+    width: 200px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: all 0.5s ease-in-out;
+    transform-origin: top right;
+    transform: rotate(0deg) scale(0.2) translate(0%, 0%);
+    top: 0;
+  } */
+/***************           MEDIA QUERIES    *****************/
+@media screen and (min-width:1728px){
+    .testimonialMainContainerStyles {
+      padding: 96px 64px;
+    }
+    .testimonialLightDescTextStyles,
+    .testimonialLightDescTextStyles span {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .testimonialContentTextStyles {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    .testimonialClientNameTextStyles {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    .clientNameTextStyles {
+        font-size: 56px;
+        line-height: 64px;
+    } 
+}
+@media screen and (min-width:1513px) and (max-width:1728px){
+.testimonialMainContainerStyles {
+    padding: 96px 64px;
+  }
+  .clientNameTextStyles {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .testimonialLightDescTextStyles,
+  .testimonialLightDescTextStyles span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .testimonialContentTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .testimonialClientNameTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+@media screen and (max-width:1366px){ 
+   .clientNameTextStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .testimonialContentTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }}
+@media screen and (max-width:1148px){}
+@media screen and (max-width:1080px){ .testimonialMainContainerStyles {
+      padding: 96px 32px;
+    }}
+@media screen and (max-width:895px){.testimonialMainContainerStyles {
+      padding: 80px 24px;
+      gap: 40px;
+    }
+    .testimonialContentTextStyles {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    .testimonialTopLeftContainerStyles,
+    .testimonialBottomContainerStyles {
+      gap: 16px;
+    }}
+@media screen and (max-width:568px){
+     .clientNameTextStyles {
+      font-size: 36px;
+      line-height: 44px;
+    }
+    .testimonialMainContainerStyles {
+      padding: 72px 20px;
+    }.testimonialMainContainerStyles {
+      gap: 32px;
+    }
+   
+    .testimonialTopLeftContainerStyles {
+      gap: 16px;
+    } .testimonialCardStyles {
+        padding: 16px;
+        gap: 16px;
+      }
+      .testimonialContentTextStyles {
+        font-size: 18px;
+        line-height: 26px;
+      }
+}
+@media screen and (max-width:360px){
+
+    .clientNameTextStyles {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .clientNameTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .featuredMainContainerStyles,
+  .testimonialMainContainerStyles {
+    padding: 64px 20px;
+  }
+
+}

@@ -5,15 +5,13 @@
 }
 .blogImageStyles {
   width: 100%;
-  height: 800px;
-  border-radius: 12px;
-  overflow: hidden;
+  height: 90vh;
 }
 .blogDetailsContainerStyles {
   display: flex;
   width: 100%;
   margin: auto;
-  max-width: 1440px;
+  max-width: 1728px;
   padding: 144px 48px 96px 48px;
   flex-direction: column;
   align-items: flex-start;
@@ -31,7 +29,7 @@
 }
 .blogTitleMainHeadingTextStyles {
   color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
   font-size: 64px;
   font-style: normal;
   font-weight: 500;
@@ -47,7 +45,7 @@
 .emailTextStyles,
 .emailTextStyles span {
   color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -69,7 +67,7 @@
 }
 .blogQuoteHeadingTextStyles {
   color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 500;
@@ -80,11 +78,11 @@
 }
 .blogSubHeadingTextStyles {
   color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px; /* 125% */
+  line-height: 40px;
 }
 
 /************** RECENT POSTS SECTION  STYLES*****/
@@ -94,7 +92,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 48px;
-  max-width: 1440px;
+  max-width: 1728px;
   margin: auto;
 }
 .recentPostHeadingBlock {
@@ -131,8 +129,6 @@
 }
 .recentPostImgContainerStyles {
   width: 100%;
-  /* height: 432px; */
-  /* max-width: 432px; */
 }
 .recentPostDescTextStyles {
   overflow: hidden;
@@ -144,11 +140,64 @@
   font-weight: 500;
   line-height: 40px;
 }
+.listHeadingTextStyles {
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+.listDescHeadStyles {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.DescListContainerStyles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
 /*********  MEDIA QUERIES ***************/
-@media screen and (max-width: 1311px) {
-  .blogImageStyles {
-    height: 714px;
+@media screen and (min-width: 1728px) {
+  .blogDetailsContainerStyles {
+    padding: 144px 64px 96px 64px;
+  }
+  .blogDescTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .blogSubHeadingTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+@media screen and (min-width: 1513px) and (max-width: 1728px) {
+  .blogDetailsContainerStyles {
+    padding: 144px 64px 96px 64px;
+  }
+  .blogDescTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .blogSubHeadingTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .blogDetailsContainerStyles {
+    padding: 120px 48px 96px 48px;
+  }
+
+  .blogTitleMainHeadingTextStyles {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .blogSubHeadingTextStyles {
+    font-size: 28px;
+    line-height: 36px;
   }
   .recentPostHeadingTextStyles {
     font-size: 40px;
@@ -164,7 +213,9 @@
     /* max-width: 378px; */
   }
 }
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 1148px) {
+}
+@media screen and (max-width: 1080px) {
   .blogDetailsContainerStyles {
     padding: 96px 32px;
   }
@@ -189,6 +240,18 @@
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  .blogSubHeadingTextStyles {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .listHeadingTextStyles {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .listDescHeadStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 @media screen and (max-width: 895px) {
   .blogDetailsContainerStyles {
@@ -206,19 +269,21 @@
   }
   .recentPostStyles {
     width: calc(50% - 12px);
-    /* height: 224px; */
   }
-  /* .recentPostStyles .recentPostImgContainerStyles {
-    height: 224px;
-  } */
   .recentPostStyles:first-child {
     width: 100%;
     padding-bottom: 24px;
   }
+  .blogBottomDescContainerStyles {
+    gap: 8px;
+  }
+  .DescListContainerStyles {
+    gap: 4px;
+  }
 }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 568px) {
   .blogDetailsContainerStyles {
-    padding: 80px 20px 64px 20px;
+    padding: 96px 20px 72px 20px;
     gap: 40px;
   }
   .blogTitleMainHeadingTextStyles {
@@ -257,5 +322,23 @@
   }
   .recentPostStyles {
     width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .blogDetailsContainerStyles {
+    padding: 96px 20px 64px 20px;
+    gap: 32px;
+  }
+  .blogTitleMainHeadingTextStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .emailTextStyles,
+  .emailTextStyles span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .blogImageStyles {
+    height: 280px;
   }
 }

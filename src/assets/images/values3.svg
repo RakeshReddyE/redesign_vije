@@ -1,0 +1,27 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="50" height="50" fill="none"/>
+<g id="About - 1440w to 1312w" clip-path="url(#clip0_770_424)">
+<rect width="1440" height="5062" transform="translate(-1031 -1587)" fill="none"/>
+<g id="About S2">
+<rect width="1440" height="1536" transform="translate(-1031 -687)" fill="none"/>
+<g id="Frame 38428">
+<g id="Frame 38131">
+<g id="Values card 3 - B">
+<rect x="-23" y="-175" width="384" height="512" rx="12" fill="none"/>
+<g id="Frame 38214">
+<g id="Vector">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 1H1V25H13C6.37259 25 1 30.3726 1 37V49H25V37C25 43.6274 30.3726 49 37 49H49V25H37C43.6274 25 49 19.6274 49 13V1H25V13C25 6.37259 19.6274 1 13 1ZM25 25H13C19.6274 25 25 30.3726 25 37V25ZM25 25V13C25 19.6274 30.3726 25 37 25H25Z" fill="none"/>
+<path d="M13 25H1V1H13C19.6274 1 25 6.37259 25 13M13 25C6.37259 25 1 30.3726 1 37V49H25V37M13 25H25M13 25C19.6274 25 25 30.3726 25 37M25 37C25 43.6274 30.3726 49 37 49H49V25H37M25 37V25M37 25C43.6274 25 49 19.6274 49 13V1H25V13M37 25C30.3726 25 25 19.6274 25 13M37 25H25M25 13V25" stroke="white" stroke-width="2"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_770_424">
+<rect width="1440" height="5062" fill="white" transform="translate(-1031 -1587)"/>
+</clipPath>
+</defs>
+</svg>
