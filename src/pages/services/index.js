@@ -14,11 +14,22 @@ import {
 import Divider from '../../components/divider';
 import TestimonialsSection from '../../components/testimonialsection';
 import ServiceSection from '../../components/servicesection';
+import { useLocation } from 'react-router';
+import { Helmet } from 'react-helmet';
 
 const Services = () => {
+  const location = useLocation();
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'auto' });
-  }, []);
+    if (location.state === 'App development') {
+      document.getElementById('01').scrollIntoView();
+    } else if (location.state === 'Web development') {
+      document.getElementById('02').scrollIntoView();
+    } else if (location.state === 'UX/UI design') {
+      document.getElementById('03').scrollIntoView();
+    } else {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+  }, [location.state]);
 
   const [appDevStepCount, setAppDevStepCount] = useState(1);
   const [webDevStepCount, setWebDevStepCount] = useState(1);
@@ -46,35 +57,35 @@ const Services = () => {
     {
       id: '01',
       uuid: 'appCards',
-      head: 'App development',
+      head: '01. App development',
       stepCount: appDevStepCount,
       setStepCount: setAppDevStepCount,
       desc: 'We build and revamp mobile applications to inspire users, expand adaptation, and scale revenue. Vilje Tech works with your company to design, develop and deliver user-centric mobile apps. By having an iterative and thorough approach that encompasses strategy, research, UI/UX design, and front -and back-end development, we create something built to change the world.',
       stepsData: [
         {
           id: '01',
-          name: 'Backend',
+          name: '01. Backend',
           image: step1Img,
           bgColor: '#DADEE3',
           color: '#303E37',
         },
         {
           id: '02',
-          name: 'Frontend',
+          name: '02. Frontend',
           image: step2Img,
           bgColor: '#28292C',
           color: '#DADEE3',
         },
         {
           id: '03',
-          name: 'Testing',
+          name: '03. Testing',
           image: step3Img,
           bgColor: '#303E37',
           color: '#DADEE3',
         },
         {
           id: '04',
-          name: 'Deploying',
+          name: '04. Deploying',
           image: step4Img,
           bgColor: '#30313E',
           color: '#DADEE3',
@@ -84,35 +95,35 @@ const Services = () => {
     {
       id: '02',
       uuid: 'webCards',
-      head: 'Web development',
+      head: '02. Web development',
       stepCount: webDevStepCount,
       setStepCount: setWebDevStepCount,
       desc: 'A good website establishes your business, communicates your brand identity and builds customer relationships. Vilje Tech develops great websites that deliver all that and much more. By understanding your customer, we deliver websites that enhance your brand, focus on user experience and function lawlessly.',
       stepsData: [
         {
           id: '01',
-          name: 'Backend',
+          name: '01. Backend',
           image: step1Img,
           bgColor: '#DADEE3',
           color: '#303E37',
         },
         {
           id: '02',
-          name: 'Frontend',
+          name: '02. Frontend',
           image: step2Img,
           bgColor: '#28292C',
           color: '#DADEE3',
         },
         {
           id: '03',
-          name: 'Testing',
+          name: '03. Testing',
           image: step3Img,
           bgColor: '#303E37',
           color: '#DADEE3',
         },
         {
           id: '04',
-          name: 'Deploying',
+          name: '04. Deploying',
           image: step4Img,
           bgColor: '#30313E',
           color: '#DADEE3',
@@ -121,7 +132,7 @@ const Services = () => {
     },
     {
       id: '03',
-      head: 'UX/UI design',
+      head: '03. UX/UI design',
       uuid: 'uiuxCards',
       stepCount: uiUxDevStepCount,
       setStepCount: setUiUxDevStepCount,
@@ -129,35 +140,35 @@ const Services = () => {
       stepsData: [
         {
           id: '01',
-          name: 'Empathize',
+          name: '01. Empathize',
           image: step1Img,
           bgColor: '#DADEE3',
           color: '#303E37',
         },
         {
           id: '02',
-          name: 'Define',
+          name: '02.Define',
           image: step2Img,
           bgColor: '#28292C',
           color: '#DADEE3',
         },
         {
           id: '03',
-          name: 'Ideate',
+          name: '03. Ideate',
           image: step3Img,
           bgColor: '#303E37',
           color: '#DADEE3',
         },
         {
           id: '04',
-          name: 'Prototype',
+          name: '04. Prototype',
           image: step4Img,
           bgColor: '#30313E',
           color: '#DADEE3',
         },
         {
           id: '05',
-          name: 'Test',
+          name: '05. Test',
           image: step5Img,
           bgColor: '#DADEE3',
           color: '#303E37',
@@ -318,20 +329,30 @@ const Services = () => {
 
   return (
     <div className={styles.servicesMainContainerStyles}>
+      <Helmet>
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-eu1.hs-scripts.com/27027103.js"
+        ></script>
+      </Helmet>
       <NavBar theme={'dark'} />
       {renderBannerSection()}
       <Divider />
       {servicesData.map((service, index) => (
-        <ServiceSection
-          key={index}
-          stepsData={service.stepsData}
-          stepCount={service.stepCount}
-          setStepCount={service.setStepCount}
-          serviceId={service.id}
-          serviceName={service.head}
-          serviceDesc={service.desc}
-          serviceCardId={service.uuid}
-        />
+        <div id={service.id} key={index}>
+          <ServiceSection
+            stepsData={service.stepsData}
+            stepCount={service.stepCount}
+            setStepCount={service.setStepCount}
+            serviceId={service.id}
+            serviceName={service.head}
+            serviceDesc={service.desc}
+            serviceCardId={service.uuid}
+          />{' '}
+        </div>
         // {/* <Divider /> */}
       ))}
       <div className={styles.chooseUsMainContainerStyles}>

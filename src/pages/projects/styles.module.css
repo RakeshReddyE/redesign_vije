@@ -1,21 +1,27 @@
 .projectsContainerStyles {
   display: flex;
-  max-width: 1440px;
+  max-width: 1728px;
   width: 100%;
   margin: auto;
   padding: 144px 48px 96px 48px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 96px;
+  gap: 48px;
   background: #fff;
 }
+.projectsCardsOuterContainerStyles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
 .projectPageHeadingTextStyles {
-  color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
-  font-size: 56px;
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 64px;
   font-style: normal;
   font-weight: 500;
-  line-height: 64px;
+  line-height: 72px;
   width: 100%;
   max-width: 784px;
 }
@@ -31,7 +37,7 @@
 .activeTabNameTextStyles,
 .tabNameTextStyles {
   color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -45,72 +51,206 @@
   border-bottom: none;
 }
 .individualProjectsContainerStyles,
-.individualProjectsContainerStyles2 {
+.individualProjectsContainerStyles2,
+.individualProjectsContainerStyles3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
+.individualProjectsContainerStyles {
+  justify-content: flex-end;
+}
 .individualProjectsContainerStyles2 {
-  justify-content: end;
+  justify-content: center;
   gap: 24px;
+}
+.individualProjectsContainerStyles3 {
+  justify-content: space-between;
 }
 .projectSmallCardStyles,
 .projectSmallCardStyles1 {
-  width: 386px;
-  height: fit-content;
+  width: 384px;
 }
 .projectBigCardStyles {
   width: 784px;
 }
 .projectBigCardImageStyles {
-  height: 486px;
+  width: 100%;
+  height: 468px;
 }
+.projectsBottomSectionStyles {
+  padding-bottom: 96px;
+  width: 100%;
+  max-width: 1728px;
+  margin: auto;
+}
+.projectContainerStyles {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  border-top: 1px solid #cdcdcd;
+}
+.projectContainerStyles:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+.projectNameContainerStyles {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  color: var(--dark);
+  transition: all 0.3s ease-in-out;
+}
+.projectNameTextStyles {
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 56px;
+}
+.rightUpArrowStyles {
+  width: 56px;
+  height: 56px;
+  opacity: 0;
+  display: none;
+}
+.rightUpArrowPathStyles {
+  stroke: var(--white);
+}
+.projectTypeTextStyles {
+  white-space: nowrap;
+  color: var(--white);
+  width: fit-content;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+.projectContainerStyles:hover {
+  background-color: var(--dark);
+  gap: 8px !important;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.projectContainerStyles:hover .rightUpArrowStyles {
+  display: block;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+.projectContainerStyles:hover .projectNameContainerStyles {
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+.projectContainerStyles:hover .projectTypeTextStyles {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
 /********MEDIA QUERIES ********/
-@media screen and (max-width: 1311px) {
+
+@media screen and (min-width: 1728px) {
+  .projectsContainerStyles {
+    padding: 144px 64px 96px 64px;
+  }
+  .projectPageHeadingTextStyles {
+    font-size: 72px;
+    line-height: 80px;
+  }
+  .projectBigCardStyles {
+    width: 880px;
+  }
+  .projectBigCardImageStyles {
+    height: 520px;
+  }
+  .projectSmallCardStyles,
+  .projectSmallCardStyles1 {
+    width: 424px;
+  }
+  .projectNameTextStyles {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .projectTypeTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .rightUpArrowStyles {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media screen and (min-width: 1513px) and (max-width: 1728px) {
+  .projectsContainerStyles {
+    padding: 144px 64px 96px 64px;
+  }
+  .projectPageHeadingTextStyles {
+    font-size: 72px;
+    line-height: 80px;
+  }
+  .projectBigCardStyles {
+    width: 880px;
+  }
+  .projectBigCardImageStyles {
+    height: 520px;
+  }
+  .projectSmallCardStyles,
+  .projectSmallCardStyles1 {
+    width: 424px;
+  }
+  .projectNameTextStyles {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .projectTypeTextStyles {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .rightUpArrowStyles {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .projectsContainerStyles {
+    padding: 120px 48px 96px 48px;
+  }
   .projectPageHeadingTextStyles {
     font-size: 56px;
     line-height: 64px;
   }
   .projectBigCardImageStyles {
-    height: 486px;
+    height: 448px;
   }
-  .projectSmallCardImageStyles {
-    height: 360px;
+  .projectNameTextStyles {
+    font-size: 40px;
+    line-height: 48px;
   }
-  .projectSmallCardStyles,
-  .projectSmallCardStyles1 {
-    width: 360px;
+  .rightUpArrowStyles {
+    width: 48px;
+    height: 48px;
   }
 }
-@media screen and (max-width: 1079px) {
+@media screen and (max-width: 1148px) {
+}
+@media screen and (max-width: 1080px) {
   .projectPageHeadingTextStyles {
     font-size: 48px;
     line-height: 56px;
   }
   .projectsContainerStyles {
-    padding: 112px 32px 96px 32px;
-    gap: 64px;
+    padding: 96px 32px;
   }
-  .individualProjectsContainerStyles,
-  .individualProjectsContainerStyles2 {
-    flex-direction: column;
-    gap: 64px;
+  .projectsCardsOuterContainerStyles {
+    gap: 72px;
   }
   .projectSmallCardStyles1,
-  .projectBigCardStyles {
-    width: 720px;
-  }
-
-  .projectSmallCardImageStyles1 {
-    height: 486px;
-  }
-  .projectSmallCardStyles,
-  .projectBigCardStyles1 {
-    align-self: flex-end;
-  }
-  .projectBigCardStyles1 {
-    width: 360px;
+  .projectSmallCardStyles {
+    width: 320px;
   }
 }
 @media screen and (max-width: 895px) {
@@ -120,37 +260,52 @@
   }
   .projectsContainerStyles {
     padding: 96px 24px 80px 24px;
-    gap: 48px;
+    gap: 40px;
   }
-  .individualProjectsContainerStyles,
-  .individualProjectsContainerStyles2 {
+  .projectBigCardStyles {
+    width: 384px;
+  }
+  .projectBigCardImageStyles {
+    height: 384px;
+  }
+  .individualProjectsContainerStyles3 {
     flex-direction: column;
     gap: 48px;
   }
-  .projectBigCardStyles,
-  .projectSmallCardStyles1 {
-    width: 468px;
+  .individualProjectsContainerStyles3 .projectSmallCardStyles:first-child {
+    margin-left: auto;
+    width: 384px;
   }
-  .projectBigCardImageStyles,
-  .projectSmallCardImageStyles1 {
-    height: 468px;
-  }
-  .projectSmallCardImageStyles,
-  .projectBigCardImageStyles1 {
-    height: 320px;
+  .individualProjectsContainerStyles3 .projectSmallCardImageStyles {
+    height: 384px;
+    width: 100%;
   }
   .projectSmallCardStyles,
-  .projectBigCardStyles1 {
-    width: 320px;
+  .projectSmallCardStyles1 {
+    width: 286px;
+  }
+  .projectsCardsOuterContainerStyles {
+    gap: 48px;
+  }
+  .individualProjectsContainerStyles2 {
+    justify-content: flex-start;
+  }
+  .projectNameTextStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .rightUpArrowStyles {
+    width: 36px;
+    height: 36px;
   }
 }
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 568px) {
   .projectPageHeadingTextStyles {
     font-size: 40px;
     line-height: 48px;
   }
   .projectsContainerStyles {
-    padding: 96px 20px 64px 20px;
+    padding: 96px 20px 72px 20px;
     gap: 32px;
   }
   .projectSmallCardStyles,
@@ -163,10 +318,47 @@
   .projectSmallCardImageStyles {
     height: 374px;
   }
-  .individualProjectsContainerStyles,
-  .individualProjectsContainerStyles2 {
-    gap: 32px;
+  .projectsCardsOuterContainerStyles,
+  .individualProjectsContainerStyles3 {
+    gap: 40px;
+  }
+  .individualProjectsContainerStyles3 .projectSmallCardStyles:first-child {
+    margin-left: auto;
+    width: 100%;
+  }
+  .individualProjectsContainerStyles3 .projectSmallCardImageStyles {
+    height: 374px;
+    width: 100%;
   }
 }
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 360px) {
+  .projectsContainerStyles {
+    padding: 96px 20px 64px 20px;
+  }
+  .projectBigCardImageStyles,
+  .projectSmallCardImageStyles {
+    height: 280px;
+  }
+  .projectsCardsOuterContainerStyles,
+  .individualProjectsContainerStyles3 {
+    gap: 40px;
+  }
+  .individualProjectsContainerStyles3 .projectSmallCardStyles:first-child {
+    margin-left: auto;
+    width: 100%;
+  }
+  .individualProjectsContainerStyles3 .projectSmallCardImageStyles {
+    height: 280px;
+    width: 100%;
+  }
+  .rightUpArrowStyles,
+  .projectTypeTextStyles {
+    display: none;
+  }
+  .projectContainerStyles {
+    justify-content: flex-start;
+  }
+  .projectContainerStyles:hover .rightUpArrowStyles {
+    display: none;
+  }
 }

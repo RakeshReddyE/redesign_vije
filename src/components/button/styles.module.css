@@ -27,6 +27,11 @@
   color: #ffff;
   transition: all 0.2s ease-in-out;
 }
+.buttonStyles:active {
+  background-color: #050505;
+  color: #ffff;
+  transition: all 0.2s ease-in-out;
+}
 @media screen and (min-width: 1728px) {
   .buttonStyles {
     font-size: 18px;
@@ -37,5 +42,12 @@
   .buttonStyles {
     font-size: 18px;
     line-height: 28px;
+  }
+}
+
+@media (hover: none) {
+  .buttonStyles:hover {
+    background-color: initial;
+    color: initial;
   }
 }

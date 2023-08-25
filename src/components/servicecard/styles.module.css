@@ -59,6 +59,7 @@
   stroke: var(--dark);
   transition: all 0.2s ease-in-out;
 }
+
 @media screen and (min-width: 1729px) {
   .serviceCardContainerStyles {
     width: 432px;
@@ -95,7 +96,6 @@
     line-height: 26px;
   }
 }
-
 @media screen and (max-width: 1366px) {
   .serviceNameTextStyles {
     font-size: 28px;
@@ -128,7 +128,6 @@
     height: 32px;
   }
 }
-
 @media screen and (max-width: 360px) {
   .serviceCardContainerStyles {
     width: 256px;
@@ -140,5 +139,22 @@
   .serviceNameTextStyles {
     font-size: 20px;
     line-height: 28px;
+  }
+}
+
+@media (hover: none) {
+  .serviceCardContainerStyles:hover {
+    background-color: var(--white);
+    border: 1px solid #dadee3;
+  }
+  .serviceCardContainerStyles:hover .rightUpArrowPathStyles {
+    stroke: var(--dark);
+  }
+  .serviceCardContainerStyles:active {
+    background-color: #dadee3;
+    border: 1px solid #dadee3;
+  }
+  .serviceCardContainerStyles:active .rightUpArrowPathStyles {
+    stroke: var(--blue);
   }
 }

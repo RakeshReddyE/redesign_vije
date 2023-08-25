@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import NavBar from '../../components/navbar';
-import {
-  bharathProfilePic,
-  idaAlfonsiProfilePic,
-} from '../../resources/images';
+import { albinProfilePic, bharathProfilePic } from '../../resources/images';
 import Footer from '../../components/footer';
 import Divider from '../../components/divider';
 import { CrossMarkIcon } from '../../resources/svg';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   const [showPopUp, setShowPopUp] = useState(false);
@@ -23,10 +21,10 @@ const Contact = () => {
       phoneNumber: '072 44 30 170',
     },
     {
-      image: idaAlfonsiProfilePic,
-      name: 'Ida Alfonsi',
-      designation: 'Communication Manager, Vilje Tech',
-      mail: 'Ida@viljetech.com',
+      image: albinProfilePic,
+      name: 'Albin',
+      designation: 'Sales Stagiest, Vilje Tech',
+      mail: 'Albin@viljetech.com',
       phoneNumber: '072 44 30 170',
     },
   ];
@@ -136,6 +134,15 @@ const Contact = () => {
   };
   return (
     <div className={styles.contactMainContainerStyles}>
+      <Helmet>
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-eu1.hs-scripts.com/27027103.js"
+        ></script>
+      </Helmet>
       <NavBar />
       <div className={styles.contactContainerStyles}>
         <h2 className={styles.contactHeadingTextStyles}>

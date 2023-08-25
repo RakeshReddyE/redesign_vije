@@ -3,17 +3,24 @@ import styles from './styles.module.css';
 import { RightUpArrow } from '../../resources/svg';
 
 const ServiceCard = (props) => {
-  const { service, customStyles, teamValues, iconStyles, customNameStyles } =
-    props;
+  const {
+    service,
+    customStyles,
+    teamValues,
+    iconStyles,
+    customNameStyles,
+    onClick,
+  } = props;
   return (
     <div
       className={[styles.serviceCardContainerStyles, customStyles].join(' ')}
+      onClick={onClick}
     >
       <div className={styles.serviceContentContainerStyles}>
         <p
           className={[styles.serviceNameTextStyles, customNameStyles].join(' ')}
         >
-          {service.id}.{service.name}
+          {service.name}
         </p>
         <div className={[styles.serviceIonStyles, iconStyles].join(' ')}>
           <img

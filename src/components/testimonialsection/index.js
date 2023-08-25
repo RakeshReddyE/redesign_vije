@@ -18,28 +18,16 @@ const TestimonialsSection = (props) => {
   ];
   const clientTestimonials = [
     {
-      desc: `Vilje Tech built our complex eye coordination training app and
-    streamlined development efficiently and qualitatively from MVP to a
-    complete mobile application. They had clear and transparent
-    communication and were highly involved throughout the project; we will
-    continue working together. We highly recommend Vilje Tech.`,
+      desc: `Vilje Tech built our complex eye coordination training app and streamlined development efficiently and qualitatively from MVP to a complete mobile application. Our unique solution had several specially built functions which Vilje Tech developed. They had clear and transparent communication and were highly involved throughout the project; we will continue working together. We highly recommend Vilje Tech.`,
       clientName: `Michael Malmqvist (CIO, IMVI Labs, Sweden)`,
     },
     {
-      desc: `VINNOVA Tech built our complex eye coordination training app and
-    streamlined development efficiently and qualitatively from MVP to a
-    complete mobile application. They had clear and transparent
-    communication and were highly involved throughout the project; we will
-    continue working together. We highly recommend Vilje Tech.`,
-      clientName: `Michael Malmqvist (CIO, VINNOVA Labs, Sweden)`,
+      desc: `Vilje Tech was in charge of building Bytboo's frontend when we rebuild the product from scratch. I am very happy with their work. Continuous updates along the way, pragmatic thinking presenting solutions to any obstacles we faced. The end result was spotless. I can definitely recommend Vilje Tech to any company in the same situation as Bytboo.`,
+      clientName: `Herman Treschow (CEO, Bytboo AB)`,
     },
     {
-      desc: `ROSHOLMDELL Tech built our complex eye coordination training app and
-    streamlined development efficiently and qualitatively from MVP to a
-    complete mobile application. They had clear and transparent
-    communication and were highly involved throughout the project; we will
-    continue working together. We highly recommend Vilje Tech.`,
-      clientName: `Michael Malmqvist (CIO, ROSHOLMDELL Labs, Sweden)`,
+      desc: `Vilje Tech has truly excelled in the reconstruction of our pre-existing website using our Figma design files. The scope of their work encompassed the frontend of our website, which was built in WordPress and Elementor. While the process and project management had occasional challenges as it was a slightly unconventional process for both parties, the end result has undeniably surpassed our expectations. The improved speed and responsiveness of our website are impressive, which has resulted in a high-performance website.`,
+      clientName: `Marketing Manager, MRstudio`,
     },
   ];
   const handleRightClick = (index) => {
@@ -71,7 +59,6 @@ const TestimonialsSection = (props) => {
                     <Button
                       btnName={
                         <LeftArrow
-                          // fillOpacity={index === 0 ? 0.5 : 1}
                           PathStyles={
                             index === 0
                               ? styles.leftArrowDisablePathStyles
@@ -91,9 +78,6 @@ const TestimonialsSection = (props) => {
                     <Button
                       btnName={
                         <RightArrow
-                          // fillOpacity={
-                          //   index === clientTestimonials.length - 1 ? 0.5 : 1
-                          // }
                           PathStyles={
                             index === clientTestimonials.length - 1
                               ? styles.rightArrowDisablePathStyles

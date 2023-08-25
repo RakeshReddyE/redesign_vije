@@ -1,4 +1,6 @@
 import {
+  bannerImg5,
+  bannerImg6,
   bp1Og,
   bp1Zb,
   bp2Og,
@@ -9,18 +11,48 @@ import {
   bp4Zb,
   bp5Og,
   bp5Zb,
+  bytBoo2,
+  bytBooHifi1,
+  bytBooHifi2,
+  bytBooOg,
+  imvi2,
+  imvi3,
+  imviHifi1,
+  imviHifi2,
+  imviHifi3,
+  imviOg,
+  imviWireframes,
+  moreSpace2,
+  moreSpaceHifi1,
+  moreSpaceHifi2,
+  moreSpaceHifi3,
+  moreSpaceHifi4,
+  moreSpaceOg,
+  mrStudio2,
+  mrStudioHifi1,
+  mrStudioHifi2,
+  mrStudioOg,
   news1Og,
+  trakr2,
+  trakrHifi1,
+  trakrHifi2,
+  trakrHifi3,
+  trakrHifi4,
+  trakrHifi5,
+  trakrHifi6,
+  trakrHifi7,
+  trakrOg,
 } from '../resources/images';
 
 export const insightsData = [
   {
     id: 1,
-    author: 'Ida Alfonsi',
+    author: 'Bharath Panyala',
     position: 'Communication Manager, Vilje',
     image: bp1Og,
     hoverImage: bp1Zb,
     blogalt: 'Two robots having a conversation',
-    alt: 'Photograph of Ida Alfonsi',
+    alt: 'Photograph of Bharath Panyala',
     imagealt: '',
     headerText: 'Designens framtid i det robotiserade internetet',
     title: 'Designens-framtid-i-det-robotiserade-internetet',
@@ -72,8 +104,8 @@ export const insightsData = [
     image: bp2Og,
     hoverImage: bp2Zb,
     blogalt: 'Robot sitting on a bench with a computer',
-    alt: 'Photograph of Ida Alfonsi',
-    author: 'Ida Alfonsi',
+    alt: 'Photograph of Bharath Panyala',
+    author: 'Bharath Panyala',
     position: 'Communication Manager, Vilje',
     imagealt: 'Robot-crawling-internet',
     headerText: 'Förbättra din webbplats SEO med ChatGPT',
@@ -137,8 +169,8 @@ export const insightsData = [
     image: bp3Og,
     hoverImage: bp3Zb,
     blogalt: 'SEO Extension for ChatGPT',
-    alt: 'Photograph of Ida Alfonsi',
-    author: 'Ida Alfonsi',
+    alt: 'Photograph of Bharath Panyala',
+    author: 'Bharath Panyala',
     position: 'Communication Manager, Vilje',
     imagealt: 'AIPRM extension',
     headerText: 'AIPRM: The Revolutionary SEO Extension for ChatGPT',
@@ -277,8 +309,8 @@ export const insightsData = [
     image: bp5Og,
     hoverImage: bp5Zb,
     blogalt: 'A Poster of Abstract representation of UX',
-    alt: 'Photograph of Ida Alfonsi',
-    author: 'Ida Alfonsi',
+    alt: 'Photograph of Bharath Panyala',
+    author: 'Bharath Panyala',
     position: 'Communication Manager, Vilje',
     imagealt: 'Abstract representation of User Experience',
     headerText:
@@ -404,5 +436,413 @@ export const insightsData = [
           'By participating in our competition, you not only get a chance to win valuable development or design hours but also gain exposure to a wider audience. Our platform will provide a stage for you to showcase your innovative idea, potentially attracting investors, mentors, and collaborators who can further propel your entrepreneurial journey.',
       },
     ],
+  },
+];
+
+export const projectsData = [
+  {
+    id: 1,
+    title: 'IMVI',
+    headerText: 'IMVI',
+    bannerImage: imviOg,
+    year: '2022',
+    servicesOffered:
+      'Redesign of the existing mobile app with improved user experience and app development.',
+    overview:
+      'IMVI approached our team to create a dyslexia treatment solution that could be used by dyslexic individuals of all ages and abilities. The solution was to be designed in Figma, built using React Native as the front-end framework and Firebase as the back-end platform.',
+    appLink: '',
+    webLink: '',
+    section2: {
+      image: imvi2,
+      headText:
+        'Poor eye coordination significantly impacts energy, headaches, concentration, double vision and reading speed.',
+      desc: 'To help improve the vision and reading skills of people, imvi Labs created a patented solution. They partnered up with Vilje Tech to turn theory into reality, an app that is straightforward & simple to use but has a complex coded core.',
+      desc2: `Imvi Lab's wanted a redesign for their VR-based vision training app with improved UX/UI and efficient coding for their complex solution. We offer a one-stop solution for all of their needs.`,
+    },
+    reasearchResult: {
+      images: [imvi3],
+      headText:
+        'To gather insights for our redesign, we conducted a quantitative research with the existing imvi mobile app: ',
+      results: [
+        {
+          pencent: '90%',
+          desc: 'of users felt the app is complex & lacks proper usage instructions',
+        },
+        {
+          pencent: '72%',
+          desc: 'of users voted the previous app as “Poor” in terms of end-user experience',
+        },
+        {
+          pencent: '65%',
+          desc: 'of existing user group felt there is no incentive to keep training on regular basis',
+        },
+      ],
+    },
+    wireFrames: {
+      headText: 'Wireframes:',
+      images: [imviWireframes],
+      desc: 'Informed by the insights, we crafted wireframes which were further tested and shared with the client for nuanced feedback and validation of the design approach we were taking.',
+    },
+    imagesSection: {
+      headText: 'Designing a better mobile app experience for IMVI:',
+      images: [imviHifi1, imviHifi2, imviHifi3],
+      desc: 'We made sure the final product is informational and requires minimal learning curve, both for guardians and training-users. We also came up with a step-wise questions for vergence test (previously designed as list) to eliminate the possibility of users skipping certain questions due to cluttered appearance of the list-view. ',
+      desc2:
+        'We felt notifications alone won’t give enough incentive for users to keep training on a regular basis, so we designed “Goals” structure where users can pick a weekly goal and can monitor their progress.',
+    },
+    developingProcess: {
+      head: 'Developing the app:',
+      steps: [
+        {
+          name: 'Frontend',
+          desc: 'We designed the user interface to be simple and intuitive, with clear instructions and feedback.',
+        },
+        {
+          name: 'Backend',
+          desc: 'Firebase was used to store user data and provide real-time updates to the front-end.',
+        },
+        {
+          name: 'Test & Deploy',
+          desc: 'The solution underwent extensive testing before deployment, including usability testing with dyslexic individuals.',
+        },
+        {
+          name: 'Maintenance',
+          desc: 'We used modern and standardized technologies for the solution to ensure it was easily maintainable.',
+        },
+      ],
+    },
+    outcome:
+      'Thanks to our partnership with imvi Labs, we were able to create an app that has helped improve the vision and reading skills of people.',
+    testimonials: {
+      desc: 'Vilje Tech built our complex eye coordination training app and streamlined development efficiently and qualitatively from MVP to a complete mobile application. Our unique solution had several specially built functions which Vilje Tech developed. They had clear and transparent communication and were highly involved throughout the project; we will continue working together. We highly recommend Vilje Tech.',
+      name: 'Michael Malmqvist',
+      companyName: 'CIO, IMVI Labs, Sweden',
+      image: '',
+    },
+    technologiesUSed: ['1. React Native', '2. Firebase', '3. Figma'],
+  },
+  {
+    id: 2,
+    title: 'Bytboo',
+    headerText: 'Bytboo',
+    bannerImage: bytBooOg,
+    year: '2022',
+    servicesOffered: 'Web development (Frontend).',
+    overview: `Bytboo is a real estate estimation project in Sweden that provides users with an easy and reliable way to estimate the value of their property. The project involved a variety of development processes, including frontend development, architecture, testing, and delivery.`,
+    appLink: '',
+    webLink: '',
+    section2: {
+      image: bytBoo2,
+      headText:
+        'The idea of Bytboo emerged from the realisation that the real estate industry has nearly no transparency.',
+      desc: 'After extensive research, it was clear that the choice of a realtor affects the price when selling a home. The solution was creating a service where users compare realtors, explore sales statistics and get economic insights within the housing market. ',
+      desc2:
+        'Bytboo contacted Vilje Tech to develop their vision. They wanted a design with complex animations with click events, data handling and dynamic images with different colours. Challenges that we solved. The result was a website that allows for a seamless experience for the user while having high standards for function and quality.',
+    },
+    // reasearchResult: {
+    //   image: '',
+    //   headText:
+    //     'To gather insights for our redesign, we conducted a quantitative research with the existing imvi mobile app: ',
+    //   results: [
+    //     {
+    //       pencent: '90%',
+    //       desc: 'of users felt the app is complex & lacks proper usage instructions',
+    //     },
+    //     {
+    //       pencent: '72%',
+    //       desc: 'of users voted the previous app as “Poor” in terms of end-user experience',
+    //     },
+    //     {
+    //       pencent: '65%',
+    //       desc: 'of existing user group felt there is no incentive to keep training on regular basis',
+    //     },
+    //   ],
+    // },
+    // wireFrames: {
+    //   headText: 'Wireframes:',
+    //   images: [],
+    //   desc: 'Informed by the insights, we crafted wireframes which were further tested and shared with the client for nuanced feedback and validation of the design approach we were taking.',
+    // },
+    imagesSection: {
+      // headText: 'Designing a better mobile app experience for IMVI:',
+      images: [bytBooHifi1, bytBooHifi2],
+      // desc: '',
+      // desc2: '',
+    },
+    developingProcess: {
+      head: 'Developing the app:',
+      steps: [
+        {
+          name: 'Frontend',
+          desc: 'Modern frontend technologies like React and TypeScript were used to create a simple and intuitive design that was responsive on desktop and mobile. The team also implemented features like auto-suggestion and real-time updating.',
+        },
+        {
+          name: 'Architecture',
+          desc: `Bytboo's architecture was designed for scalability and maintainability, using microservices to create a modular system. RESTful API architecture allowed seamless communication between frontend and backend.`,
+        },
+        {
+          name: 'Testing',
+          desc: `Different methodologies like unit testing, integration testing, end-to-end testing, and security testing were used to ensure the quality of the app.`,
+        },
+        {
+          name: 'Delivery',
+          desc: `The delivery process of Bytboo involved deploying the app to a production environment and ensuring that it was available to users. Continuous integration and continuous delivery technique is used so that the app was deployed quickly and efficiently.`,
+        },
+      ],
+    },
+    outcome: `We delivered a clean and engaging end product that packaged the Bytboo team's vision perfectly. We are proud to be apart of a more transparent real estate market in Sweden.`,
+    testimonials: {
+      desc: `Vilje Tech was in charge of building Bytboo's frontend when we rebuild the product from scratch. I am very happy with their work. Continuous updates along the way, pragmatic thinking presenting solutions to any obstacles we faced. The end result was spotless. I can definitely recommend Vilje Tech to any company in the same situation as Bytboo.`,
+      name: 'Herman Treschow',
+      companyName: 'CEO, Bytboo AB',
+      image: '',
+    },
+    technologiesUSed: ['1. React JS'],
+  },
+  {
+    id: 3,
+    title: 'MRstudio',
+    headerText: 'MRstudio',
+    bannerImage: mrStudioOg,
+    year: '2023',
+    servicesOffered: 'Web development (Frontend & Backend).',
+    overview: `Embrace a world of endless possibilities with MRstuidos, a true leader in the realm of VR & AR. We infuse genuine optimism into every pixel, crafting immersive interactive videos and dynamic 3D models that turn your dreams into digital realities, all while achieving unprecedented loading speeds.`,
+    appLink: '',
+    webLink: '',
+    section2: {
+      image: mrStudio2,
+      headText:
+        'Guiding the Future: Where VR & AR Dreams Come True with MRstuidos',
+      desc: `Faced with a client's outdated Wordpress website, MRstuidos saw an opportunity to create genuine change. Empowered by Figma files and a positive outlook, we embarked on a journey to rejuvenate their online presence, ensuring that innovation and excellence were at the heart of every choice`,
+      desc2: `Drawing on our expertise in web development and design, we set out to transform the client's digital platform. With meticulous dedication, we seamlessly integrated interactive videos and captivating 3D models, pushing technological boundaries to achieve a loading speed of just 0.5 seconds – a remarkable leap from the previous 2.5 minutes. This genuine commitment to excellence extended to achieving an industry-leading 99% performance rating, alongside an impressive 99% in best practices and a heartening 95% in SEO.`,
+    },
+    reasearchResult: {
+      title: 'Developing MRstudio’s website:',
+      images: [mrStudioHifi1, mrStudioHifi2],
+      headText:
+        'Our tenacious commitment to excellence while developing translated into a website that is snappy and efficient:',
+      results: [
+        {
+          pencent: '99%',
+          desc: 'We increased the Page Performance from 62% to astonishing 99%',
+        },
+        {
+          pencent: '100%',
+          desc: 'Newly developed WordPress site has scored 100% in terms of best practices ',
+        },
+        {
+          pencent: '0.3 secs',
+          desc: 'We made a big leap in loading speeds, reducing it from 4 secs to blazing 0.3 secs',
+        },
+      ],
+    },
+    // wireFrames: {
+    //   headText: 'Wireframes:',
+    //   images: [imviWireframes],
+    //   desc: 'Informed by the insights, we crafted wireframes which were further tested and shared with the client for nuanced feedback and validation of the design approach we were taking.',
+    // },
+    // imagesSection: {
+    //   headText: 'Developing MRstudio’s website:',
+    //   images: [mrStudioHifi1, mrStudioHifi2],
+    //   desc: '',
+    //   desc2: '',
+    // },
+    // developingProcess: {
+    //   head: 'Developing the app:',
+    //   steps: [
+    //     {
+    //       name: 'Frontend',
+    //       desc: 'We designed the user interface to be simple and intuitive, with clear instructions and feedback.',
+    //     },
+    //     {
+    //       name: 'Backend',
+    //       desc: 'Firebase was used to store user data and provide real-time updates to the front-end.',
+    //     },
+    //     {
+    //       name: 'Test & Deploy',
+    //       desc: 'The solution underwent extensive testing before deployment, including usability testing with dyslexic individuals.',
+    //     },
+    //     {
+    //       name: 'Maintenance',
+    //       desc: 'We used modern and standardized technologies for the solution to ensure it was easily maintainable.',
+    //     },
+    //   ],
+    // },
+    outcome: `MRstudio’s website underwent a true metamorphosis, with loading speeds reduced to a fraction of their former time. This achievement, coupled with our unwavering commitment to best practices and SEO, not only transformed their online presence but also positioned MRstuidos as a beacon of optimism and innovation in the VR & AR landscape. Join us on a journey where every pixel holds the promise of a brighter digital future.`,
+    testimonials: {
+      desc: `Vilje Tech has truly excelled in the reconstruction of our pre-existing website using our Figma design files. The scope of their work encompassed the frontend of our website, which was built in WordPress and Elementor. While the process and project management had occasional challenges as it was a slightly unconventional process for both parties, the end result has undeniably surpassed our expectations. The improved speed and responsiveness of our website are impressive, which has resulted in a high-performance website.`,
+      name: 'Annemiek de Nijs',
+      companyName: 'Marketing Manager, MRstudio',
+      image: '',
+    },
+    technologiesUSed: ['1. WordPress', '2. Elementor', '3. Figma'],
+  },
+  {
+    id: 4,
+    title: 'Morespace',
+    headerText: 'Morespace',
+    bannerImage: moreSpaceOg,
+    year: '2023',
+    servicesOffered:
+      'Research and crafting wireframes or skeleton for the redesign.',
+    overview: `Overview: Morespace is a British-owned ultra modern storage facility located in Dubai. They make self-storage easy for both businesses and individuals. The project is about researching how the current site can be improved and crafting wireframes for a redesign of the existing site. `,
+    appLink: '',
+    webLink: '',
+    section2: {
+      image: moreSpace2,
+      headText:
+        'Redefining the website experience of Morespace’s self-storage solution.',
+      desc: `Morespace approached us to reimagine their existing website, from user flow, and UX, to visual interfaces. Redundant sections across pages, outdated layouts are main issues with the existing site.`,
+      desc2: `We started the project with redefining the information architecture to optimise the user flows, add new features/pages, and inform our choices for the redesign.`,
+    },
+    // reasearchResult: {
+    //   image: imvi3,
+    //   headText:
+    //     'To gather insights for our redesign, we conducted a quantitative research with the existing imvi mobile app: ',
+    //   results: [
+    //     {
+    //       pencent: '90%',
+    //       desc: 'of users felt the app is complex & lacks proper usage instructions',
+    //     },
+    //     {
+    //       pencent: '72%',
+    //       desc: 'of users voted the previous app as “Poor” in terms of end-user experience',
+    //     },
+    //     {
+    //       pencent: '65%',
+    //       desc: 'of existing user group felt there is no incentive to keep training on regular basis',
+    //     },
+    //   ],
+    // },
+    wireFrames: {
+      headText: 'Designing wireframes:',
+      images: [moreSpaceHifi1, moreSpaceHifi2, moreSpaceHifi3, moreSpaceHifi4],
+      desc: `We improved the booking experience by allowing users to see how many items will fit in a selected unit. We also included a "Help me choose" feature to recommend the correct unit space for individuals/businesses depending on their storage needs.`,
+      desc2: `An extra "Profile page" is added to help subscribed individuals/businesses to manage their booked units and payments, upgrade/degrade the storage unit space, and much more.`,
+    },
+    // imagesSection: {
+    //   headText: 'Designing a better mobile app experience for IMVI:',
+    //   images: [imviHifi1, imviHifi2, imviHifi3],
+    //   desc: '',
+    //   desc2: '',
+    // },
+    // developingProcess: {
+    //   head: 'Developing the app:',
+    //   steps: [
+    //     {
+    //       name: 'Frontend',
+    //       desc: 'We designed the user interface to be simple and intuitive, with clear instructions and feedback.',
+    //     },
+    //     {
+    //       name: 'Backend',
+    //       desc: 'Firebase was used to store user data and provide real-time updates to the front-end.',
+    //     },
+    //     {
+    //       name: 'Test & Deploy',
+    //       desc: 'The solution underwent extensive testing before deployment, including usability testing with dyslexic individuals.',
+    //     },
+    //     {
+    //       name: 'Maintenance',
+    //       desc: 'We used modern and standardized technologies for the solution to ensure it was easily maintainable.',
+    //     },
+    //   ],
+    // },
+    outcome: `Apart from redefining Morespace’s site map, we also delivered wireframes that are clean, user-friendly, and elevate the site’s overall online experience. `,
+    testimonials: {
+      desc: `Collaborating with Vilje Tech on the UX design for our ‘Morespace’ website was a revelation. Their clean, intuitive design perfectly captures our website’s essence. They transformed our vision into reality, delivering a user-friendly experience that exceeded our expectations. The attention to detail and dedication to quality shine through in every aspect of their work. We’re thrilled with the outcome and highly recommend Vilje for their expertise and professionalism.`,
+      name: 'Danieal Zehadi',
+      companyName: 'Morespace Project Lead',
+      image: '',
+    },
+    technologiesUSed: ['1. Figma'],
+  },
+  {
+    id: 5,
+    title: 'Trakr',
+    headerText: 'Trakr',
+    bannerImage: trakrOg,
+    year: '2023',
+    servicesOffered: `UX/UI design, Web design, Web development, Software design, Software development.`,
+    overview: `Overview: Integrating QR codes and RFID for streamlined asset management: efficient check-in/out, maintenance tracking, and lost item recovery. Enhancing control, minimizing downtimes, and optimizing asset value throughout the lifecycle. A new era of comprehensive asset management begins.`,
+    appLink: '',
+    webLink: 'http://demo.trakr.se',
+    section2: {
+      image: trakr2,
+      headText: `Elevating asset control and efficiency with seamless QR code and RFID solutions.`,
+      desc: `Emerging from the complexities of modern asset management, our idea is to fuse QR codes and RFID technology, a response to the demand for streamlined tracking, maintenance, and recovery solutions. This innovation leverages digital identification, aiming to revolutionize asset management into a proactive, value-optimized process, reducing disruptions.`,
+      desc2: `By amalgamating QR codes and RFID technology, we propose a dynamic approach to elevate asset management. This solution enables seamless check-in/out procedures, empowers proactive maintenance control, and facilitates swift recovery of misplaced items. The outcome is an enhanced asset management framework, minimizing disruptions and unlocking full lifecycle value.`,
+    },
+    section3: {
+      headText: `Creating presentation deck for our unique asset management solution:`,
+      images: [bannerImg6],
+    },
+    // reasearchResult: {
+    //   image: imvi3,
+    //   headText:
+    //     'To gather insights for our redesign, we conducted a quantitative research with the existing imvi mobile app: ',
+    //   results: [
+    //     {
+    //       pencent: '90%',
+    //       desc: 'of users felt the app is complex & lacks proper usage instructions',
+    //     },
+    //     {
+    //       pencent: '72%',
+    //       desc: 'of users voted the previous app as “Poor” in terms of end-user experience',
+    //     },
+    //     {
+    //       pencent: '65%',
+    //       desc: 'of existing user group felt there is no incentive to keep training on regular basis',
+    //     },
+    //   ],
+    // },
+    wireFrames: {
+      headText: 'Designing and Developing trakr’s landing page:',
+      images: [trakrHifi1, trakrHifi2],
+      desc: '',
+    },
+    section4: {
+      headText: `Transforming complex ideas into simpler user flows:`,
+      images: [trakrHifi3],
+    },
+    imagesSection: {
+      headText:
+        'Building trakr’s software interfaces for both admins and users:',
+      images: [trakrHifi4, trakrHifi5, trakrHifi6, trakrHifi7],
+      desc: '',
+      desc2: '',
+      outcome:
+        'Trakr, our in-house project, is still in the early stages of its design and development cycle. We are planning to run scenario-based field-tests in collaboration with Hetch, starting this November.',
+      technologiesUSed: ['1. Figma', '2. MongoDB', '3. AWS', '4. React JS'],
+    },
+    // developingProcess: {
+    //   head: 'Developing the app:',
+    //   steps: [
+    //     {
+    //       name: 'Frontend',
+    //       desc: 'We designed the user interface to be simple and intuitive, with clear instructions and feedback.',
+    //     },
+    //     {
+    //       name: 'Backend',
+    //       desc: 'Firebase was used to store user data and provide real-time updates to the front-end.',
+    //     },
+    //     {
+    //       name: 'Test & Deploy',
+    //       desc: 'The solution underwent extensive testing before deployment, including usability testing with dyslexic individuals.',
+    //     },
+    //     {
+    //       name: 'Maintenance',
+    //       desc: 'We used modern and standardized technologies for the solution to ensure it was easily maintainable.',
+    //     },
+    //   ],
+    // },
+    // outcome:
+    //   'Thanks to our partnership with imvi Labs, we were able to create an app that has helped improve the vision and reading skills of people.',
+    // testimonials: {
+    //   desc: 'Vilje Tech built our complex eye coordination training app and streamlined development efficiently and qualitatively from MVP to a complete mobile application. Our unique solution had several specially built functions which Vilje Tech developed. They had clear and transparent communication and were highly involved throughout the project; we will continue working together. We highly recommend Vilje Tech.',
+    //   name: 'Michael Malmqvist',
+    //   companyName: 'CIO, IMVI Labs, Sweden',
+    //   image: '',
+    // },
+    // technologiesUSed: ['1. React Native', '2. Firebase', '3. Figma'],
   },
 ];

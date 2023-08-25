@@ -1,425 +1,1290 @@
-.projectMainContainerStyles {
-  background: #fff;
-}
-.imageWidthStyles {
+.imagesOutComeSection {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/*******PROJECT BANNER SECTION STYLES*******/
-.navigationTextStyles {
-  display: none;
-  color: #050505;
-  font-family: 'Manrope', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: 24px;
-}
-.presentPageLinkTextStyles {
-  color: rgba(5, 5, 5, 0.5);
-}
-.projectBannerContainerStyles {
+  max-width: 784px;
   display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-left: auto;
+}
+
+.newIndividualProject {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1728px;
   margin: auto;
-  padding: 144px 48px;
+}
+/* banner Section Start */
+.bannerSectionStyles {
+  padding: 144px 64px 96px;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 48px;
 }
-.projectTitleTextStyles {
-  color: #050505;
+.bannerHeaderStyles {
+  color: var(--dark);
   font-family: 'NeueHaasDisplay-Medium', sans-serif;
   font-size: 80px;
   font-style: normal;
   font-weight: 500;
   line-height: 88px;
 }
-.projectBannerImageStyles {
-  width: 100%;
-  height: 800px;
+.bannerImgStyles {
+  height: 90vh;
 }
-.projectBannerBottomContainerStyles {
+.imageWidth {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bannerTextStyles {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.projectBannerBottomLeftStyles {
-  color: #050505;
+.bannerLeftTextStyles {
+  color: var(--dark);
+  display: block;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 450;
   line-height: 24px;
-  /* width: 100%; */
 }
-.rightAngledArrowIconStyles {
-  width: 24px;
-  height: 24px;
-}
-.websiteTextStyles {
-  display: flex;
-  flex-direction: row;
-}
-.projectBannerBottomDescContainerStyles {
-  width: 100%;
-  max-width: 784px;
+.bannerRightStyles {
   display: flex;
   flex-direction: row;
   gap: 48px;
-  color: #050505;
-  font-family: 'Manrope';
+}
+.bannerParaStyles,
+.bannerParaStylesOne {
+  max-width: 368px;
+  color: var(--dark);
   font-size: 16px;
   font-style: normal;
   font-weight: 450;
   line-height: 24px;
 }
-.projectBannerBottomDescTextStyles {
-  width: 100%;
-}
-.projectBannerBottomDescTextStyles span {
+.bannerSpanStyles,
+.bannerSpanStylesOne {
   color: rgba(5, 5, 5, 0.5);
-}
-/*********  INFORMATION ARCHITECTURE SECTION STYLES***************/
-.architectureMainContainerStyles {
-  display: flex;
-  width: 100%;
-  margin: auto;
-  max-width: 1440px;
-  padding: 96px 48px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 48px;
-}
-.architectureHeadingStyles {
-  color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
-  width: 100%;
-  max-width: 784px;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 56px; /* 116.667% */
-}
-.architectureImageStyles {
-  width: 100%;
-  height: 800px;
-}
-.architectureDescContainerStyles {
-  display: flex;
-  width: 784px;
-  align-items: flex-start;
-  gap: 48px;
-  width: 100%;
-  max-width: 784px;
-  margin-left: auto;
-}
-.architectureDescTextStyles {
-  color: #050505;
-  font-family: 'Manrope';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: 24px;
-  width: 100%;
-}
-.architectureDescTextStyles span {
-  color: rgba(5, 5, 5, 0.5);
-}
-/********* TYPOGRAPHY AND WIREFRAMES SECTION STYLES***********/
-.typographyMainContainerStyles {
-  display: flex;
-  width: 100%;
-  max-width: 1440px;
-  margin: auto;
-  padding: 96px 48px;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 48px;
-}
-.typographyThickDescTextStyles {
-  color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 56px;
-}
-.typographyDescTextStyles {
-  color: #050505;
-  font-family: 'Manrope';
   font-size: 16px;
   font-style: normal;
   font-weight: 450;
   line-height: 24px;
 }
-.typographyDescTextStyles span {
-  color: rgba(5, 5, 5, 0.5);
-}
-/********* HIGH Fidelity SECTION STYLES *******/
-.highFidelityMainContainerStyles {
+.bannerViewStyles {
   display: flex;
-  width: 100%;
-  margin: auto;
-  max-width: 1440px;
-  padding: 96px 48px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 48px;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
 }
-.highFidelityHeadingStyles {
-  color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
-  font-size: 48px;
+.bannerViewBottomStyles {
+  display: none;
+}
+.bannerGapStyles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 262px;
+}
+.bannerViewTextStyles {
+  color: var(--dark);
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 56px;
-  width: 100%;
-  max-width: 784px;
+  line-height: 26px;
+  white-space: nowrap;
 }
-.highFidelityDescContainerStyles,
-.typographyDescContainerStyles {
+.bannerViewImgStyles {
+  max-width: 26px;
+  max-height: 26px;
+}
+/* banner Section end */
+
+/* eyeCoordination Section start */
+.eyeCoordinationSectionStyles {
+  padding: 96px 64px;
   display: flex;
   flex-direction: column;
   gap: 48px;
+}
+.coordinationHeaderStyles {
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+  max-width: 880px;
+}
+.coordinationImgStyles {
+  height: 1024px;
   width: 100%;
-  max-width: 784px;
-  margin-left: auto;
-  color: #050505;
-  font-family: 'Manrope';
-  font-size: 16px;
+}
+.imageWidth {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coordinationParaStyles {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 48px;
+}
+.coordinationParaTextStyles,
+.coordinationParaTextStylesOne {
+  color: var(--dark);
+  font-size: 18px;
   font-style: normal;
   font-weight: 450;
-  line-height: 24px;
+  line-height: 26px;
+  max-width: 416px;
 }
-.highFidelityImageStyles,
-.typographyImageStyles {
+/* eyeCoordination Section end */
+
+/* gatherInsights Section start */
+.insightsSectionStyles {
+  padding: 96px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.gatherInsightsImgStyles {
   width: 100%;
-  height: 800px;
+  height: 1024px;
 }
-.highFidelityDescTextStyles span {
+.imageWidth {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gatherInsightsHeaderStyles {
+  max-width: 416px;
   color: rgba(5, 5, 5, 0.5);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
 }
-.highFidelityThickDescTextStyles {
-  color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
-  font-size: 32px;
+.insightsUserStyles {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-end;
+  grid-gap: 48px;
+}
+.insightsUsageInstructionsStyles,
+.insightsUserExperinceStyles,
+.insightsRegularBasisStyles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.insightsUsageHeaderStyles,
+.insightsUserExperinceHeaderStyles,
+.insightsRegularBasisHeaderStyles {
+  color: var(--dark);
+  font-size: 80px;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 88px;
+}
+.insightsUsageParaStyles,
+.insightsUserExperinceParaStyles,
+.insightsRegularBasisParaStyles {
+  color: var(--dark);
+  max-width: 416px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
+}
+/* gatherInsights Section end */
+
+/* wireFramesSection Section start */
+.wireFramesSectionStyles {
+  padding: 96px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.wireFrameHeaderStyles {
+  width: 100%;
+  max-width: 784px;
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+}
+.wireFramesImgStyles {
+  width: 100%;
+  height: 1024px;
+}
+.imageWidth {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wireFramesParaStyles {
+  display: flex;
+  justify-content: flex-end;
+  gap: 48px;
+}
+.wireFramesParaTextStyles {
+  max-width: 416px;
+  color: var(--dark);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
 }
 
-/**********RESULT AND REVIEW SECTION STYLES******/
-.resultReviewMainContainerStyles {
+/* wireFramesSection Section end */
+
+/* experince Mivi Section start */
+.experinceMiviSectionStyles {
+  padding: 96px 64px;
   display: flex;
-  width: 100%;
-  margin: auto;
-  max-width: 1440px;
-  padding: 96px 48px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 48px;
 }
-.resultDescTextStyles {
-  color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
-  font-size: 48px;
+.experinceHeaderStyles {
+  max-width: 880px;
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 56px;
   font-style: normal;
   font-weight: 500;
-  line-height: 56px;
-  width: 100%;
-  max-width: 784px;
+  line-height: 64px;
 }
-.reviewContainerStyles {
-  display: flex;
-  max-width: 784px;
+.experinceImageStyles {
   width: 100%;
-  margin-left: auto;
-  padding: 24px;
+  height: 1024px;
+}
+.imageWidth {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.experinceParaStyles {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  justify-content: flex-end;
+}
+.experinceParaTextStyles,
+.experinceParaTextStylesOne {
+  max-width: 416px;
+  color: var(--dark);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
+}
+/* experince Mivi Section end */
+
+/* developingApp Section start */
+.developingAppStyles {
+  padding: 96px 64px;
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  gap: 48px;
+}
+.developingAppHeaderStyles {
+  color: rgba(5, 5, 5, 0.5);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
+}
+.developingMapStyles {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-end;
+  grid-gap: 48px;
+}
+.developingGapStyles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.developingHeaderStyles {
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+}
+.developingParaStyles {
+  max-width: 416px;
+  color: var(--dark);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
+}
+/* developingApp Section end */
+
+/* outcome Section start */
+.outcomeSectionStyles {
+  padding: 96px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.outcomeSpanStyles {
+  color: rgba(5, 5, 5, 0.5);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
+}
+.outcomeParaStyles {
+  max-width: 416px;
+  color: var(--dark);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
+}
+.testimonialCardStyles {
+  display: flex;
+  flex-direction: column;
   gap: 24px;
+  padding: 24px;
+  max-width: 880px;
+  /* width: 100%; */
+  margin-left: auto;
   border-radius: 12px;
   border: 1px solid rgba(5, 5, 5, 0.2);
-  background: #fff;
 }
-.reviewDescTextStyles {
-  color: #050505;
-  font-family: 'NeueHaasDisplay-Medium';
-  font-size: 32px;
+
+.testimonialParaStyles {
+  max-width: 832px;
+  width: 100%;
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 36px;
   font-style: normal;
   font-weight: 500;
-  line-height: 40px;
+  line-height: 44px;
 }
-.clientNameTextStyles {
+.testimonialImgSectionStyles {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.testimonialImgStyles {
+  width: 52px;
+  height: 52px;
+  border-radius: 52px;
+  background: #d9d9d9;
+  align-items: center;
+}
+.testimonialParaStylesTwo {
   color: rgba(5, 5, 5, 0.5);
-  font-family: 'NeueHaasDisplay-Medium';
-  font-size: 16px;
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 26px;
+}
+.testimonialParaStylesOne {
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+.outcomeTechnologyTextStyles {
+  color: rgba(5, 5, 5, 0.5);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
+}
+.outcomeTechnologyTextStylesOne,
+.outcomeTechnologyTextStylesTwo,
+.outcomeTechnologyTextStylesThree {
+  color: var(--dark);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 26px;
 }
 
-/**********MEDIA QUERIES **********/
+/* outcome Section end */
 
-@media screen and (max-width: 1311px) {
-  .projectTitleTextStyles {
-    font-size: 64px;
-    line-height: 72px;
+@media screen and (max-width: 1513px) {
+  /* banner Section Start */
+  .bannerSectionStyles {
+    padding: 144px 48px 96px;
   }
-  .projectBannerImageStyles,
-  .architectureImageStyles,
-  .highFidelityImageStyles,
-  .typographyImageStyles {
-    height: 714px;
+  /* 
+  .bannerImgStyles {
+    height: 800px;
+  } */
+
+  .bannerViewStyles {
+    margin-right: 273px;
   }
-  .architectureHeadingStyles,
-  .typographyThickDescTextStyles,
-  .highFidelityHeadingStyles,
-  .resultDescTextStyles {
-    font-size: 40px;
-    line-height: 48px;
+  .bannerGapStyles {
+    margin-right: 0px;
   }
-  .highFidelityThickDescTextStyles,
-  .reviewDescTextStyles {
-    font-size: 28px;
-    line-height: 36px;
+  .bannerViewTextStyles {
+    font-size: 16px;
+    line-height: 24px;
   }
-}
-@media screen and (max-width: 1080px) {
-  .projectTitleTextStyles {
+  .bannerViewImgStyles {
+    max-width: 24px;
+    max-height: 24px;
+  }
+  /* banner Section end */
+
+  /* eyeCoordination Section start */
+  .eyeCoordinationSectionStyles {
+    padding: 96px 48px;
+  }
+  .coordinationHeaderStyles {
+    font-size: 48px;
+    line-height: 56px;
+    max-width: 784px;
+  }
+  .coordinationImgStyles {
+    height: 800px;
+    width: 100%;
+  }
+  .coordinationParaTextStyles,
+  .coordinationParaTextStylesOne {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 368px;
+  }
+  /* eyeCoordination Section end */
+
+  /* gatherInsights Section start */
+  .insightsSectionStyles {
+    padding: 96px 48px;
+  }
+  .gatherInsightsImgStyles {
+    width: 100%;
+    height: 800px;
+  }
+  .gatherInsightsHeaderStyles {
+    max-width: 368px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .insightsUsageParaStyles,
+  .insightsUserExperinceParaStyles,
+  .insightsRegularBasisParaStyles {
+    color: var(--dark);
+    max-width: 368px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* gatherInsights Section end */
+
+  /* wireFramesSection Section start */
+  .wireFramesSectionStyles {
+    padding: 96px 48px;
+  }
+  .wireFrameHeaderStyles {
     font-size: 48px;
     line-height: 56px;
   }
-  .projectBannerContainerStyles {
-    gap: 32px;
+  .wireFramesImgStyles {
+    width: 100%;
+    height: 800px;
   }
-  .projectBannerContainerStyles,
-  .architectureMainContainerStyles,
-  .typographyMainContainerStyles,
-  .highFidelityMainContainerStyles,
-  .resultReviewMainContainerStyles {
-    padding: 96px 32px;
+  .wireFramesParaTextStyles {
+    max-width: 368px;
+    font-size: 16px;
+    line-height: 24px;
   }
-  .projectBannerImageStyles,
-  .architectureImageStyles,
-  .highFidelityImageStyles,
-  .typographyImageStyles {
-    height: 568px;
+  /* wireFramesSection Section end */
+
+  /* experince Mivi Section start */
+  .experinceMiviSectionStyles {
+    padding: 96px 48px;
   }
-  .projectBannerBottomContainerStyles {
-    flex-direction: column;
-    gap: 32px;
+  .experinceHeaderStyles {
+    max-width: 784px;
+    font-size: 48px;
+    line-height: 56px;
   }
-  .projectBannerBottomDescContainerStyles {
-    margin-left: auto;
+  .experinceImageStyles {
+    width: 100%;
+    height: 800px;
   }
-  .projectBannerBottomLeftStyles {
-    order: 1;
+  .experinceParaTextStyles,
+  .experinceParaTextStylesOne {
+    max-width: 368px;
+    font-size: 16px;
+    line-height: 24px;
   }
-  .architectureMainContainerStyles,
-  .typographyMainContainerStyles,
-  .typographyDescContainerStyles,
-  .highFidelityMainContainerStyles,
-  .highFidelityDescContainerStyles {
-    gap: 32px;
+  /* experince Mivi Section end */
+
+  /* developingApp Section start */
+  .developingAppStyles {
+    padding: 96px 48px;
   }
-  .architectureHeadingStyles,
-  .typographyThickDescTextStyles,
-  .highFidelityHeadingStyles,
-  .resultDescTextStyles {
+  .developingAppHeaderStyles {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .developingHeaderStyles {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .developingParaStyles {
+    max-width: 368px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* developingApp Section end */
+
+  /* outcome Section start */
+  .outcomeSectionStyles {
+    padding: 96px 48px;
+  }
+  .outcomeSpanStyles {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .outcomeParaStyles {
+    max-width: 368px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .testimonialCardStyles {
+    max-width: 784px;
+    /* width: 100%; */
+  }
+
+  .testimonialParaStyles {
+    max-width: 736px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .testimonialImgSectionStyles {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .testimonialImgStyles {
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+  }
+  .testimonialParaStylesTwo {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .testimonialParaStylesOne {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .outcomeTechnologyTextStyles {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .outcomeTechnologyTextStylesOne,
+  .outcomeTechnologyTextStylesTwo,
+  .outcomeTechnologyTextStylesThree {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* outcome Section end */
+}
+
+@media screen and (max-width: 1366px) {
+  /* banner Section Start */
+  .bannerSectionStyles {
+    padding: 120px 48px 96px;
+  }
+  .bannerHeaderStyles {
+    font-size: 64px;
+    line-height: 72px;
+  }
+
+  /* banner Section end */
+
+  /* eyeCoordination Section start */
+  .coordinationImgStyles {
+    height: 720px;
+    width: 100%;
+  }
+  /* eyeCoordination Section end */
+
+  /* gatherInsights Section start */
+
+  .gatherInsightsImgStyles {
+    width: 100%;
+    height: 720px;
+  }
+  .insightsUsageParaStyles,
+  .insightsUserExperinceParaStyles,
+  .insightsRegularBasisParaStyles {
+    color: var(--dark);
+    max-width: 368px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .insightsUsageHeaderStyles,
+  .insightsUserExperinceHeaderStyles,
+  .insightsRegularBasisHeaderStyles {
+    font-size: 64px;
+    line-height: 72px;
+  }
+  .insightsUsageParaStyles,
+  .insightsUserExperinceParaStyles,
+  .insightsRegularBasisParaStyles {
+    max-width: 368px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* gatherInsights Section end */
+
+  /* wireFramesSection Section start */
+
+  .wireFrameHeaderStyles {
     font-size: 40px;
     line-height: 48px;
   }
-  .highFidelityThickDescTextStyles,
-  .reviewDescTextStyles {
+  .wireFramesImgStyles {
+    width: 100%;
+    height: 720px;
+  }
+
+  /* wireFramesSection Section end */
+
+  /* experince Mivi Section start */
+
+  .experinceHeaderStyles {
+    max-width: 650px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .experinceImageStyles {
+    width: 100%;
+    height: 720px;
+  }
+  /* experince Mivi Section end */
+
+  /* developingApp Section start */
+
+  .developingHeaderStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  /* developingApp Section end */
+
+  /* outcome Section start */
+
+  .testimonialParaStyles {
     font-size: 28px;
     line-height: 36px;
   }
+
+  /* outcome Section end */
 }
-@media screen and (max-width: 895px) {
-  .projectBannerContainerStyles {
-    padding: 96px 24px 80px 24px;
-    gap: 32px;
+
+@media screen and (max-width: 1148px) {
+  /* banner Section Start */
+  /* banner Section end */
+
+  /* eyeCoordination Section start */
+  .coordinationImgStyles {
+    height: 668px;
+    width: 100%;
   }
-  .projectBannerImageStyles,
-  .architectureImageStyles,
-  .typographyImageStyles,
-  .highFidelityImageStyles {
-    height: 486px;
+  /* eyeCoordination Section end */
+
+  /* gatherInsights Section start */
+
+  .gatherInsightsImgStyles {
+    width: 100%;
+    height: 668px;
   }
-  .projectBannerBottomDescContainerStyles {
-    max-width: 100%;
-    gap: 32px;
+  /* gatherInsights Section end */
+
+  /* wireFramesSection Section start */
+  .wireFramesImgStyles {
+    width: 100%;
+    height: 668px;
   }
-  .architectureMainContainerStyles,
-  .typographyMainContainerStyles,
-  .highFidelityMainContainerStyles,
-  .resultReviewMainContainerStyles {
-    padding: 80px 24px;
-    gap: 32px;
+
+  /* wireFramesSection Section end */
+
+  /* experince Mivi Section start */
+  .experinceImageStyles {
+    width: 100%;
+    height: 668px;
   }
-  .architectureDescContainerStyles {
-    gap: 32px;
+  /* experince Mivi Section end */
+
+  /* developingApp Section start */
+  /* developingApp Section end */
+
+  /* outcome Section start */
+  .testimonialParaStyles {
+    font-size: 28px;
+    line-height: 36px;
   }
-  .reviewDescTextStyles {
-    font-size: 24px;
-    line-height: 32px;
-  }
+  /* outcome Section end */
 }
-@media screen and (max-width: 567px) {
-  .navigationTextStyles {
+
+@media screen and (max-width: 1080px) {
+  /* banner Section Start */
+  .bannerSectionStyles {
+    padding: 96px 32px;
+    gap: 40px;
+  }
+  .bannerHeaderStyles {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .bannerImgStyles {
+    height: 568px;
+  }
+  .bannerTextStyles {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .bannerLeftTextStyles {
+    display: none;
+  }
+
+  .bannerViewStyles {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .bannerViewBottomStyles {
     display: block;
+    color: var(--dark);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 24px;
   }
-  .projectBannerContainerStyles {
-    padding: 96px 20px 64px 20px;
-    gap: 32px;
-  }
-  .projectTitleTextStyles {
-    font-size: 40px;
-    line-height: 48px;
-  }
-  .projectBannerImageStyles,
-  .architectureImageStyles,
-  .highFidelityImageStyles,
-  .architectureImageStyles,
-  .typographyImageStyles {
-    height: 374px;
-  }
-  .projectBannerBottomLeftStyles {
-    order: 0;
-  }
-  .projectBannerBottomDescContainerStyles,
-  .architectureDescContainerStyles {
+  .bannerGapStylesOne {
+    display: flex;
     flex-direction: column;
   }
-  .architectureMainContainerStyles,
-  .typographyMainContainerStyles,
-  .highFidelityMainContainerStyles,
-  .resultReviewMainContainerStyles {
-    padding: 64px 20px;
+  .bannerGapStyles {
+    /* display: flex;
+    flex-direction: column-reverse;
+    gap: 32px; */
   }
-  .architectureHeadingStyles,
-  .typographyThickDescTextStyles,
-  .highFidelityHeadingStyles,
-  .resultDescTextStyles {
+  /* banner Section end */
+
+  /* eyeCoordination Section start */
+  .eyeCoordinationSectionStyles {
+    padding: 96px 32px;
+    gap: 40px;
+  }
+  .coordinationHeaderStyles {
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 784px;
+  }
+  .coordinationImgStyles {
+    height: 568px;
+    width: 100%;
+  }
+  /* eyeCoordination Section end */
+
+  /* gatherInsights Section start */
+  .insightsSectionStyles {
+    padding: 96px 32px;
+    gap: 40px;
+  }
+  .gatherInsightsImgStyles {
+    width: 100%;
+    height: 568px;
+  }
+  .insightsUserStyles {
+    grid-row-gap: 40px;
+    grid-column-gap: 48px;
+  }
+  .insightsUsageHeaderStyles,
+  .insightsUserExperinceHeaderStyles,
+  .insightsRegularBasisHeaderStyles {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  /* gatherInsights Section end */
+
+  /* wireFramesSection Section start */
+  .wireFramesSectionStyles {
+    padding: 96px 32px;
+    gap: 40px;
+  }
+  .wireFrameHeaderStyles {
     font-size: 36px;
     line-height: 44px;
   }
-  .highFidelityThickDescTextStyles {
+  .wireFramesImgStyles {
+    width: 100%;
+    height: 568px;
+  }
+  /* wireFramesSection Section end */
+
+  /* experince Mivi Section start */
+  .experinceMiviSectionStyles {
+    padding: 96px 32px;
+    gap: 40px;
+  }
+  .experinceHeaderStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .experinceImageStyles {
+    width: 100%;
+    height: 568px;
+  }
+  /* experince Mivi Section end */
+
+  /* developingApp Section start */
+  .developingAppStyles {
+    padding: 96px 32px;
+    gap: 40px;
+  }
+  .developingMapStyles {
+    grid-row-gap: 40px;
+    grid-column-gap: 48px;
+  }
+  .developingHeaderStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  /* developingApp Section end */
+
+  /* outcome Section start */
+  .outcomeSectionStyles {
+    padding: 96px 32px;
+    gap: 40px;
+  } /* outcome Section end */
+}
+
+@media screen and (max-width: 895px) {
+  /* banner Section Start */
+  .bannerSectionStyles {
+    padding: 96px 24px 80px;
+    gap: 32px;
+  }
+  .bannerImgStyles {
+    height: 468px;
+  }
+  .bannerParaStyles,
+  .bannerParaStylesOne {
+    max-width: 244px;
+  }
+  .bannerRightStyles {
+    gap: 32px;
+  }
+  /* banner Section end */
+
+  /* eyeCoordination Section start */
+  .eyeCoordinationSectionStyles {
+    padding: 80px 24px;
+    gap: 32px;
+  }
+  .coordinationHeaderStyles {
+    max-width: 520px;
+  }
+  .coordinationImgStyles {
+    height: 468px;
+    width: 100%;
+  }
+  .coordinationParaStyles {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 32px;
+  }
+  /* eyeCoordination Section end */
+
+  /* gatherInsights Section start */
+  .insightsSectionStyles {
+    padding: 80px 24px;
+    gap: 32px;
+  }
+  .gatherInsightsImgStyles {
+    width: 100%;
+    height: 468px;
+  }
+  .gatherInsightsHeaderStyles {
+    max-width: 244px;
+  }
+  .insightsUserStyles {
+    grid-gap: 32px;
+  }
+
+  .insightsUsageParaStyles,
+  .insightsUserExperinceParaStyles,
+  .insightsRegularBasisParaStyles {
+    max-width: 244px;
+  }
+  /* gatherInsights Section end */
+
+  /* wireFramesSection Section start */
+  .wireFramesSectionStyles {
+    padding: 80px 24px;
+    gap: 32px;
+  }
+  .wireFramesImgStyles {
+    width: 100%;
+    height: 468px;
+  }
+  .wireFramesParaTextStyles {
+    max-width: 244px;
+  }
+  /* wireFramesSection Section end */
+
+  /* experince Mivi Section start */
+  .experinceMiviSectionStyles {
+    padding: 80px 24px;
+    gap: 32px;
+  }
+  .experinceImageStyles {
+    width: 100%;
+    height: 468px;
+  }
+  .experinceParaStyles {
+    gap: 32px;
+  }
+  .experinceParaTextStyles,
+  .experinceParaTextStylesOne {
+    max-width: 244px;
+  }
+  /* experince Mivi Section end */
+
+  /* developingApp Section start */
+  .developingAppStyles {
+    padding: 80px 24px;
+    gap: 32px;
+  }
+  .developingMapStyles {
+    grid-gap: 32px;
+  }
+  .developingParaStyles {
+    max-width: 244px;
+  }
+  /* developingApp Section end */
+
+  /* outcome Section start */
+  .outcomeSectionStyles {
+    padding: 80px 24px;
+    gap: 32px;
+  }
+  .outcomeParaStyles {
+    max-width: 244px;
+  }
+  .testimonialCardStyles {
+    max-width: 520px;
+  }
+
+  .testimonialParaStyles {
+    max-width: 472px;
     font-size: 24px;
     line-height: 32px;
   }
-  .reviewContainerStyles {
+
+  /* outcome Section end */
+}
+
+@media screen and (max-width: 568px) {
+  .imagesOutComeSection {
+    flex-direction: column;
+  }
+  /* banner Section Start */
+  .bannerSectionStyles {
+    padding: 96px 20px 72px;
+  }
+  .bannerImgStyles {
+    height: 374px;
+  }
+  .bannerTextStyles {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .bannerParaStyles,
+  .bannerParaStylesOne {
+    max-width: 100%;
+  }
+  .bannerRightStyles {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  /* banner Section end */
+  /* eyeCoordination Section start */
+  .eyeCoordinationSectionStyles {
+    padding: 72px 20px;
+  }
+  .coordinationHeaderStyles {
+    max-width: 100%;
+  }
+  .coordinationImgStyles {
+    height: 374px;
+    width: 100%;
+  }
+
+  .coordinationParaStyles,
+  .wireFramesParaStyles {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .coordinationParaTextStyles,
+  .coordinationParaTextStylesOne {
+    max-width: 100%;
+  }
+  /* eyeCoordination Section end */
+
+  /* gatherInsights Section start */
+  .insightsSectionStyles {
+    padding: 72px 20px;
+  }
+  .gatherInsightsImgStyles {
+    width: 100%;
+    height: 374px;
+  }
+  .gatherInsightsHeaderStyles {
+    max-width: 100%;
+  }
+  .insightsUserStyles {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .insightsUsageHeaderStyles,
+  .insightsUserExperinceHeaderStyles,
+  .insightsRegularBasisHeaderStyles {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .insightsUsageParaStyles,
+  .insightsUserExperinceParaStyles,
+  .insightsRegularBasisParaStyles {
+    max-width: 100%;
+  }
+  /* gatherInsights Section end */
+
+  /* wireFramesSection Section start */
+  .wireFramesSectionStyles {
+    padding: 72px 20px;
+  }
+  .wireFramesImgStyles {
+    width: 100%;
+    height: 320px;
+  }
+  .wireFramesParaStyles {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .wireFramesParaTextStyles {
+    max-width: 100%;
+  }
+  /* wireFramesSection Section end */
+
+  /* experince Mivi Section start */
+  .experinceMiviSectionStyles {
+    padding: 72px 20px;
+  }
+  .experinceHeaderStyle {
+    max-width: 100%;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .experinceImageStyles {
+    width: 100%;
+    height: 320px;
+  }
+  .experinceParaStyles {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .experinceParaTextStyles,
+  .experinceParaTextStylesOne {
+    max-width: 100%;
+  }
+  /* experince Mivi Section end */
+
+  /* developingApp Section start */
+  .developingAppStyles {
+    padding: 72px 20px;
+  }
+  .developingMapStyles {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .developingGapStyles {
+    gap: 4px;
+  }
+  .developingHeaderStyles {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .developingParaStyles {
+    max-width: 100%;
+  }
+  /* developingApp Section end */
+
+  /* outcome Section start */
+  .outcomeSectionStyles {
+    padding: 72px 20px;
+  }
+  .outcomeParaStyles {
+    max-width: 100%;
+  }
+  .testimonialCardStyles {
+    max-width: 100%;
+    margin: 0;
     padding: 16px;
     gap: 16px;
   }
-  .reviewDescTextStyles {
+
+  .testimonialParaStyles {
+    max-width: 100%;
     font-size: 18px;
     line-height: 26px;
   }
+  /* outcome Section end */
 }
-@media screen and (max-width: 359px) {
+
+@media screen and (max-width: 360px) {
+  /* banner Section Start */
+  .bannerSectionStyles {
+    padding: 96px 20px 64px;
+  }
+  .bannerImgStyles {
+    height: 280px;
+  }
+
+  .bannerParaStyles,
+  .bannerParaStylesOne {
+    max-width: 280px;
+  }
+  /* banner Section end */
+  /* eyeCoordination Section start */
+  .eyeCoordinationSectionStyles {
+    padding: 64px 20px;
+  }
+  .coordinationHeaderStyles {
+    max-width: 280px;
+  }
+  .coordinationImgStyles {
+    height: 280px;
+    width: 100%;
+  }
+  .coordinationParaTextStyles,
+  .coordinationParaTextStylesOne {
+    max-width: 280px;
+  }
+
+  /* eyeCoordination Section end */
+
+  /* gatherInsights Section start */
+  .insightsSectionStyles {
+    padding: 64px 20px;
+  }
+  .gatherInsightsImgStyles {
+    width: 100%;
+    height: 280px;
+  }
+  .gatherInsightsHeaderStyles {
+    max-width: 280px;
+  }
+
+  .insightsUsageHeaderStyles,
+  .insightsUserExperinceHeaderStyles,
+  .insightsRegularBasisHeaderStyles {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .insightsUsageParaStyles,
+  .insightsUserExperinceParaStyles,
+  .insightsRegularBasisParaStyles {
+    max-width: 280px;
+  }
+  /* gatherInsights Section end */
+
+  /* wireFramesSection Section start */
+  .wireFramesSectionStyles {
+    padding: 64px 20px;
+  }
+  .wireFramesImgStyles {
+    width: 100%;
+    height: 280px;
+  }
+  .wireFramesParaTextStyles {
+    max-width: 280px;
+  }
+  /* wireFramesSection Section end */
+
+  /* experince Mivi Section start */
+  .experinceMiviSectionStyles {
+    padding: 64px 20px;
+  }
+  .experinceHeaderStyle {
+    max-width: 280px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .experinceImageStyles {
+    width: 100%;
+    height: 280px;
+  }
+
+  .experinceParaTextStyles,
+  .experinceParaTextStylesOne {
+    max-width: 280px;
+  }
+  /* experince Mivi Section end */
+
+  /* developingApp Section start */
+  .developingAppStyles {
+    padding: 64px 20px;
+  }
+  .developingHeaderStyles {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .developingParaStyles {
+    max-width: 280px;
+  }
+  /* developingApp Section end */
+
+  /* outcome Section start */
+  .outcomeSectionStyles {
+    padding: 64px 20px;
+  }
+  .outcomeParaStyles {
+    max-width: 280px;
+  }
+  .testimonialCardStyles {
+    max-width: 280px;
+    margin: 0;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .testimonialParaStyles {
+    max-width: 248px;
+  }
+  /* outcome Section end */
 }

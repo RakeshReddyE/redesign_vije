@@ -3,6 +3,7 @@ import styles from './styles.module.css';
 import NavBar from '../../components/navbar';
 import Divider from '../../components/divider';
 import Footer from '../../components/footer';
+import { Helmet } from 'react-helmet';
 const PrivacyPolicy = () => {
   const privacyPolicyData = [
     {
@@ -26,6 +27,15 @@ const PrivacyPolicy = () => {
   }, []);
   return (
     <div className={styles.privacyPolicyMainContainerStyles}>
+      <Helmet>
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-eu1.hs-scripts.com/27027103.js"
+        ></script>
+      </Helmet>
       <NavBar theme={'dark'} />
       <div className={styles.privacyPolicyInnerContainerStyles}>
         <h1 className={styles.headingTextStyles}>Privacy policy</h1>

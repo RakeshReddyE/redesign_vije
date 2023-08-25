@@ -15,7 +15,7 @@
 }
 .sectionBgStyles {
   background-color: var(--dark);
-  transition: all 0.8s ease-in-out;
+  transition: all 0.2s ease-in-out;
   color: var(--white);
 }
 .serviceSectionInnerContainerStylesTwo {

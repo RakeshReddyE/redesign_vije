@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from './styles.module.css';
 import { RightUpArrow } from '../../resources/svg';
 import { swedenFlag } from '../../resources/images';
+import { useNavigate } from 'react-router';
 
 const Footer = (props) => {
   const {
@@ -11,6 +12,7 @@ const Footer = (props) => {
     customFooterMainContainerStyles,
   } = props;
   const [email, setEmail] = useState({ email: '' });
+  const navigate = useNavigate();
   const renderFooterTopSection = () => {
     return (
       <div className={styles.footerTopContainerStyles}>
@@ -21,6 +23,7 @@ const Footer = (props) => {
                 ? styles.footerHeadingDarkTextStyles
                 : styles.footerHeadingTextStyles
             }
+            onClick={() => navigate('/contact')}
           >
             Get in touch
             <RightUpArrow

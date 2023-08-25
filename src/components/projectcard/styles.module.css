@@ -4,48 +4,93 @@
   flex-direction: column;
   gap: 16px;
   width: 576px;
-  /* height: 576px; */
 }
 .projectImageContainerStyles {
+  position: relative;
   width: 100%;
-  height: auto;
+  height: 384px;
 }
 .imageWidthStyles {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+.hoveredImageWidthStyles {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.projectCardContainerStyle:hover .hoveredImageWidthStyles {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
 .projectNameTextStyles,
 .projectNameTextStyles span {
-  color: #050505;
-  font-family: "NeueHaasDisplay-Medium", sans-serif;
-  font-size: 20px;
+  color: var(--dark);
+  font-family: 'NeueHaasDisplay-Medium', sans-serif;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 24px;
 }
 .projectNameTextStyles span {
   color: rgba(5, 5, 5, 0.4);
 }
 
 /********MEDIA QUERIES ********/
-@media screen and (max-width: 1311px) {
+@media screen and (min-width: 1728px) {
   .projectNameTextStyles,
   .projectNameTextStyles span {
     font-size: 18px;
     line-height: 26px;
   }
 }
-@media screen and (max-width: 1079px) {
+
+@media screen and (min-width: 1513px) and (max-width: 1728px) {
+  .projectNameTextStyles,
+  .projectNameTextStyles span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .projectImageContainerStyles {
+    height: 424px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+}
+@media screen and (max-width: 1080px) {
+  .projectImageContainerStyles {
+    width: 320px;
+    height: 320px;
+  }
 }
 @media screen and (max-width: 895px) {
+  .projectImageContainerStyles {
+    width: 286px;
+    height: 286px;
+  }
 }
 @media screen and (max-width: 567px) {
+  .projectImageContainerStyles {
+    width: 100%;
+    height: 374px;
+  }
 }
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 360px) {
   .projectNameTextStyles,
   .projectNameTextStyles span {
     font-size: 16px;
     line-height: 24px;
+  }
+  .projectImageContainerStyles {
+    width: 100%;
+    height: 280px;
   }
 }

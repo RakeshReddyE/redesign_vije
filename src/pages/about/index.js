@@ -21,6 +21,7 @@ import Divider from '../../components/divider';
 import Button from '../../components/button';
 import { LeftArrow, RightArrow } from '../../resources/svg';
 import ServiceCard from '../../components/servicecard';
+import { Helmet } from 'react-helmet';
 const About = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'auto' });
@@ -47,81 +48,81 @@ const About = () => {
     {
       id: '01',
       icon: valuesIcon1,
-      name: 'We are progressive',
+      name: '01. We are progressive',
       desc: "We bring a unique perspective to every project, constantly pushing the boundaries of what's possible. Our focus on progress and continuous improvement allows us to provide exceptional results for our clients.",
     },
     {
       id: '02',
       icon: valuesIcon2,
-      name: 'We believe in synergy',
+      name: '02. We believe in synergy',
       desc: 'We understand the power of collaboration. Our commitment to synergy drives us to bring diverse perspectives and expertise together, creating a dynamic and magical experience for our clients.',
     },
     {
       id: '03',
       icon: valuesIcon3,
-      name: 'We celebrate diversity',
+      name: '03. We celebrate diversity',
       desc: 'We approach work with a celebration of diversity in ideas, people, knowledge, and cultures. Our inclusive mindset drives us to seek out new perspectives and create innovative solutions for our clients. By embracing diversity, we are able to provide a wider range of expertise and deliver exceptional results.',
     },
     {
       id: '04',
       icon: valuesIcon4,
-      name: 'We act with integrity',
+      name: '04. We act with integrity',
       desc: 'At our company, integrity drives every action we take and shapes the quality of everything we create. Our commitment to truthfulness and respect ensures that we consistently deliver exceptional results for our clients.',
     },
   ];
   const approachStepsData = [
     {
       id: '01',
-      name: 'Onboarding',
+      name: '01. Onboarding',
       image: step1Img,
       bgColor: '#DADEE3',
       color: '#303E37',
     },
     {
       id: '02',
-      name: 'Research',
+      name: '02. Research',
       image: step2Img,
       bgColor: '#28292C',
       color: '#DADEE3',
     },
     {
       id: '03',
-      name: 'Look testing',
+      name: '03. Look testing',
       image: step3Img,
       bgColor: '#303E37',
       color: '#DADEE3',
     },
     {
       id: '04',
-      name: 'Low fidelity',
+      name: '04. Low fidelity',
       image: step4Img,
       bgColor: '#30313E',
       color: '#DADEE3',
     },
     {
       id: '05',
-      name: 'High fidelity',
+      name: '05. High fidelity',
       image: step5Img,
       bgColor: '#DADEE3',
       color: '#303E37',
     },
     {
       id: '06',
-      name: 'Get feedback',
+      name: '06. Get feedback',
       image: step6Img,
       bgColor: '#28292C',
       color: '#DADEE3',
     },
     {
       id: '07',
-      name: 'Iterate',
+      name: '07. Iterate',
       image: step7Img,
       bgColor: '#303E37',
       color: '#DADEE3',
     },
     {
       id: '08',
-      name: 'Handoff',
+      name: '08. Handoff',
       image: step8Img,
       bgColor: '#30313E',
       color: '#DADEE3',
@@ -257,7 +258,7 @@ const About = () => {
           className={styles.stepNameStyles}
           style={{ color: step.color, borderTop: `1px solid ${step.color}33` }}
         >
-          {step.id}.{step.name}
+          {step.name}
         </p>
       </div>
     );
@@ -480,6 +481,15 @@ const About = () => {
   };
   return (
     <div className={styles.aboutMainContainerStyles}>
+      <Helmet>
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-eu1.hs-scripts.com/27027103.js"
+        ></script>
+      </Helmet>
       <NavBar />
       {renderAboutBannerSection()}
       <Divider customDividerStyles={styles.dividerStyles} />

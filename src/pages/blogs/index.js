@@ -18,6 +18,7 @@ import {
 import BlogCard from '../../components/blogcard';
 import styles from './styles.module.css';
 import { useNavigate } from 'react-router';
+import { Helmet } from 'react-helmet';
 const Blogs = () => {
   const tabsData = ['All', 'Blogs', 'News'];
   // const blogsData = [
@@ -26,7 +27,7 @@ const Blogs = () => {
   //     type: 'Blogs',
   //     image: bp1Og,
   //     hoverImage: bp1Zb,
-  //     author: 'Ida Alfonsi ',
+  //     author: 'Bharath Panyala ',
   //     position: '(Communication Manager, Vilje)',
   //     title: 'Opinion: The future of design in robotic internet',
   //     desc: `Over the past week, major players in the AI ​​development world have announced that they will soon integrate AI into workplace tools such as email, Excel sheets, documents, etc. Given the speed at which AI integration is happening in various tools, the world where we ask AI to write an email and read the inbox is not very far off. In such a world, where human interaction with the graphical interface is minimal, design plays an important role. Because robots don't care about the aesthetics, accessibility and experience of a digital product as much as humans do.`,
@@ -36,7 +37,7 @@ const Blogs = () => {
   //     type: 'News',
   //     image: bp2Og,
   //     hoverImage: bp2Zb,
-  //     author: 'Ida Alfonsi ',
+  //     author: 'Bharath Panyala ',
   //     position: '(Communication Manager, Vilje)',
   //     title: 'Improve your website’s SEO using ChatGPT',
   //     desc: `Search Engine Optimization (SEO) is an important part of web design and web development in today's digital era. With millions of websites vying for users' attention, it can be difficult and time-consuming to attract visitors to your website without optimizing its content. Creating and maintaining website content can be a laborious process that requires extensive research and analysis, especially when it comes to keyword research and content scouting. The challenge can be even more demanding for companies that have limited budgets, such as startups. Fortunately, there is a solution to this dilemma, and it's TOTALLY free!`,
@@ -46,7 +47,7 @@ const Blogs = () => {
   //     type: 'News',
   //     image: bp3Og,
   //     hoverImage: bp3Zb,
-  //     author: 'Ida Alfonsi ',
+  //     author: 'Bharath Panyala ',
   //     position: '(Communication Manager, Vilje)',
   //     title: 'AIPRM: The revolutionary SEO extension for ChatGPT',
   //     desc: `As businesses move towards digital marketing, search engine optimization (SEO) becomes a critical element in ensuring online success. With the vast amount of content available online, it's essential to stand out from the crowd and optimise your content for search engines. This is where AIPRM comes in - the revolutionary SEO extension for ChatGPT that provides you with SEO prompts from other users.`,
@@ -56,7 +57,7 @@ const Blogs = () => {
   //     type: 'Blogs',
   //     image: bp4Og,
   //     hoverImage: bp4Zb,
-  //     author: 'Ida Alfonsi ',
+  //     author: 'Bharath Panyala ',
   //     position: '(Communication Manager, Vilje)',
   //     title: '3 simple ways to improve your site’s user experience',
   //     desc: `The user experience (UX) of your website can make or break your online success. A great UX can lead to increased engagement, higher conversion rates, and better brand recognition, while a poor UX can result in high bounce rates, low customer satisfaction, and reduced sales. Learn how to improve the user experience in three easy steps.`,
@@ -77,7 +78,7 @@ const Blogs = () => {
       id: 1,
       image: bp1Og,
       hoverImage: bp1Zb,
-      author: 'Ida Alfonsi ',
+      author: 'Bharath Panyala ',
       position: '(Communication Manager, Vilje)',
       type: 'Blogs',
       alt: 'Two robots having a conversation',
@@ -89,7 +90,7 @@ const Blogs = () => {
       id: 2,
       image: bp2Og,
       hoverImage: bp2Zb,
-      author: 'Ida Alfonsi ',
+      author: 'Bharath Panyala ',
       position: '(Communication Manager, Vilje)',
       type: 'Blogs',
       alt: 'Robot sitting on a bench with a computer',
@@ -101,7 +102,7 @@ const Blogs = () => {
       id: 3,
       image: bp3Og,
       hoverImage: bp3Zb,
-      author: 'Ida Alfonsi ',
+      author: 'Bharath Panyala ',
       position: '(Communication Manager, Vilje)',
       type: 'Blogs',
       alt: 'SEO Extension for ChatGPT',
@@ -127,27 +128,27 @@ const Blogs = () => {
       id: 5,
       image: bp5Og,
       hoverImage: bp5Zb,
-      author: 'Ida Alfonsi ',
+      author: 'Bharath Panyala ',
       position: '(Communication Manager, Vilje)',
-      type: 'Blogs',
+      type: 'News',
       alt: 'User Experince Blog image',
       headerText:
         '3 Simple Changes to Improve the User Experience on Your Website',
       title: '3-Simple-Changes-to-Improve-the-User-Experience-on-Your-Website',
       desc: 'The user experience (UX) of your website can make or break your online success. A great UX can lead to increased engagement, higher conversion rates, and better brand recognition, while a poor UX can result in high bounce rates, low customer satisfaction, and reduced sales. Learn how to improve the user experience in three easy steps.',
     },
-    {
-      id: 1,
-      image: news1Og,
-      hoverImage: news1Og,
-      author: 'Ida Alfonsi ',
-      position: '(Communication Manager, Vilje)',
-      type: 'News',
-      alt: 'Two robots having a conversation',
-      headerText: 'Join our Innovation Competition - 50 hours to greatness',
-      title: 'Join-our-Innovation-Competition-50-hours-to-greatness',
-      desc: 'Vilje Tech is announcing our latest competition where you have a chance to bring your vision to life. We firmly believe in the power of innovation to drive change and improvement, and we want to provide an opportunity for start-ups to take their ideas to the next level.',
-    },
+    // {
+    //   id: 1,
+    //   image: news1Og,
+    //   hoverImage: news1Og,
+    //   author: 'Bharath Panyala ',
+    //   position: '(Communication Manager, Vilje)',
+    //   type: 'News',
+    //   alt: 'Two robots having a conversation',
+    //   headerText: 'Join our Innovation Competition - 50 hours to greatness',
+    //   title: 'Join-our-Innovation-Competition-50-hours-to-greatness',
+    //   desc: 'Vilje Tech is announcing our latest competition where you have a chance to bring your vision to life. We firmly believe in the power of innovation to drive change and improvement, and we want to provide an opportunity for start-ups to take their ideas to the next level.',
+    // },
   ];
 
   const navigate = useNavigate();
@@ -234,6 +235,15 @@ const Blogs = () => {
   };
   return (
     <div className={styles.blogsMainContainerStyles}>
+      <Helmet>
+        <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-eu1.hs-scripts.com/27027103.js"
+        ></script>
+      </Helmet>
       <NavBar theme={'dark'} />
       {renderBlogsContainerSection()}
       <Divider />

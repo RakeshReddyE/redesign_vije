@@ -52,7 +52,7 @@ const ServiceSection = (props) => {
           className={styles.stepNameStyles}
           style={{ color: step.color, borderTop: `1px solid ${step.color}33` }}
         >
-          {step.id}.{step.name}
+          {step.name}
         </p>
       </div>
     );
@@ -106,9 +106,7 @@ const ServiceSection = (props) => {
         }
       >
         <div className={styles.serviceSectionTopStyles}>
-          <h5 className={styles.serviceHeadTextStyles}>
-            {serviceId}.{serviceName}
-          </h5>
+          <h5 className={styles.serviceHeadTextStyles}>{serviceName}</h5>
           <p className={styles.serviceDecTextStyles}>{serviceDesc}</p>
         </div>
         <div className={styles.approachStepsContainerStyles}>

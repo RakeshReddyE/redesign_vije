@@ -99,7 +99,6 @@
     line-height: 48px;
   }
 }
-
 @media screen and (min-width: 1513px) and (max-width: 1728px) {
   .recentPostsMainContainerStyles {
     padding: 96px 64px;
@@ -116,7 +115,6 @@
     line-height: 48px;
   }
 }
-
 @media screen and (max-width: 1366px) {
   .recentPostHeadingTextStyles {
     font-size: 40px;
@@ -263,5 +261,23 @@
     .recentPostImgContainerStyles {
     height: 256px;
     width: 256px;
+  }
+}
+
+@media (hover: none) {
+  .recentPostStyles:hover .hoverImageStyles {
+    opacity: 0;
+  }
+  .recentPostStyles:active .hoverImageStyles {
+    opacity: 1;
+  }
+  .allPostsMobileViewButtonStyles:hover {
+    background-color: var(--white);
+    color: var(--dark);
+  }
+
+  .allPostsMobileViewButtonStyles:active {
+    background-color: var(--dark);
+    color: var(--white);
   }
 }
