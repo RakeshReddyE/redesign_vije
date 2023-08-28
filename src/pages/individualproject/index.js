@@ -6,6 +6,7 @@ import {
   rightAngledArrow,
   rightUpArrow,
   swedenFlag,
+  testimonialSampleProfile,
 } from '../../resources/images';
 import Divider from '../../components/divider';
 import Footer from '../../components/footer';
@@ -28,7 +29,7 @@ const IndividualProject = () => {
     setProject(foundValue[0]);
   }, [location.pathname]);
 
-  console.log(project);
+  // console.log(project);
 
   const bannerSection = () => {
     return (
@@ -46,10 +47,12 @@ const IndividualProject = () => {
           <div className={styles.bannerRightStyles}>
             <p className={styles.bannerParaStyles}>
               <span className={styles.bannerSpanStyles}>Services offered:</span>
+              &nbsp;
               {project?.servicesOffered}
             </p>
             <p className={styles.bannerParaStylesOne}>
               <span className={styles.bannerSpanStylesOne}>Overview:</span>
+              &nbsp;
               {project?.overview}
             </p>
           </div>
@@ -327,7 +330,11 @@ const IndividualProject = () => {
               <Divider />
               <div className={styles.testimonialImgSectionStyles}>
                 <div className={styles.testimonialImgStyles}>
-                  <img src={''} alt="" className={styles.imageeWidth} />
+                  <img
+                    src={project?.testimonials.image}
+                    alt=""
+                    className={styles.imageWidthStyles}
+                  />
                 </div>
                 <div className={styles.testimonialParaBottomStyles}>
                   <p className={styles.testimonialParaStylesOne}>

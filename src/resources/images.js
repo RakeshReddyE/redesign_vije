@@ -126,6 +126,8 @@ import step6Img from '../assets/images/step-6.svg';
 import step7Img from '../assets/images/step-7.svg';
 import step8Img from '../assets/images/step-8.svg';
 
+import testimonialSampleProfile from '../assets/images/testimonialSampleProfile.jpg';
+
 export {
   bannerImg1,
   bannerImg2,
@@ -232,4 +234,5 @@ export {
   step6Img,
   step7Img,
   step8Img,
+  testimonialSampleProfile,
 };
